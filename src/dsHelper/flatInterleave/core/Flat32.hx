@@ -1,4 +1,4 @@
-package dsHelper.flatInterleave;
+package dsHelper.flatInterleave.core;
 import haxe.io.Float32Array; // js.lib.Float32Array
 // arr[0] defines pos the position, pos is used to get items
 // arr[1] defines internal ( populated ) size
