@@ -1,4 +1,4 @@
-package dsHelper.iter;
+package dsHelper.iterArr;
 abstract ArrayQuad<T>( Array<T> ) {
     public function new( arr: Array<T> ):Void this = arr;
     public var length( get, never ):Int;
