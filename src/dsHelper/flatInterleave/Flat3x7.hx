@@ -1,4 +1,4 @@
-package trilateral3.geom.flat;
+package dsHelper.flatInterleave.flat;
 import haxe.io.Float32Array; 
 @:forward
 abstract Flat3x7( Flat32 ) {
