@@ -1,4 +1,4 @@
-package dsHelper.flatInterleave.flat;
+package dsHelper.flatInterleave.core;
 import haxe.io.Float32Array; 
 @:forward
 abstract Flat3x9( Flat32 ) {
