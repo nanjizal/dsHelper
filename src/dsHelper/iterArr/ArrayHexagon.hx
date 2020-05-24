@@ -6,14 +6,21 @@ abstract ArrayHexagon<T>( Array<T> ) {
     @:arrayAccess inline function access( key: Int ): { a: T, b: T
                                                       , c: T, d: T
                                                       , e: T, f: T } {
+        return getObj( key );
+    }
+    public inline
+    function getObj( key: Int ): { a: T, b: T
+                                 , c: T, d: T
+                                 , e: T, f: T } {
         var i: Int = Std.int( key*6 );
         return { a: this[ i ], b: this[ i + 1 ]
                , c: this[ i + 2 ], d: this[ i + 3 ]
                , e: this[ i + 4 ], f: this[ i + 5 ] };
     }
-    public inline function reverse(): Array<T>{
+    public inline
+    function reverse(): Array<T>{
         var arr = [];
-        for( i in new ArrayTriple( this ) ){
+        for( i in new ArrayDozen( this ) ){
             arr.unshift( i.f );
             arr.unshift( i.e );
             arr.unshift( i.d );

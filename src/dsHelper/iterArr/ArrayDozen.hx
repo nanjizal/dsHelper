@@ -6,15 +6,22 @@ abstract ArrayDozen<T>( Array<T> ) {
     @:arrayAccess inline function access( key: Int ): { a: T, b: T, c: T, d: T
                                                       , e: T, f: T, g: T, h: T
                                                       , i: T, j: T, k: T, l: T } {
-        var i: Int = Std.int( key*12 );
-        return { 
-          a: this[ i ],      b: this[ i + 1 ],  c: this[ i + 2 ],  d: this[ i + 3 ]
-        , e: this[ i + 4 ],  f: this[ i + 5 ],  g: this[ i + 6 ],  h: this[ i + 7 ]
-        , i: this[ i + 8 ],  j: this[ i + 9 ],  k: this[ i + 10 ], l: this[ i + 11 ]            };
+        return getObj( key );
     }
-    public inline function reverse(): Array<T>{
+    public inline
+    function getObj( key: Int ): { a: T, b: T, c: T, d: T
+                                 , e: T, f: T, g: T, h: T
+                                 , i: T, j: T, k: T, l: T } {
+       var i: Int = Std.int( key*12 );
+       return { 
+         a: this[ i ],      b: this[ i + 1 ],  c: this[ i + 2 ],  d: this[ i + 3 ]
+       , e: this[ i + 4 ],  f: this[ i + 5 ],  g: this[ i + 6 ],  h: this[ i + 7 ]
+       , i: this[ i + 8 ],  j: this[ i + 9 ],  k: this[ i + 10 ], l: this[ i + 11 ]            };
+    }
+    public inline
+    function reverse(): Array<T>{
         var arr = [];
-        for( i in new ArrayTriple( this ) ){
+        for( i in new ArrayDozen( this ) ){
               arr.unshift( i.l );
               arr.unshift( i.k );
               arr.unshift( i.j );

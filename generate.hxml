@@ -1,0 +1,9 @@
+-D dsHelperDoc
+-D doc-gen
+--macro include('dsHelper')
+-cp src
+-main dsHelper.DocdsHelper
+--no-output
+-xml output.xml
+-js foo
+#-D dump==pretty

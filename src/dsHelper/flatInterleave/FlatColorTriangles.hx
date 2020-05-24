@@ -1,13 +1,13 @@
 package dsHelper.flatInterleave;
 import dsHelper.flatInterleave.core.Flat3x7;
 @:forward
-abstract FloatColorTriangle( Flat3x7 ){
+abstract FloatColorTriangles( Flat3x7 ){
     public inline function new( len: Int ){
         this = new Flat3x7( len );
     }
     public static inline
     function create( len: Int ){
-        return new FloatColorTriangle( len * 21 );
+        return new FloatColorTriangles( len * 21 );
     }
     public var ax( get, set ): Float;
     function get_ax(): Float {
@@ -359,9 +359,9 @@ abstract FloatColorTriangle( Flat3x7 ){
     public var rgb( never, set ): Int;
     inline
     function set_rgb( col: Int ): Int {
-        rgbA( col );
-        rgbB( col );
-        rgbC( col );
+        rgbA = col;
+        rgbB = col;
+        rgbC = col;
         return col;
     }
     public var rgbA( get, set ): Int;
@@ -404,17 +404,17 @@ abstract FloatColorTriangle( Flat3x7 ){
         return col;
     }
     inline
-    function get_rgb():Int {
+    function get_rgbC():Int {
         return     Math.round( blueC  * 255 )
                | ( Math.round( greenC * 255 ) << 8 ) 
                | ( Math.round( redC   * 255 ) << 16 );
     }
-    public var argb( get, set ): Int;
+    public var argb( never, set ): Int;
     inline
     function set_argb( col: Int ): Int {
-        argbA( col );
-        argbB( col );
-        argbC( col );
+        argbA = col;
+        argbB = col;
+        argbC = col;
         return col;
     }
     public var argbA( get, set ): Int;
@@ -476,7 +476,7 @@ abstract FloatColorTriangle( Flat3x7 ){
         this.pos = 0;
         var str = 'FlatColorTriangle - Verts: \n';
         for( i in 0...this.size ) {
-            str += prettyString();
+            str += prettyStringVert();
             this.next();
         }
         this.pos = 0;
@@ -495,7 +495,7 @@ abstract FloatColorTriangle( Flat3x7 ){
         return hex( argbB );
     }
     public inline
-    function hexA(): String {
+    function hexC(): String {
         return hex( argbC );
     }
     public inline
@@ -503,7 +503,7 @@ abstract FloatColorTriangle( Flat3x7 ){
         this.pos = 0;
         var str = 'FlatColorTriangle - RGBA: \n';
         for( i in 0...this.size ) {
-            str += 'colorA: ' + hexA() ', colorB: ' + hexB() +', colorC: ' + colorC + '\n';
+            str += 'colorA: ' + hexA() + ', colorB: ' + hexB() +', colorC: ' + hexC() + '\n';
             this.next();
         }
         this.pos = 0;

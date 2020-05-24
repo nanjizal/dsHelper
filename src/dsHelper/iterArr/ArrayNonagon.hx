@@ -6,14 +6,21 @@ abstract ArrayNonagon<T>( Array<T> ) {
     @:arrayAccess inline function access( key: Int ): { a: T, b: T, c: T
                                                       , d: T, e: T, f: T
                                                       , g: T, h: T, i: T } {
+        return getObj( key );
+    }
+    public inline
+    function getObj( key: Int ): { a: T, b: T, c: T
+                                 , d: T, e: T, f: T
+                                 , g: T, h: T, i: T } {
         var i: Int = Std.int( key*9 );
         return { a: this[ i ],     b: this[ i + 1 ], c: this[ i + 2 ]
                , d: this[ i + 3 ], e: this[ i + 4 ], f: this[ i + 5 ]
                , g: this[ i + 6 ], h: this[ i + 7 ], i: this[ i + 8 ] };
     }
-    public inline function reverse(): Array<T>{
+    public inline
+    function reverse(): Array<T>{
         var arr = [];
-        for( i in new ArrayTriple( this ) ){
+        for( i in new ArrayNonagon( this ) ){
             arr.unshift( i.i );
             arr.unshift( i.h );
             arr.unshift( i.g );

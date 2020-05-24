@@ -1,14 +1,13 @@
-  
 package dsHelper.flatInterleave;
 import dsHelper.flatInterleave.core.Flat3x9;
 @:forward
-abstract FloatColorTriangle( Flat3x9 ){
+abstract FloatColorTrianglesUV( Flat3x9 ){
     public inline function new( len: Int ){
         this = new Flat3x9( len );
     }
     public static inline
     function create( len: Int ){
-        return new FloatColorTriangle( len * 27 );
+        return new FloatColorTrianglesUV( len * 27 );
     }
     public var ax( get, set ): Float;
     function get_ax(): Float {
@@ -77,20 +76,22 @@ abstract FloatColorTriangle( Flat3x9 ){
     public var uA( get, set ): Float;
     inline
     function get_uA(): Float {
-        return this[ 7 ]
+        return this[ 7 ];
     }
     inline
     function set_uA( v: Float ): Float {
         this[ 7 ] = v;
+        return v;
     }
     public var vA( get, set ): Float;
     inline
     function get_vA(): Float {
-        return this[ 8 ]
+        return this[ 8 ];
     }
     inline
     function set_vA( v: Float ): Float {
         this[ 8 ] = v;
+        return v;
     }
     
     public var bx( get, set ): Float;
@@ -160,20 +161,22 @@ abstract FloatColorTriangle( Flat3x9 ){
     public var uB( get, set ): Float;
     inline
     function get_uB(): Float {
-        return this[ 16 ]
+        return this[ 16 ];
     }
     inline
     function set_uB( v: Float ): Float {
         this[ 16 ] = v;
+        return v;
     }
     public var vB( get, set ): Float;
     inline
     function get_vB(): Float {
-        return this[ 17 ]
+        return this[ 17 ];
     }
     inline
     function set_vB( v: Float ): Float {
         this[ 17 ] = v;
+        return v;
     }
 
     public var cx( get, set ): Float;
@@ -243,20 +246,22 @@ abstract FloatColorTriangle( Flat3x9 ){
     public var uC( get, set ): Float;
     inline
     function get_uC(): Float {
-        return this[ 25 ]
+        return this[ 25 ];
     }
     inline
     function set_uC( v: Float ): Float {
         this[ 25 ] = v;
+        return v;
     }
     public var vC( get, set ): Float;
     inline
     function get_vC(): Float {
-        return this[ 26 ]
+        return this[ 26 ];
     }
     inline
-    function set_vB( v: Float ): Float {
+    function set_vC( v: Float ): Float {
         this[ 26 ] = v;
+        return v;
     }
     
     @:keep
@@ -289,7 +294,7 @@ abstract FloatColorTriangle( Flat3x9 ){
                               , uB_: Float, vB_: Float
                               , uC_: Float, vC_: Float, windingChange ){
         uA = uA_;
-        vA = vA_
+        vA = vA_;
         if( windingChange ){
             uB = uC_;
             vB = vC_;
@@ -434,9 +439,9 @@ abstract FloatColorTriangle( Flat3x9 ){
     public var rgb( never, set ): Int;
     inline
     function set_rgb( col: Int ): Int {
-        rgbA( col );
-        rgbB( col );
-        rgbC( col );
+        rgbA = col;
+        rgbB = col;
+        rgbC = col;
         return col;
     }
     public var rgbA( get, set ): Int;
@@ -479,19 +484,20 @@ abstract FloatColorTriangle( Flat3x9 ){
         return col;
     }
     inline
-    function get_rgb():Int {
+    function get_rgbC():Int {
         return     Math.round( blueC  * 255 )
                | ( Math.round( greenC * 255 ) << 8 ) 
                | ( Math.round( redC   * 255 ) << 16 );
     }
-    public var argb( get, set ): Int;
+    public var argb( never, set ): Int;
     inline
     function set_argb( col: Int ): Int {
-        argbA( col );
-        argbB( col );
-        argbC( col );
+        argbA = col;
+        argbB = col;
+        argbC = col;
         return col;
     }
+    
     public var argbA( get, set ): Int;
     inline
     function set_argbA( col: Int ): Int {
@@ -502,12 +508,13 @@ abstract FloatColorTriangle( Flat3x9 ){
         return col;
     }
     inline
-    function get_argbA():Int {
+    function get_argbA(): Int {
         return    ( Math.round( alphaA * 255 ) << 24 ) 
-                | ( Math.round( redA   * 255 ) << 16) 
-                | ( Math.round( greenA * 255 ) << 8) 
+                | ( Math.round( redA   * 255 ) << 16 ) 
+                | ( Math.round( greenA * 255 ) << 8 ) 
                 |   Math.round( blueA  * 255 );
     }
+    
     public var argbB( get, set ): Int;
     inline
     function set_argbB( col: Int ): Int {
@@ -520,8 +527,8 @@ abstract FloatColorTriangle( Flat3x9 ){
     inline
     function get_argbB():Int {
         return    ( Math.round( alphaA * 255 ) << 24 ) 
-                | ( Math.round( redA   * 255 ) << 16) 
-                | ( Math.round( greenA * 255 ) << 8) 
+                | ( Math.round( redA   * 255 ) << 16 ) 
+                | ( Math.round( greenA * 255 ) << 8 ) 
                 |   Math.round( blueA  * 255 );
     }
     public var argbC( get, set ): Int;
@@ -569,7 +576,7 @@ abstract FloatColorTriangle( Flat3x9 ){
         return hex( argbB );
     }
     public inline
-    function hexA(): String {
+    function hexC(): String {
         return hex( argbC );
     }
     public inline
@@ -577,7 +584,7 @@ abstract FloatColorTriangle( Flat3x9 ){
         this.pos = 0;
         var str = 'FlatColorTriangle - RGBA: \n';
         for( i in 0...this.size ) {
-            str += 'colorA: ' + hexA() ', colorB: ' + hexB() +', colorC: ' + colorC + '\n';
+            str += 'colorA: ' + hexA() + ', colorB: ' + hexB() +', colorC: ' + hexC() + '\n';
             this.next();
         }
         this.pos = 0;
