@@ -1,4 +1,4 @@
-package trilateral3.iter;
+package dsHelper.iter;
 abstract ArrayPairs<T>( Array<T> ) {
     public function new( arr: Array<T> ):Void this = arr;
     public var length( get, never ):Int;
