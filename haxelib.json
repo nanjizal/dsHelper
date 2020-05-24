@@ -1,0 +1,12 @@
+{
+    "name"         : "dsHelper",
+    "url"          : "https://github.com/nanjizal/dsHelper#dsHelper",
+    "license"      : "MIT",
+    "tags"         : ["cross", "drawing" ],
+    "description"  : "some useful datastructures",
+    "version"      : "0.0.1",
+    "releasenote"  : "See https://github.com/nanjizal/dsHelper/blob/master/CHANGELOG.md",
+    "classPath"    : "src",
+    "contributors" : ["Nanjizal"],
+    "dependencies" : {}
+}
