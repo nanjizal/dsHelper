@@ -14354,10 +14354,10 @@
 			<meta><m n=":impl"/></meta>
 		</getArray>
 	</class>
-	<abstract path="dsHelper.flatInterleave.FloatColorTriangles" params="" file="src/dsHelper/flatInterleave/FlatColorTriangles.hx" module="dsHelper.flatInterleave.FlatColorTriangles">
+	<abstract path="dsHelper.flatInterleave.FloatColorTriangles" params="" file="src/dsHelper/flatInterleave/FloatColorTriangles.hx">
 		<this><x path="dsHelper.flatInterleave.core.Flat3x7"/></this>
 		<meta><m n=":forward"/></meta>
-		<impl><class path="dsHelper.flatInterleave._FlatColorTriangles.FloatColorTriangles_Impl_" params="" file="src/dsHelper/flatInterleave/FlatColorTriangles.hx" private="1" module="dsHelper.flatInterleave.FlatColorTriangles" final="1">
+		<impl><class path="dsHelper.flatInterleave._FloatColorTriangles.FloatColorTriangles_Impl_" params="" file="src/dsHelper/flatInterleave/FloatColorTriangles.hx" private="1" module="dsHelper.flatInterleave.FloatColorTriangles" final="1">
 	<_new public="1" get="inline" set="null" line="5" static="1">
 		<f a="len">
 			<x path="Int"/>
@@ -15164,7 +15164,7 @@
 </f></blueChannel>
 </class></impl>
 	</abstract>
-	<class path="dsHelper.flatInterleave._FlatColorTriangles.FloatColorTriangles_Impl_" params="" file="src/dsHelper/flatInterleave/FlatColorTriangles.hx" private="1" module="dsHelper.flatInterleave.FlatColorTriangles" final="1">
+	<class path="dsHelper.flatInterleave._FloatColorTriangles.FloatColorTriangles_Impl_" params="" file="src/dsHelper/flatInterleave/FloatColorTriangles.hx" private="1" module="dsHelper.flatInterleave.FloatColorTriangles" final="1">
 		<_new public="1" get="inline" set="null" line="5" static="1">
 			<f a="len">
 				<x path="Int"/>
@@ -15970,10 +15970,10 @@
 	<x path="Float"/>
 </f></blueChannel>
 	</class>
-	<abstract path="dsHelper.flatInterleave.FloatColorTrianglesUV" params="" file="src/dsHelper/flatInterleave/FlatColorTrianglesUV.hx" module="dsHelper.flatInterleave.FlatColorTrianglesUV">
+	<abstract path="dsHelper.flatInterleave.FloatColorTrianglesUV" params="" file="src/dsHelper/flatInterleave/FloatColorTrianglesUV.hx">
 		<this><x path="dsHelper.flatInterleave.core.Flat3x9"/></this>
 		<meta><m n=":forward"/></meta>
-		<impl><class path="dsHelper.flatInterleave._FlatColorTrianglesUV.FloatColorTrianglesUV_Impl_" params="" file="src/dsHelper/flatInterleave/FlatColorTrianglesUV.hx" private="1" module="dsHelper.flatInterleave.FlatColorTrianglesUV" final="1">
+		<impl><class path="dsHelper.flatInterleave._FloatColorTrianglesUV.FloatColorTrianglesUV_Impl_" params="" file="src/dsHelper/flatInterleave/FloatColorTrianglesUV.hx" private="1" module="dsHelper.flatInterleave.FloatColorTrianglesUV" final="1">
 	<_new public="1" get="inline" set="null" line="5" static="1">
 		<f a="len">
 			<x path="Int"/>
@@ -16925,7 +16925,7 @@
 </f></blueChannel>
 </class></impl>
 	</abstract>
-	<class path="dsHelper.flatInterleave._FlatColorTrianglesUV.FloatColorTrianglesUV_Impl_" params="" file="src/dsHelper/flatInterleave/FlatColorTrianglesUV.hx" private="1" module="dsHelper.flatInterleave.FlatColorTrianglesUV" final="1">
+	<class path="dsHelper.flatInterleave._FloatColorTrianglesUV.FloatColorTrianglesUV_Impl_" params="" file="src/dsHelper/flatInterleave/FloatColorTrianglesUV.hx" private="1" module="dsHelper.flatInterleave.FloatColorTrianglesUV" final="1">
 		<_new public="1" get="inline" set="null" line="5" static="1">
 			<f a="len">
 				<x path="Int"/>
