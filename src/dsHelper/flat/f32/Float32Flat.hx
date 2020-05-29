@@ -90,7 +90,7 @@ abstract Float32Flat( Float32Array ) to Float32Array from Float32Array {
     @:to
     public inline
     function toArray(): Float32Array {
-        return this.subarray( 2, get_size() + 2 );
+        return this.subarray( 2, this.length - 2 );
     }
     @:from
     public static inline

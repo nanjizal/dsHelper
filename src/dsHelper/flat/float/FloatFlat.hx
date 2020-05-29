@@ -71,14 +71,10 @@ abstract FloatFlat( Array<Float> ){
     function increment() {
         return next();
     }
-    public inline
-    function getArray(): Array<Float> {
-        return this.slice( 2, get_size() + 2 );
-    }
     @:to
     public inline
-    function toArray(): Array<Float> {
-        return this.slice( 2, get_size() + 2 );
+    function toArray(): Float32Array {
+        return this.subarray( 2, this.length - 2 );
     }
     @:from
     public static inline

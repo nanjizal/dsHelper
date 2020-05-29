@@ -436,10 +436,10 @@ abstract FloatColorTriangles( Flat3x7 ){
     public var argbB( get, set ): Int;
     inline
     function set_argbB( col: Int ): Int {
-        redA   = redChannel( col );
-        blueA  = blueChannel( col );
-        greenA = greenChannel( col );
-        alphaA = alphaChannel( col );
+        redB   = redChannel( col );
+        blueB  = blueChannel( col );
+        greenB = greenChannel( col );
+        alphaB = alphaChannel( col );
         return col;
     }
     inline
@@ -452,10 +452,10 @@ abstract FloatColorTriangles( Flat3x7 ){
     public var argbC( get, set ): Int;
     inline
     function set_argbC( col: Int ): Int {
-        redA   = redChannel( col );
-        blueA  = blueChannel( col );
-        greenA = greenChannel( col );
-        alphaA = alphaChannel( col );
+        redC   = redChannel( col );
+        blueC  = blueChannel( col );
+        greenC = greenChannel( col );
+        alphaC = alphaChannel( col );
         return col;
     }
     inline

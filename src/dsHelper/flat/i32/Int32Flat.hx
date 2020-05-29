@@ -60,8 +60,8 @@ abstract Int32Flat( Int32Array ) {
     }
     @:to
     public inline
-    function toArray(): Int32Array {
-        return this.subarray( 2, get_size() + 2 );
+    function toArray(): Float32Array {
+        return this.subarray( 2, this.length - 2 );
     }
     @:from
     public static inline

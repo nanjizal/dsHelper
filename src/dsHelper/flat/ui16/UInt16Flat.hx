@@ -87,8 +87,8 @@ abstract UInt16Flat( UInt16Array ) {
     }
     @:to
     public inline
-    function toArray(): UInt16Array {
-        return this.subarray( 4, get_size() + 4 );
+    function toArray(): Float32Array {
+        return this.subarray( 4, this.length - 4 );
     }
     @:from
     public static inline
