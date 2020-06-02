@@ -17,7 +17,7 @@ class SpaceSplitter {
                     arr[ no++ ] = arrTemp.copy();
                     count = 0;
                     sl.resetBuffer();
-                case ' '.code: // case comma
+                case ' '.code: // case space
                     switch( count ){
                         case 0:
                             arrTemp.resize( 0 );
