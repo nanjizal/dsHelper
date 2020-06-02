@@ -1242,6 +1242,25 @@
 	abstract types.
 
 	@see https://haxe.org/manual/types-abstract-array-access.html</haxe_doc></class>
+	<class path="StringBuf" params="" file="/usr/local/lib/haxe/std/StringBuf.hx">
+		<b><c path="String"/></b>
+		<new public="1" get="inline" set="null" line="44">
+			<f a=""><x path="Void"/></f>
+			<haxe_doc>Creates a new StringBuf instance.
+
+		This may involve initialization of the internal buffer.</haxe_doc>
+		</new>
+		<haxe_doc>A String buffer is an efficient way to build a big string by appending small
+	elements together.
+
+	Unlike String, an instance of StringBuf is not immutable in the sense that
+	it can be passed as argument to functions which modify it by appending more
+	values.</haxe_doc>
+		<meta>
+			<m n=":keep"/>
+			<m n=":directlyUsed"/>
+		</meta>
+	</class>
 	<class path="StringTools" params="" file="/usr/local/lib/haxe/std/StringTools.hx">
 		<hex public="1" set="method" line="426" static="1">
 			<f a="n:?digits">
@@ -4727,14 +4746,7 @@
 			<m n=":op"><e>A++</e></m>
 		</meta>
 	</increment>
-	<getArray public="1" get="inline" set="null" line="74" static="1">
-		<f a="this">
-			<c path="Array"><x path="Float"/></c>
-			<c path="Array"><x path="Float"/></c>
-		</f>
-		<meta><m n=":impl"/></meta>
-	</getArray>
-	<toArray public="1" get="inline" set="null" line="79" static="1">
+	<toArray public="1" get="inline" set="null" line="75" static="1">
 		<f a="this">
 			<c path="Array"><x path="Float"/></c>
 			<c path="Array"><x path="Float"/></c>
@@ -4744,21 +4756,21 @@
 			<m n=":to"/>
 		</meta>
 	</toArray>
-	<fromArray public="1" get="inline" set="null" line="84" static="1">
+	<fromArray public="1" get="inline" set="null" line="80" static="1">
 		<f a="arr">
 			<c path="Array"><x path="Float"/></c>
 			<x path="dsHelper.flat.float.FloatFlat"/>
 		</f>
 		<meta><m n=":from"/></meta>
 	</fromArray>
-	<clone public="1" get="inline" set="null" line="90" static="1">
+	<clone public="1" get="inline" set="null" line="86" static="1">
 		<f a="this">
 			<c path="Array"><x path="Float"/></c>
 			<x path="dsHelper.flat.float.FloatFlat"/>
 		</f>
 		<meta><m n=":impl"/></meta>
 	</clone>
-	<fill public="1" get="inline" set="null" line="96" static="1">
+	<fill public="1" get="inline" set="null" line="92" static="1">
 		<f a="this:arr">
 			<c path="Array"><x path="Float"/></c>
 			<c path="Array"><x path="Float"/></c>
@@ -4890,14 +4902,7 @@
 				<m n=":op"><e>A++</e></m>
 			</meta>
 		</increment>
-		<getArray public="1" get="inline" set="null" line="74" static="1">
-			<f a="this">
-				<c path="Array"><x path="Float"/></c>
-				<c path="Array"><x path="Float"/></c>
-			</f>
-			<meta><m n=":impl"/></meta>
-		</getArray>
-		<toArray public="1" get="inline" set="null" line="79" static="1">
+		<toArray public="1" get="inline" set="null" line="75" static="1">
 			<f a="this">
 				<c path="Array"><x path="Float"/></c>
 				<c path="Array"><x path="Float"/></c>
@@ -4907,21 +4912,21 @@
 				<m n=":to"/>
 			</meta>
 		</toArray>
-		<fromArray public="1" get="inline" set="null" line="84" static="1">
+		<fromArray public="1" get="inline" set="null" line="80" static="1">
 			<f a="arr">
 				<c path="Array"><x path="Float"/></c>
 				<x path="dsHelper.flat.float.FloatFlat"/>
 			</f>
 			<meta><m n=":from"/></meta>
 		</fromArray>
-		<clone public="1" get="inline" set="null" line="90" static="1">
+		<clone public="1" get="inline" set="null" line="86" static="1">
 			<f a="this">
 				<c path="Array"><x path="Float"/></c>
 				<x path="dsHelper.flat.float.FloatFlat"/>
 			</f>
 			<meta><m n=":impl"/></meta>
 		</clone>
-		<fill public="1" get="inline" set="null" line="96" static="1">
+		<fill public="1" get="inline" set="null" line="92" static="1">
 			<f a="this:arr">
 				<c path="Array"><x path="Float"/></c>
 				<c path="Array"><x path="Float"/></c>
@@ -19304,9 +19309,9 @@
 			<meta><m n=":impl"/></meta>
 		</reverse>
 	</class>
-	<abstract path="dsHelper.iterArr.ArrayTriple" params="T" file="src/dsHelper/iterArr/ArrayTripple.hx" module="dsHelper.iterArr.ArrayTripple">
+	<abstract path="dsHelper.iterArr.ArrayTriple" params="T" file="src/dsHelper/iterArr/ArrayTriple.hx">
 		<this><c path="Array"><c path="dsHelper.iterArr.ArrayTriple.T"/></c></this>
-		<impl><class path="dsHelper.iterArr._ArrayTripple.ArrayTriple_Impl_" params="" file="src/dsHelper/iterArr/ArrayTripple.hx" private="1" module="dsHelper.iterArr.ArrayTripple" final="1">
+		<impl><class path="dsHelper.iterArr._ArrayTriple.ArrayTriple_Impl_" params="" file="src/dsHelper/iterArr/ArrayTriple.hx" private="1" module="dsHelper.iterArr.ArrayTriple" final="1">
 	<_new public="1" set="method" line="3" static="1">
 		<f a="arr">
 			<c path="Array"><c path="dsHelper.iterArr.ArrayTriple.T"/></c>
@@ -19364,7 +19369,7 @@
 	</reverse>
 </class></impl>
 	</abstract>
-	<class path="dsHelper.iterArr._ArrayTripple.ArrayTriple_Impl_" params="" file="src/dsHelper/iterArr/ArrayTripple.hx" private="1" module="dsHelper.iterArr.ArrayTripple" final="1">
+	<class path="dsHelper.iterArr._ArrayTriple.ArrayTriple_Impl_" params="" file="src/dsHelper/iterArr/ArrayTriple.hx" private="1" module="dsHelper.iterArr.ArrayTriple" final="1">
 		<_new public="1" set="method" line="3" static="1">
 			<f a="arr">
 				<c path="Array"><c path="dsHelper.iterArr.ArrayTriple.T"/></c>
@@ -19420,6 +19425,42 @@
 			</f>
 			<meta><m n=":impl"/></meta>
 		</reverse>
+	</class>
+	<class path="dsHelper.splitter.CSV" params="" file="src/dsHelper/splitter/CSV.hx"><parse public="1" get="inline" set="null" line="5" static="1"><f a="str">
+	<c path="String"/>
+	<c path="Array"><c path="Array"><c path="String"/></c></c>
+</f></parse></class>
+	<class path="dsHelper.splitter.SpaceSplitter" params="" file="src/dsHelper/splitter/SpaceSpliter.hx" module="dsHelper.splitter.SpaceSpliter"><parse public="1" get="inline" set="null" line="5" static="1"><f a="str">
+	<c path="String"/>
+	<c path="Array"><c path="Array"><c path="String"/></c></c>
+</f></parse></class>
+	<class path="dsHelper.splitter.StringCodeIterator" params="" file="src/dsHelper/splitter/StringCodeIterator.hx">
+		<str expr="&quot;&quot;">
+			<c path="String"/>
+			<meta><m n=":value"><e>""</e></m></meta>
+		</str>
+		<b><c path="StringBuf"/></b>
+		<pos public="1"><x path="Int"/></pos>
+		<c public="1"><x path="Int"/></c>
+		<last2 public="1"><c path="String"/></last2>
+		<last public="1"><c path="String"/></last>
+		<length public="1"><x path="Int"/></length>
+		<addChar public="1" get="inline" set="null" line="17"><f a=""><x path="Void"/></f></addChar>
+		<toStr public="1" get="inline" set="null" line="21"><f a=""><c path="String"/></f></toStr>
+		<isRepeat public="1" get="inline" set="null" line="27"><f a=""><x path="Bool"/></f></isRepeat>
+		<resetBuffer public="1" get="inline" set="null" line="33"><f a=""><x path="Void"/></f></resetBuffer>
+		<reset public="1" get="inline" set="null" line="37"><f a=""><x path="Void"/></f></reset>
+		<hasNext public="1" get="inline" set="null" line="41"><f a=""><x path="Bool"/></f></hasNext>
+		<next public="1" get="inline" set="null" line="45"><f a=""><x path="Int"/></f></next>
+		<new public="1" set="method" line="11">
+			<f a="str_:?pos_" v=":0">
+				<c path="String"/>
+				<x path="Int"/>
+				<x path="Void"/>
+			</f>
+			<meta><m n=":value"><e>{ pos_ : 0 }</e></m></meta>
+		</new>
+		<meta><m n=":directlyUsed"/></meta>
 	</class>
 	<abstract path="haxe.CallStack" params="" file="/usr/local/lib/haxe/std/haxe/CallStack.hx">
 		<from><icast><c path="Array"><e path="haxe.StackItem"/></c></icast></from>

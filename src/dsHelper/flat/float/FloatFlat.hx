@@ -73,8 +73,8 @@ abstract FloatFlat( Array<Float> ){
     }
     @:to
     public inline
-    function toArray(): Float32Array {
-        return this.subarray( 2, this.length - 2 );
+    function toArray(): Array<Float> {
+        return this.slice( 2, this.length - 2 );
     }
     @:from
     public static inline
