@@ -19430,7 +19430,7 @@
 	<c path="String"/>
 	<c path="Array"><c path="Array"><c path="String"/></c></c>
 </f></parse></class>
-	<class path="dsHelper.splitter.SpaceSplitter" params="" file="src/dsHelper/splitter/SpaceSpliter.hx" module="dsHelper.splitter.SpaceSpliter"><parse public="1" get="inline" set="null" line="5" static="1"><f a="str">
+	<class path="dsHelper.splitter.SpaceSplitter" params="" file="src/dsHelper/splitter/SpaceSplitter.hx"><parse public="1" get="inline" set="null" line="5" static="1"><f a="str">
 	<c path="String"/>
 	<c path="Array"><c path="Array"><c path="String"/></c></c>
 </f></parse></class>
