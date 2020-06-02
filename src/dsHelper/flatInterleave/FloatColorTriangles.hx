@@ -348,7 +348,10 @@ abstract FloatColorTriangles( Flat3x7 ){
     }
     public inline
     function colorTriangles( color: Int, times: Int ){
-        for( i in 0...times ) argb = color;
+        for( i in 0...times ) {
+            argb = color;
+            this.pos++;
+        }
     }
     public inline
     function cornerColors( colorA: Int, colorB: Int, colorC: Int ) {
