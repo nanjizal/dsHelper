@@ -1,7 +1,8 @@
 package dsHelper.flatInterleave.core;
-import haxe.io.Float32Array; 
+import dsHelper.flat.io.Float32Flat;
+import dsHelper.haxe.io.Float32Array;
 @:forward
-abstract Flat3x9( Flat32 ) {
+abstract Flat3x9( Float32Flat ) {
     @:op([]) public inline 
     function readItem( k: Int ): Float {
         return this.readItem( index*27 + k );
@@ -13,7 +14,7 @@ abstract Flat3x9( Flat32 ) {
     }
     public inline 
     function new( len: Int ){
-        this = new Flat32( len );
+        this = new Float32Flat( len );
     }
     public var index( get, set ): Int;
     inline

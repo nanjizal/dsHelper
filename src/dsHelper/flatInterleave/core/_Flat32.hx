@@ -1,14 +1,15 @@
-package dsHelper.flat.f32;
-import haxe.io.Float32Array; // js.lib.Float32Array
+package dsHelper.flatInterleave.core;
+
+import dsHelper.haxe.io.Float32Array;
 // arr[0] defines pos the position, pos is used to get items
 // arr[1] defines internal ( populated ) size
 // DON'T use this one directly!!
 @:forward
-abstract Float32Flat( Float32Array ) to Float32Array from Float32Array {
+abstract Flat32( Float32Array ) to Float32Array from Float32Array {
     /**
      * <pre><code>
      * >>> ({ 
-     * ... var ff = new Float32Flat(2);
+     * ... var ff = new Flat32(2);
      * ... ff[0] = 1.;
      * ... ff[0] == 1.; }) == true
      * </code></pre>
@@ -21,7 +22,7 @@ abstract Float32Flat( Float32Array ) to Float32Array from Float32Array {
     /**
      * <pre><code>
      * >>> ({ 
-     * ... var ff = new Float32Flat(2);
+     * ... var ff = new Flat32(2);
      * ... ff[0] = 1.;
      * ... ff[0] == 1.; }) == true
      * </code></pre>
@@ -94,14 +95,14 @@ abstract Float32Flat( Float32Array ) to Float32Array from Float32Array {
     }
     @:from
     public static inline
-    function fromArray( arr: Float32Array ): Float32Flat {
-        var flat = new Float32Flat( arr.length );
+    function fromArray( arr: Float32Array ): Flat32 {
+        var flat = new Flat32( arr.length );
         flat.fill( arr );
         return flat;
     }
     public inline
-    function clone(): Float32Flat {
-        var flat = new Float32Flat( this.length - 2 );
+    function clone(): Flat32 {
+        var flat = new Flat32( this.length - 2 );
         flat.fill( toArray() );
         return flat;
     }

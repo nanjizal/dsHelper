@@ -1,11 +1,11 @@
-package dsHelper.flat.ui16;
+package dsHelper.flat.io;
 import haxe.io.UInt16Array; // js.lib.Int16Array
 // arr[0] defines pos the position, pos is used to get items
 // arr[1]
 // arr[2] defines size used. 0xFFFF0000
 // arr[3] defines size used. 0x000FFFFF;
 @:forward
-abstract UInt16Flat( UInt16Array ) {
+abstract UInt16Flat( UInt16Array ) to UInt16Array to UInt16Array {
     @:op([]) //@:arrayAccess
     public inline
     function readItem( k: Int ): UInt {

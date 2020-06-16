@@ -1,9 +1,9 @@
-package dsHelper.flat.i32;
+package dsHelper.flat.io;
 import haxe.io.Int32Array; // js.lib.Int32Array
 // arr[0] defines pos the position, pos is used to get items
 // arr[1] defines size used.
 @:forward
-abstract Int32Flat( Int32Array ) {
+abstract Int32Flat( Int32Array ) to Int32Array from Int32Array {
     @:op([]) //@:arrayAccess
     public inline
     function readItem( k: Int ): Int {

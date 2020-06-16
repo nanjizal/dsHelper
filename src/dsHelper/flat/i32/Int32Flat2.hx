@@ -1,5 +1,6 @@
 package dsHelper.flat.i32;
-import haxe.io.Int32Array; 
+import dsHelper.flat.io.Int32Flat;
+import dsHelper.haxe.io.Int32Array;
 @:forward
 abstract Int32Flat2( Int32Flat ) {
     @:op([]) public inline 
