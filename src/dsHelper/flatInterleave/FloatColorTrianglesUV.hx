@@ -292,10 +292,12 @@ abstract FloatColorTrianglesUV( Flat3x9 ){
     @:keep
     public function triangleUV( uA_: Float, vA_: Float
                               , uB_: Float, vB_: Float
-                              , uC_: Float, vC_: Float ){
+                              , uC_: Float, vC_: Float
+                              , ?windAdjust: Null<Bool> ){
+        if( windAdjust == null ) windAdjust = adjustWinding();
         uA = uA_;
         vA = vA_;
-        if( windingChange ){
+        if( windingAdjust ){
             uB = uC_;
             vB = vC_;
             uC = uB_;
@@ -306,7 +308,7 @@ abstract FloatColorTrianglesUV( Flat3x9 ){
             uC = uC_;
             vC = vC_;
         }        
-        return windingChange;
+        return windingAdjust;
     }    
     public function adjustWinding():Bool { // check sign
         return ( (ax * by - bx * ay) + (bx * cy - cx * by) + (cx * ay - ax * cy) )>0;
