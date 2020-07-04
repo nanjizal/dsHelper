@@ -1060,7 +1060,7 @@
 		</meta>
 	</class>
 	<class path="Std" params="" file="/usr/local/lib/haxe/std/js/_std/Std.hx">
-		<string public="1" set="method" line="46" static="1">
+		<string public="1" set="method" line="47" static="1">
 			<f a="s">
 				<d/>
 				<c path="String"/>
@@ -12096,15 +12096,9 @@
 		</prettyAll>
 	</class>
 	<abstract path="dsHelper.flat.io.Float32Flat" params="" file="src/dsHelper/flat/io/Float32Flat.hx">
-		<from>
-			<icast><t path="dsHelper.haxe.io.Float32Array"/></icast>
-			<icast field="fromArray"><t path="dsHelper.haxe.io.Float32Array"/></icast>
-		</from>
+		<from><icast field="fromArray"><t path="dsHelper.haxe.io.Float32Array"/></icast></from>
 		<this><t path="dsHelper.haxe.io.Float32Array"/></this>
-		<to>
-			<icast><t path="dsHelper.haxe.io.Float32Array"/></icast>
-			<icast field="toArray"><x path="haxe.io.Float32Array"/></icast>
-		</to>
+		<to><icast field="toArray"><x path="haxe.io.Float32Array"/></icast></to>
 		<meta><m n=":forward"/></meta>
 		<impl><class path="dsHelper.flat.io._Float32Flat.Float32Flat_Impl_" params="" file="src/dsHelper/flat/io/Float32Flat.hx" private="1" module="dsHelper.flat.io.Float32Flat" final="1">
 	<readItem public="1" get="inline" set="null" line="17" static="1">
@@ -18143,352 +18137,6 @@
 			<meta><m n=":impl"/></meta>
 		</getArray>
 	</class>
-	<abstract path="dsHelper.flatInterleave.core.Flat32" params="" file="src/dsHelper/flatInterleave/core/_Flat32.hx" module="dsHelper.flatInterleave.core._Flat32">
-		<from>
-			<icast><t path="dsHelper.haxe.io.Float32Array"/></icast>
-			<icast field="fromArray"><t path="dsHelper.haxe.io.Float32Array"/></icast>
-		</from>
-		<this><t path="dsHelper.haxe.io.Float32Array"/></this>
-		<to>
-			<icast><t path="dsHelper.haxe.io.Float32Array"/></icast>
-			<icast field="toArray"><x path="haxe.io.Float32Array"/></icast>
-		</to>
-		<meta><m n=":forward"/></meta>
-		<impl><class path="dsHelper.flatInterleave.core.__Flat32.Flat32_Impl_" params="" file="src/dsHelper/flatInterleave/core/_Flat32.hx" private="1" module="dsHelper.flatInterleave.core._Flat32" final="1">
-	<readItem public="1" get="inline" set="null" line="18" static="1">
-		<f a="this:k">
-			<t path="dsHelper.haxe.io.Float32Array"/>
-			<x path="Int"/>
-			<x path="Float"/>
-		</f>
-		<meta>
-			<m n=":impl"/>
-			<m n=":op"><e>[]</e></m>
-		</meta>
-		<haxe_doc><![CDATA[* <pre><code>
-     * >>> ({ 
-     * ... var ff = new Flat32(2);
-     * ... ff[0] = 1.;
-     * ... ff[0] == 1.; }) == true
-     * </code></pre>]]></haxe_doc>
-	</readItem>
-	<writeItem public="1" get="inline" set="null" line="31" static="1">
-		<f a="this:k:v">
-			<t path="dsHelper.haxe.io.Float32Array"/>
-			<x path="Int"/>
-			<x path="Float"/>
-			<x path="Float"/>
-		</f>
-		<meta>
-			<m n=":impl"/>
-			<m n=":op"><e>[]</e></m>
-		</meta>
-		<haxe_doc><![CDATA[* <pre><code>
-     * >>> ({ 
-     * ... var ff = new Flat32(2);
-     * ... ff[0] = 1.;
-     * ... ff[0] == 1.; }) == true
-     * </code></pre>]]></haxe_doc>
-	</writeItem>
-	<_new public="1" get="inline" set="null" line="37" static="1">
-		<f a="len">
-			<x path="Int"/>
-			<x path="dsHelper.flatInterleave.core.Flat32"/>
-		</f>
-		<meta>
-			<m n=":impl"/>
-			<m n=":noCompletion"/>
-		</meta>
-	</_new>
-	<size public="1" get="accessor" set="accessor" static="1">
-		<x path="Int"/>
-		<meta><m n=":impl"/></meta>
-	</size>
-	<get_size set="method" line="45" static="1">
-		<f a="this">
-			<t path="dsHelper.haxe.io.Float32Array"/>
-			<x path="Int"/>
-		</f>
-		<meta><m n=":impl"/></meta>
-	</get_size>
-	<set_size set="method" line="50" static="1">
-		<f a="this:id">
-			<t path="dsHelper.haxe.io.Float32Array"/>
-			<x path="Int"/>
-			<x path="Int"/>
-		</f>
-		<meta><m n=":impl"/></meta>
-	</set_size>
-	<index public="1" get="accessor" set="accessor" static="1">
-		<x path="Int"/>
-		<meta><m n=":impl"/></meta>
-	</index>
-	<get_index get="inline" set="null" line="55" static="1">
-		<f a="this">
-			<t path="dsHelper.haxe.io.Float32Array"/>
-			<x path="Int"/>
-		</f>
-		<meta><m n=":impl"/></meta>
-	</get_index>
-	<set_index get="inline" set="null" line="59" static="1">
-		<f a="this:id">
-			<t path="dsHelper.haxe.io.Float32Array"/>
-			<x path="Int"/>
-			<x path="Int"/>
-		</f>
-		<meta><m n=":impl"/></meta>
-	</set_index>
-	<pos public="1" get="accessor" set="accessor" static="1">
-		<x path="Float"/>
-		<meta><m n=":impl"/></meta>
-	</pos>
-	<get_pos get="inline" set="null" line="65" static="1">
-		<f a="this">
-			<t path="dsHelper.haxe.io.Float32Array"/>
-			<x path="Float"/>
-		</f>
-		<meta><m n=":impl"/></meta>
-	</get_pos>
-	<set_pos get="inline" set="null" line="69" static="1">
-		<f a="this:pos_">
-			<t path="dsHelper.haxe.io.Float32Array"/>
-			<x path="Float"/>
-			<x path="Float"/>
-		</f>
-		<meta><m n=":impl"/></meta>
-	</set_pos>
-	<updateLen get="inline" set="null" line="75" static="1">
-		<f a="this">
-			<t path="dsHelper.haxe.io.Float32Array"/>
-			<x path="Void"/>
-		</f>
-		<meta><m n=":impl"/></meta>
-	</updateLen>
-	<hasNext public="1" get="inline" set="null" line="80" static="1">
-		<f a="this">
-			<t path="dsHelper.haxe.io.Float32Array"/>
-			<x path="Bool"/>
-		</f>
-		<meta><m n=":impl"/></meta>
-	</hasNext>
-	<next public="1" get="inline" set="null" line="82" static="1">
-		<f a="this">
-			<t path="dsHelper.haxe.io.Float32Array"/>
-			<x path="Float"/>
-		</f>
-		<meta><m n=":impl"/></meta>
-	</next>
-	<increment public="1" get="inline" set="null" line="87" static="1">
-		<f a="this">
-			<t path="dsHelper.haxe.io.Float32Array"/>
-			<x path="Float"/>
-		</f>
-		<meta>
-			<m n=":impl"/>
-			<m n=":op"><e>A++</e></m>
-		</meta>
-	</increment>
-	<toArray public="1" get="inline" set="null" line="92" static="1">
-		<f a="this">
-			<t path="dsHelper.haxe.io.Float32Array"/>
-			<t path="dsHelper.haxe.io.Float32Array"/>
-		</f>
-		<meta>
-			<m n=":impl"/>
-			<m n=":to"/>
-		</meta>
-	</toArray>
-	<fromArray public="1" get="inline" set="null" line="97" static="1">
-		<f a="arr">
-			<t path="dsHelper.haxe.io.Float32Array"/>
-			<x path="dsHelper.flatInterleave.core.Flat32"/>
-		</f>
-		<meta><m n=":from"/></meta>
-	</fromArray>
-	<clone public="1" get="inline" set="null" line="103" static="1">
-		<f a="this">
-			<t path="dsHelper.haxe.io.Float32Array"/>
-			<x path="dsHelper.flatInterleave.core.Flat32"/>
-		</f>
-		<meta><m n=":impl"/></meta>
-	</clone>
-	<fill public="1" get="inline" set="null" line="109" static="1">
-		<f a="this:arr">
-			<t path="dsHelper.haxe.io.Float32Array"/>
-			<t path="dsHelper.haxe.io.Float32Array"/>
-			<x path="Void"/>
-		</f>
-		<meta><m n=":impl"/></meta>
-	</fill>
-</class></impl>
-	</abstract>
-	<class path="dsHelper.flatInterleave.core.__Flat32.Flat32_Impl_" params="" file="src/dsHelper/flatInterleave/core/_Flat32.hx" private="1" module="dsHelper.flatInterleave.core._Flat32" final="1">
-		<readItem public="1" get="inline" set="null" line="18" static="1">
-			<f a="this:k">
-				<t path="dsHelper.haxe.io.Float32Array"/>
-				<x path="Int"/>
-				<x path="Float"/>
-			</f>
-			<meta>
-				<m n=":impl"/>
-				<m n=":op"><e>[]</e></m>
-			</meta>
-			<haxe_doc><![CDATA[* <pre><code>
-     * >>> ({ 
-     * ... var ff = new Flat32(2);
-     * ... ff[0] = 1.;
-     * ... ff[0] == 1.; }) == true
-     * </code></pre>]]></haxe_doc>
-		</readItem>
-		<writeItem public="1" get="inline" set="null" line="31" static="1">
-			<f a="this:k:v">
-				<t path="dsHelper.haxe.io.Float32Array"/>
-				<x path="Int"/>
-				<x path="Float"/>
-				<x path="Float"/>
-			</f>
-			<meta>
-				<m n=":impl"/>
-				<m n=":op"><e>[]</e></m>
-			</meta>
-			<haxe_doc><![CDATA[* <pre><code>
-     * >>> ({ 
-     * ... var ff = new Flat32(2);
-     * ... ff[0] = 1.;
-     * ... ff[0] == 1.; }) == true
-     * </code></pre>]]></haxe_doc>
-		</writeItem>
-		<_new public="1" get="inline" set="null" line="37" static="1">
-			<f a="len">
-				<x path="Int"/>
-				<x path="dsHelper.flatInterleave.core.Flat32"/>
-			</f>
-			<meta>
-				<m n=":impl"/>
-				<m n=":noCompletion"/>
-			</meta>
-		</_new>
-		<size public="1" get="accessor" set="accessor" static="1">
-			<x path="Int"/>
-			<meta><m n=":impl"/></meta>
-		</size>
-		<get_size set="method" line="45" static="1">
-			<f a="this">
-				<t path="dsHelper.haxe.io.Float32Array"/>
-				<x path="Int"/>
-			</f>
-			<meta><m n=":impl"/></meta>
-		</get_size>
-		<set_size set="method" line="50" static="1">
-			<f a="this:id">
-				<t path="dsHelper.haxe.io.Float32Array"/>
-				<x path="Int"/>
-				<x path="Int"/>
-			</f>
-			<meta><m n=":impl"/></meta>
-		</set_size>
-		<index public="1" get="accessor" set="accessor" static="1">
-			<x path="Int"/>
-			<meta><m n=":impl"/></meta>
-		</index>
-		<get_index get="inline" set="null" line="55" static="1">
-			<f a="this">
-				<t path="dsHelper.haxe.io.Float32Array"/>
-				<x path="Int"/>
-			</f>
-			<meta><m n=":impl"/></meta>
-		</get_index>
-		<set_index get="inline" set="null" line="59" static="1">
-			<f a="this:id">
-				<t path="dsHelper.haxe.io.Float32Array"/>
-				<x path="Int"/>
-				<x path="Int"/>
-			</f>
-			<meta><m n=":impl"/></meta>
-		</set_index>
-		<pos public="1" get="accessor" set="accessor" static="1">
-			<x path="Float"/>
-			<meta><m n=":impl"/></meta>
-		</pos>
-		<get_pos get="inline" set="null" line="65" static="1">
-			<f a="this">
-				<t path="dsHelper.haxe.io.Float32Array"/>
-				<x path="Float"/>
-			</f>
-			<meta><m n=":impl"/></meta>
-		</get_pos>
-		<set_pos get="inline" set="null" line="69" static="1">
-			<f a="this:pos_">
-				<t path="dsHelper.haxe.io.Float32Array"/>
-				<x path="Float"/>
-				<x path="Float"/>
-			</f>
-			<meta><m n=":impl"/></meta>
-		</set_pos>
-		<updateLen get="inline" set="null" line="75" static="1">
-			<f a="this">
-				<t path="dsHelper.haxe.io.Float32Array"/>
-				<x path="Void"/>
-			</f>
-			<meta><m n=":impl"/></meta>
-		</updateLen>
-		<hasNext public="1" get="inline" set="null" line="80" static="1">
-			<f a="this">
-				<t path="dsHelper.haxe.io.Float32Array"/>
-				<x path="Bool"/>
-			</f>
-			<meta><m n=":impl"/></meta>
-		</hasNext>
-		<next public="1" get="inline" set="null" line="82" static="1">
-			<f a="this">
-				<t path="dsHelper.haxe.io.Float32Array"/>
-				<x path="Float"/>
-			</f>
-			<meta><m n=":impl"/></meta>
-		</next>
-		<increment public="1" get="inline" set="null" line="87" static="1">
-			<f a="this">
-				<t path="dsHelper.haxe.io.Float32Array"/>
-				<x path="Float"/>
-			</f>
-			<meta>
-				<m n=":impl"/>
-				<m n=":op"><e>A++</e></m>
-			</meta>
-		</increment>
-		<toArray public="1" get="inline" set="null" line="92" static="1">
-			<f a="this">
-				<t path="dsHelper.haxe.io.Float32Array"/>
-				<t path="dsHelper.haxe.io.Float32Array"/>
-			</f>
-			<meta>
-				<m n=":impl"/>
-				<m n=":to"/>
-			</meta>
-		</toArray>
-		<fromArray public="1" get="inline" set="null" line="97" static="1">
-			<f a="arr">
-				<t path="dsHelper.haxe.io.Float32Array"/>
-				<x path="dsHelper.flatInterleave.core.Flat32"/>
-			</f>
-			<meta><m n=":from"/></meta>
-		</fromArray>
-		<clone public="1" get="inline" set="null" line="103" static="1">
-			<f a="this">
-				<t path="dsHelper.haxe.io.Float32Array"/>
-				<x path="dsHelper.flatInterleave.core.Flat32"/>
-			</f>
-			<meta><m n=":impl"/></meta>
-		</clone>
-		<fill public="1" get="inline" set="null" line="109" static="1">
-			<f a="this:arr">
-				<t path="dsHelper.haxe.io.Float32Array"/>
-				<t path="dsHelper.haxe.io.Float32Array"/>
-				<x path="Void"/>
-			</f>
-			<meta><m n=":impl"/></meta>
-		</fill>
-	</class>
 	<typedef path="dsHelper.haxe.io.Float32Array" params="" file="src/dsHelper/haxe/io/Float32Array.hx">
 		<x path="haxe.io.Float32Array"/>
 		<haxe_doc>* switches between Lime, NME and haxe.io.Float32Array</haxe_doc>
@@ -19782,10 +19430,12 @@
 	<e>filter</e>
 	<e>indexOf</e>
 	<e>iterator</e>
+	<e>keyValueIterator</e>
 	<e>join</e>
 	<e>lastIndexOf</e>
 	<e>map</e>
 	<e>slice</e>
+	<e>contains</e>
 	<e>toString</e>
 </m></meta>
 		<impl><class path="haxe.ds._ReadOnlyArray.ReadOnlyArray_Impl_" params="" file="/usr/local/lib/haxe/std/haxe/ds/ReadOnlyArray.hx" private="1" module="haxe.ds.ReadOnlyArray" final="1"><meta><m n=":keep"/></meta></class></impl>
@@ -25159,6 +24809,15 @@
 		or to its original fulfillment value if the promise is instead fulfilled.</haxe_doc>
 </catch></overloads>
 		</catchError>
+		<finally public="1" set="method">
+			<f a="onFinally">
+				<f a=""><x path="Void"/></f>
+				<c path="js.lib.Promise"><c path="js.lib.Promise.T"/></c>
+			</f>
+			<haxe_doc>Returns a Promise. When the promise is settled, i.e either fulfilled or rejected,
+		the specified callback function is executed. This provides a way for code to be run
+		whether the promise was fulfilled successfully or rejected once the Promise has been dealt with.</haxe_doc>
+		</finally>
 		<new public="1" set="method">
 			<f a="init">
 				<f a="resolve:reject">
