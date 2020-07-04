@@ -292,7 +292,7 @@ abstract FloatColorTrianglesUV( Flat3x9 ){
     @:keep
     public function triangleUV( uA_: Float, vA_: Float
                               , uB_: Float, vB_: Float
-                              , uC_: Float, vC_: Float, windingChange ){
+                              , uC_: Float, vC_: Float ){
         uA = uA_;
         vA = vA_;
         if( windingChange ){
