@@ -518,34 +518,34 @@ abstract FloatColorTrianglesUV( Flat3x9 ){
     public var argbB( get, set ): Int;
     inline
     function set_argbB( col: Int ): Int {
-        redA   = redChannel( col );
-        blueA  = blueChannel( col );
-        greenA = greenChannel( col );
-        alphaA = alphaChannel( col );
+        redB   = redChannel( col );
+        blueB  = blueChannel( col );
+        greenB = greenChannel( col );
+        alphaB = alphaChannel( col );
         return col;
     }
     inline
     function get_argbB():Int {
-        return    ( Math.round( alphaA * 255 ) << 24 ) 
-                | ( Math.round( redA   * 255 ) << 16 ) 
-                | ( Math.round( greenA * 255 ) << 8 ) 
-                |   Math.round( blueA  * 255 );
+        return    ( Math.round( alphaB * 255 ) << 24 ) 
+                | ( Math.round( redB   * 255 ) << 16 ) 
+                | ( Math.round( greenB * 255 ) << 8 ) 
+                |   Math.round( blueB  * 255 );
     }
     public var argbC( get, set ): Int;
     inline
     function set_argbC( col: Int ): Int {
-        redA   = redChannel( col );
-        blueA  = blueChannel( col );
-        greenA = greenChannel( col );
-        alphaA = alphaChannel( col );
+        redC   = redChannel( col );
+        blueC  = blueChannel( col );
+        greenC = greenChannel( col );
+        alphaC = alphaChannel( col );
         return col;
     }
     inline
     function get_argbC():Int {
-        return    ( Math.round( alphaA * 255 ) << 24 ) 
-                | ( Math.round( redA   * 255 ) << 16) 
-                | ( Math.round( greenA * 255 ) << 8) 
-                |   Math.round( blueA  * 255 );
+        return    ( Math.round( alphaC * 255 ) << 24 ) 
+                | ( Math.round( redC   * 255 ) << 16) 
+                | ( Math.round( greenC * 255 ) << 8) 
+                |   Math.round( blueC  * 255 );
     }
     public inline
     function prettyStringVert(){
