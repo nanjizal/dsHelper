@@ -293,8 +293,8 @@ abstract FloatColorTrianglesUV( Flat3x9 ){
     public function triangleUV( uA_: Float, vA_: Float
                               , uB_: Float, vB_: Float
                               , uC_: Float, vC_: Float
-                              , ?windAdjust: Null<Bool> ){
-        if( windAdjust == null ) windAdjust = adjustWinding();
+                              , ?windAdjust_: Null<Bool> ): Bool {
+        var windAdjust: Bool = ( windAdjust_ == null )? adjustWinding(): windAdjust_;
         uA = uA_;
         vA = vA_;
         if( windAdjust ){
@@ -313,6 +313,44 @@ abstract FloatColorTrianglesUV( Flat3x9 ){
     public function adjustWinding():Bool { // check sign
         return ( (ax * by - bx * ay) + (bx * cy - cx * by) + (cx * ay - ax * cy) )>0;
     }
+    public var u( get, set ): Float;
+    inline
+    function get_u() {
+        return Math.min( Math.min( uA, uB ), uC );
+    }
+    inline
+    function set_u( x: Float ): Float {
+        var du = u - get_u();
+        uA = uA + du;
+        uB = uB + du;
+        uC = uC + du;
+        return u;
+    }
+    public var v( get, set ): Float;   
+    inline
+    function get_v(): Float {
+        return Math.min( Math.min( vA, vB ), vC );
+    }
+    inline
+    function set_v( y: Float ): Float {
+        var dv = v - get_v();
+        vA = vA + dv;
+        vB = vB + dv;
+        vC = vC + dv;
+        return v;
+    }
+    
+    public var rightU( get, never ): Float;
+    inline
+    function get_rightU(): Float {
+        return Math.max( Math.max( uA, uB ), uC );
+    }
+    public var bottomV( get, never ): Float;
+    inline
+    function get_bottomV(): Float {
+        return Math.max( Math.max( vA, vB ), vC );
+    }
+    
     public var x( get, set ): Float;
     inline
     function get_x() {
