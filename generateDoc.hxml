@@ -1,4 +1,4 @@
 -cmd haxe generate.hxml
--cmd haxelib run dox -i output.xml --title "dsHelper API documentation" -D themeColor 0x134f5c --toplevel-package dsHelper
+-cmd haxelib run dox -i output.xml --title "dsHelper API documentation" -D themeColor 0x134f5c -D source-path https://github.com/nanjizal/dsHelper/tree/master/src/ --toplevel-package dsHelper
 -cmd cd pages
 -cmd open index.html
