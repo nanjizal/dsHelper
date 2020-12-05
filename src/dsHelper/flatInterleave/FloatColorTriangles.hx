@@ -472,7 +472,7 @@ abstract FloatColorTriangles( Flat3x7 ){
     function prettyStringVert(){
         return  '{ ax: ' + ax + ', ay: ' + ay + ', az: ' + az + ' }' + '\n' +
                 '{ bx: ' + bx + ', by: ' + by + ', bz: ' + bz + ' }' + '\n' +
-                '{ cx: ' + cx + ', cy: ' + cy + ', az: ' + cz + ' }' + '\n';
+                '{ cx: ' + cx + ', cy: ' + cy + ', cz: ' + cz + ' }' + '\n';
     }
     public inline
     function prettyAllVert(){

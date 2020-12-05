@@ -1,7 +1,7 @@
 package dsHelper.flatInterleave;
 import dsHelper.flatInterleave.core.Flat3x9;
 @:forward
-abstract FloatColorTrianglesUV( Flat3x9 ){
+abstract FloatColorTrianglesUV( Flat3x9 ) from Flat3x9 to Flat3x9 {
     public inline function new( len: Int ){
         this = new Flat3x9( len );
     }
@@ -319,12 +319,12 @@ abstract FloatColorTrianglesUV( Flat3x9 ){
         return Math.min( Math.min( uA, uB ), uC );
     }
     inline
-    function set_u( x: Float ): Float {
-        var du = u - get_u();
+    function set_u( u_: Float ): Float {
+        var du = u_ - get_u();
         uA = uA + du;
         uB = uB + du;
         uC = uC + du;
-        return u;
+        return u_;
     }
     public var v( get, set ): Float;   
     inline
@@ -332,12 +332,12 @@ abstract FloatColorTrianglesUV( Flat3x9 ){
         return Math.min( Math.min( vA, vB ), vC );
     }
     inline
-    function set_v( y: Float ): Float {
-        var dv = v - get_v();
+    function set_v( v_: Float ): Float {
+        var dv = v_ - get_v();
         vA = vA + dv;
         vB = vB + dv;
         vC = vC + dv;
-        return v;
+        return v_;
     }
     
     public var rightU( get, never ): Float;
@@ -430,6 +430,14 @@ abstract FloatColorTrianglesUV( Flat3x9 ){
     function fullHit( px: Float, py: Float ): Bool {
         if( px > x && px < right && py > y && py < bottom ) return true;
         return liteHit( px, py );
+    }
+    function moveDeltaUV( du: Float, dv: Float ){
+        uA += du;
+        vA += dv;
+        uB += du;
+        vB += dv;
+        uC += du;
+        vC += dv;
     }
     public inline 
     function rotate( x: Float, y: Float, theta: Float ){
@@ -591,19 +599,20 @@ abstract FloatColorTrianglesUV( Flat3x9 ){
     function prettyStringVert(){
         return  '{ ax: ' + ax + ', ay: ' + ay + ', az: ' + az + ' }' + '\n' +
                 '{ bx: ' + bx + ', by: ' + by + ', bz: ' + bz + ' }' + '\n' +
-                '{ cx: ' + cx + ', cy: ' + cy + ', az: ' + cz + ' }' + '\n';
+                '{ cx: ' + cx + ', cy: ' + cy + ', cz: ' + cz + ' }' + '\n';
     }
     public inline
     function prettyAllVert(){
         this.pos = 0;
-        var str = 'FlatColorTriangle - Verts: \n';
+        var str = 'FlatColorTrianglesUV - Verts: \n';
         for( i in 0...this.size ) {
             str += prettyStringVert();
             this.next();
         }
         this.pos = 0;
         return str;
-    }    public inline
+    }
+    public inline
     function hex( v: Int ): String {
         return '0x' + StringTools.hex( v );
     }
@@ -622,7 +631,7 @@ abstract FloatColorTrianglesUV( Flat3x9 ){
     public inline
     function hexAll(){
         this.pos = 0;
-        var str = 'FlatColorTriangle - RGBA: \n';
+        var str = 'FlatColorTrianglesUV - RGBA: \n';
         for( i in 0...this.size ) {
             str += 'colorA: ' + hexA() + ', colorB: ' + hexB() +', colorC: ' + hexC() + '\n';
             this.next();
@@ -630,7 +639,7 @@ abstract FloatColorTrianglesUV( Flat3x9 ){
         this.pos = 0;
         return str;
     }
-        public inline
+    public inline
     function prettyStringUV(){
         return  '{ uA: ' + uA + ', vA: ' + vA + ' }' + '\n' +
                 '{ uB: ' + uB + ', vB: ' + vB + ' }' + '\n' +
@@ -639,9 +648,22 @@ abstract FloatColorTrianglesUV( Flat3x9 ){
     public inline
     function prettyAlluv(){
         this.pos = 0;
-        var str = 'FlatColorTriangle - UVs: \n';
+        var str = 'FlatColorTrianglesUV - UVs: \n';
         for( i in 0...this.size ) {
             str += prettyStringUV();
+            this.next();
+        }
+        this.pos = 0;
+        return str;
+    }
+    public inline
+    function prettyEverything(){
+        this.pos = 0;
+        var str = 'FlatColorTriangleUV - EveryThing: \n';
+        for( i in 0...this.size ) {
+            str += prettyStringVert();
+            str += prettyStringUV();
+            str += 'colorA: ' + hexA() + ', colorB: ' + hexB() +', colorC: ' + hexC() + '\n';
             this.next();
         }
         this.pos = 0;

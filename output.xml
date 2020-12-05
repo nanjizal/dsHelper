@@ -12113,7 +12113,7 @@
 		</meta>
 		<haxe_doc><![CDATA[* <pre><code>
      * >>> ({ 
-     * ... var ff = new Flat32(2);
+     * ... var ff = new Float32Flat(2);
      * ... ff[0] = 1.;
      * ... ff[0] == 1.; }) == true
      * </code></pre>]]></haxe_doc>
@@ -12131,7 +12131,7 @@
 		</meta>
 		<haxe_doc><![CDATA[* <pre><code>
      * >>> ({ 
-     * ... var ff = new Flat32(2);
+     * ... var ff = new Float32Flat(2);
      * ... ff[0] = 1.;
      * ... ff[0] == 1.; }) == true
      * </code></pre>]]></haxe_doc>
@@ -12282,7 +12282,7 @@
 			</meta>
 			<haxe_doc><![CDATA[* <pre><code>
      * >>> ({ 
-     * ... var ff = new Flat32(2);
+     * ... var ff = new Float32Flat(2);
      * ... ff[0] = 1.;
      * ... ff[0] == 1.; }) == true
      * </code></pre>]]></haxe_doc>
@@ -12300,7 +12300,7 @@
 			</meta>
 			<haxe_doc><![CDATA[* <pre><code>
      * >>> ({ 
-     * ... var ff = new Flat32(2);
+     * ... var ff = new Float32Flat(2);
      * ... ff[0] = 1.;
      * ... ff[0] == 1.; }) == true
      * </code></pre>]]></haxe_doc>
@@ -15980,7 +15980,9 @@
 </f></blueChannel>
 	</class>
 	<abstract path="dsHelper.flatInterleave.FloatColorTrianglesUV" params="" file="src/dsHelper/flatInterleave/FloatColorTrianglesUV.hx">
+		<from><icast><x path="dsHelper.flatInterleave.core.Flat3x9"/></icast></from>
 		<this><x path="dsHelper.flatInterleave.core.Flat3x9"/></this>
+		<to><icast><x path="dsHelper.flatInterleave.core.Flat3x9"/></icast></to>
 		<meta><m n=":forward"/></meta>
 		<impl><class path="dsHelper.flatInterleave._FloatColorTrianglesUV.FloatColorTrianglesUV_Impl_" params="" file="src/dsHelper/flatInterleave/FloatColorTrianglesUV.hx" private="1" module="dsHelper.flatInterleave.FloatColorTrianglesUV" final="1">
 	<_new public="1" get="inline" set="null" line="5" static="1">
@@ -16565,7 +16567,7 @@
 		<meta><m n=":impl"/></meta>
 	</get_u>
 	<set_u get="inline" set="null" line="321" static="1">
-		<f a="this:x">
+		<f a="this:u_">
 			<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 			<x path="Float"/>
 			<x path="Float"/>
@@ -16584,7 +16586,7 @@
 		<meta><m n=":impl"/></meta>
 	</get_v>
 	<set_v get="inline" set="null" line="334" static="1">
-		<f a="this:y">
+		<f a="this:v_">
 			<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 			<x path="Float"/>
 			<x path="Float"/>
@@ -16734,7 +16736,16 @@
 		</f>
 		<meta><m n=":impl"/></meta>
 	</fullHit>
-	<rotate public="1" get="inline" set="null" line="434" static="1">
+	<moveDeltaUV set="method" line="434" static="1">
+		<f a="this:du:dv">
+			<x path="dsHelper.flatInterleave.core.Flat3x9"/>
+			<x path="Float"/>
+			<x path="Float"/>
+			<x path="Void"/>
+		</f>
+		<meta><m n=":impl"/></meta>
+	</moveDeltaUV>
+	<rotate public="1" get="inline" set="null" line="442" static="1">
 		<f a="this:x:y:theta">
 			<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 			<x path="Float"/>
@@ -16744,7 +16755,7 @@
 		</f>
 		<meta><m n=":impl"/></meta>
 	</rotate>
-	<rotateTrig public="1" get="inline" set="null" line="440" static="1">
+	<rotateTrig public="1" get="inline" set="null" line="448" static="1">
 		<f a="this:x:y:cos:sin">
 			<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 			<x path="Float"/>
@@ -16755,7 +16766,7 @@
 		</f>
 		<meta><m n=":impl"/></meta>
 	</rotateTrig>
-	<colorTriangles public="1" get="inline" set="null" line="469" static="1">
+	<colorTriangles public="1" get="inline" set="null" line="477" static="1">
 		<f a="this:color:times">
 			<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 			<x path="Int"/>
@@ -16764,7 +16775,7 @@
 		</f>
 		<meta><m n=":impl"/></meta>
 	</colorTriangles>
-	<cornerColors public="1" get="inline" set="null" line="473" static="1">
+	<cornerColors public="1" get="inline" set="null" line="481" static="1">
 		<f a="this:colorA:colorB:colorC">
 			<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 			<x path="Int"/>
@@ -16778,7 +16789,7 @@
 		<x path="Int"/>
 		<meta><m n=":impl"/></meta>
 	</rgb>
-	<set_rgb get="inline" set="null" line="480" static="1">
+	<set_rgb get="inline" set="null" line="488" static="1">
 		<f a="this:col">
 			<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 			<x path="Int"/>
@@ -16790,7 +16801,7 @@
 		<x path="Int"/>
 		<meta><m n=":impl"/></meta>
 	</rgbA>
-	<set_rgbA get="inline" set="null" line="488" static="1">
+	<set_rgbA get="inline" set="null" line="496" static="1">
 		<f a="this:col">
 			<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 			<x path="Int"/>
@@ -16798,7 +16809,7 @@
 		</f>
 		<meta><m n=":impl"/></meta>
 	</set_rgbA>
-	<get_rgbA get="inline" set="null" line="496" static="1">
+	<get_rgbA get="inline" set="null" line="504" static="1">
 		<f a="this">
 			<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 			<x path="Int"/>
@@ -16809,7 +16820,7 @@
 		<x path="Int"/>
 		<meta><m n=":impl"/></meta>
 	</rgbB>
-	<set_rgbB get="inline" set="null" line="503" static="1">
+	<set_rgbB get="inline" set="null" line="511" static="1">
 		<f a="this:col">
 			<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 			<x path="Int"/>
@@ -16817,7 +16828,7 @@
 		</f>
 		<meta><m n=":impl"/></meta>
 	</set_rgbB>
-	<get_rgbB get="inline" set="null" line="511" static="1">
+	<get_rgbB get="inline" set="null" line="519" static="1">
 		<f a="this">
 			<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 			<x path="Int"/>
@@ -16828,7 +16839,7 @@
 		<x path="Int"/>
 		<meta><m n=":impl"/></meta>
 	</rgbC>
-	<set_rgbC get="inline" set="null" line="518" static="1">
+	<set_rgbC get="inline" set="null" line="526" static="1">
 		<f a="this:col">
 			<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 			<x path="Int"/>
@@ -16836,7 +16847,7 @@
 		</f>
 		<meta><m n=":impl"/></meta>
 	</set_rgbC>
-	<get_rgbC get="inline" set="null" line="526" static="1">
+	<get_rgbC get="inline" set="null" line="534" static="1">
 		<f a="this">
 			<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 			<x path="Int"/>
@@ -16847,7 +16858,7 @@
 		<x path="Int"/>
 		<meta><m n=":impl"/></meta>
 	</argb>
-	<set_argb get="inline" set="null" line="533" static="1">
+	<set_argb get="inline" set="null" line="541" static="1">
 		<f a="this:col">
 			<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 			<x path="Int"/>
@@ -16859,7 +16870,7 @@
 		<x path="Int"/>
 		<meta><m n=":impl"/></meta>
 	</argbA>
-	<set_argbA get="inline" set="null" line="542" static="1">
+	<set_argbA get="inline" set="null" line="550" static="1">
 		<f a="this:col">
 			<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 			<x path="Int"/>
@@ -16867,7 +16878,7 @@
 		</f>
 		<meta><m n=":impl"/></meta>
 	</set_argbA>
-	<get_argbA get="inline" set="null" line="550" static="1">
+	<get_argbA get="inline" set="null" line="558" static="1">
 		<f a="this">
 			<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 			<x path="Int"/>
@@ -16878,7 +16889,7 @@
 		<x path="Int"/>
 		<meta><m n=":impl"/></meta>
 	</argbB>
-	<set_argbB get="inline" set="null" line="559" static="1">
+	<set_argbB get="inline" set="null" line="567" static="1">
 		<f a="this:col">
 			<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 			<x path="Int"/>
@@ -16886,7 +16897,7 @@
 		</f>
 		<meta><m n=":impl"/></meta>
 	</set_argbB>
-	<get_argbB get="inline" set="null" line="567" static="1">
+	<get_argbB get="inline" set="null" line="575" static="1">
 		<f a="this">
 			<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 			<x path="Int"/>
@@ -16897,7 +16908,7 @@
 		<x path="Int"/>
 		<meta><m n=":impl"/></meta>
 	</argbC>
-	<set_argbC get="inline" set="null" line="575" static="1">
+	<set_argbC get="inline" set="null" line="583" static="1">
 		<f a="this:col">
 			<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 			<x path="Int"/>
@@ -16905,28 +16916,28 @@
 		</f>
 		<meta><m n=":impl"/></meta>
 	</set_argbC>
-	<get_argbC get="inline" set="null" line="583" static="1">
+	<get_argbC get="inline" set="null" line="591" static="1">
 		<f a="this">
 			<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 			<x path="Int"/>
 		</f>
 		<meta><m n=":impl"/></meta>
 	</get_argbC>
-	<prettyStringVert public="1" get="inline" set="null" line="590" static="1">
+	<prettyStringVert public="1" get="inline" set="null" line="598" static="1">
 		<f a="this">
 			<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 			<c path="String"/>
 		</f>
 		<meta><m n=":impl"/></meta>
 	</prettyStringVert>
-	<prettyAllVert public="1" get="inline" set="null" line="596" static="1">
+	<prettyAllVert public="1" get="inline" set="null" line="604" static="1">
 		<f a="this">
 			<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 			<c path="String"/>
 		</f>
 		<meta><m n=":impl"/></meta>
 	</prettyAllVert>
-	<hex public="1" get="inline" set="null" line="606" static="1">
+	<hex public="1" get="inline" set="null" line="615" static="1">
 		<f a="this:v">
 			<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 			<x path="Int"/>
@@ -16934,61 +16945,68 @@
 		</f>
 		<meta><m n=":impl"/></meta>
 	</hex>
-	<hexA public="1" get="inline" set="null" line="610" static="1">
+	<hexA public="1" get="inline" set="null" line="619" static="1">
 		<f a="this">
 			<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 			<c path="String"/>
 		</f>
 		<meta><m n=":impl"/></meta>
 	</hexA>
-	<hexB public="1" get="inline" set="null" line="614" static="1">
+	<hexB public="1" get="inline" set="null" line="623" static="1">
 		<f a="this">
 			<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 			<c path="String"/>
 		</f>
 		<meta><m n=":impl"/></meta>
 	</hexB>
-	<hexC public="1" get="inline" set="null" line="618" static="1">
+	<hexC public="1" get="inline" set="null" line="627" static="1">
 		<f a="this">
 			<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 			<c path="String"/>
 		</f>
 		<meta><m n=":impl"/></meta>
 	</hexC>
-	<hexAll public="1" get="inline" set="null" line="622" static="1">
+	<hexAll public="1" get="inline" set="null" line="631" static="1">
 		<f a="this">
 			<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 			<c path="String"/>
 		</f>
 		<meta><m n=":impl"/></meta>
 	</hexAll>
-	<prettyStringUV public="1" get="inline" set="null" line="633" static="1">
+	<prettyStringUV public="1" get="inline" set="null" line="642" static="1">
 		<f a="this">
 			<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 			<c path="String"/>
 		</f>
 		<meta><m n=":impl"/></meta>
 	</prettyStringUV>
-	<prettyAlluv public="1" get="inline" set="null" line="639" static="1">
+	<prettyAlluv public="1" get="inline" set="null" line="648" static="1">
 		<f a="this">
 			<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 			<c path="String"/>
 		</f>
 		<meta><m n=":impl"/></meta>
 	</prettyAlluv>
-	<alphaChannel public="1" get="inline" set="null" line="650" static="1"><f a="int">
+	<prettyEverything public="1" get="inline" set="null" line="659" static="1">
+		<f a="this">
+			<x path="dsHelper.flatInterleave.core.Flat3x9"/>
+			<c path="String"/>
+		</f>
+		<meta><m n=":impl"/></meta>
+	</prettyEverything>
+	<alphaChannel public="1" get="inline" set="null" line="672" static="1"><f a="int">
 	<x path="Int"/>
 	<x path="Float"/>
 </f></alphaChannel>
-	<redChannel public="1" get="inline" set="null" line="653" static="1"><f a="int">
+	<redChannel public="1" get="inline" set="null" line="675" static="1"><f a="int">
 	<x path="Int"/>
 	<x path="Float"/>
 </f></redChannel>
-	<greenChannel public="1" get="inline" set="null" line="656" static="1"><f a="int">
+	<greenChannel public="1" get="inline" set="null" line="678" static="1"><f a="int">
 	<x path="Int"/>
 	<x path="Float"/>
 </f></greenChannel>
-	<blueChannel public="1" get="inline" set="null" line="659" static="1"><f a="int">
+	<blueChannel public="1" get="inline" set="null" line="681" static="1"><f a="int">
 	<x path="Int"/>
 	<x path="Float"/>
 </f></blueChannel>
@@ -17577,7 +17595,7 @@
 			<meta><m n=":impl"/></meta>
 		</get_u>
 		<set_u get="inline" set="null" line="321" static="1">
-			<f a="this:x">
+			<f a="this:u_">
 				<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 				<x path="Float"/>
 				<x path="Float"/>
@@ -17596,7 +17614,7 @@
 			<meta><m n=":impl"/></meta>
 		</get_v>
 		<set_v get="inline" set="null" line="334" static="1">
-			<f a="this:y">
+			<f a="this:v_">
 				<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 				<x path="Float"/>
 				<x path="Float"/>
@@ -17746,7 +17764,16 @@
 			</f>
 			<meta><m n=":impl"/></meta>
 		</fullHit>
-		<rotate public="1" get="inline" set="null" line="434" static="1">
+		<moveDeltaUV set="method" line="434" static="1">
+			<f a="this:du:dv">
+				<x path="dsHelper.flatInterleave.core.Flat3x9"/>
+				<x path="Float"/>
+				<x path="Float"/>
+				<x path="Void"/>
+			</f>
+			<meta><m n=":impl"/></meta>
+		</moveDeltaUV>
+		<rotate public="1" get="inline" set="null" line="442" static="1">
 			<f a="this:x:y:theta">
 				<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 				<x path="Float"/>
@@ -17756,7 +17783,7 @@
 			</f>
 			<meta><m n=":impl"/></meta>
 		</rotate>
-		<rotateTrig public="1" get="inline" set="null" line="440" static="1">
+		<rotateTrig public="1" get="inline" set="null" line="448" static="1">
 			<f a="this:x:y:cos:sin">
 				<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 				<x path="Float"/>
@@ -17767,7 +17794,7 @@
 			</f>
 			<meta><m n=":impl"/></meta>
 		</rotateTrig>
-		<colorTriangles public="1" get="inline" set="null" line="469" static="1">
+		<colorTriangles public="1" get="inline" set="null" line="477" static="1">
 			<f a="this:color:times">
 				<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 				<x path="Int"/>
@@ -17776,7 +17803,7 @@
 			</f>
 			<meta><m n=":impl"/></meta>
 		</colorTriangles>
-		<cornerColors public="1" get="inline" set="null" line="473" static="1">
+		<cornerColors public="1" get="inline" set="null" line="481" static="1">
 			<f a="this:colorA:colorB:colorC">
 				<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 				<x path="Int"/>
@@ -17790,7 +17817,7 @@
 			<x path="Int"/>
 			<meta><m n=":impl"/></meta>
 		</rgb>
-		<set_rgb get="inline" set="null" line="480" static="1">
+		<set_rgb get="inline" set="null" line="488" static="1">
 			<f a="this:col">
 				<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 				<x path="Int"/>
@@ -17802,7 +17829,7 @@
 			<x path="Int"/>
 			<meta><m n=":impl"/></meta>
 		</rgbA>
-		<set_rgbA get="inline" set="null" line="488" static="1">
+		<set_rgbA get="inline" set="null" line="496" static="1">
 			<f a="this:col">
 				<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 				<x path="Int"/>
@@ -17810,7 +17837,7 @@
 			</f>
 			<meta><m n=":impl"/></meta>
 		</set_rgbA>
-		<get_rgbA get="inline" set="null" line="496" static="1">
+		<get_rgbA get="inline" set="null" line="504" static="1">
 			<f a="this">
 				<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 				<x path="Int"/>
@@ -17821,7 +17848,7 @@
 			<x path="Int"/>
 			<meta><m n=":impl"/></meta>
 		</rgbB>
-		<set_rgbB get="inline" set="null" line="503" static="1">
+		<set_rgbB get="inline" set="null" line="511" static="1">
 			<f a="this:col">
 				<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 				<x path="Int"/>
@@ -17829,7 +17856,7 @@
 			</f>
 			<meta><m n=":impl"/></meta>
 		</set_rgbB>
-		<get_rgbB get="inline" set="null" line="511" static="1">
+		<get_rgbB get="inline" set="null" line="519" static="1">
 			<f a="this">
 				<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 				<x path="Int"/>
@@ -17840,7 +17867,7 @@
 			<x path="Int"/>
 			<meta><m n=":impl"/></meta>
 		</rgbC>
-		<set_rgbC get="inline" set="null" line="518" static="1">
+		<set_rgbC get="inline" set="null" line="526" static="1">
 			<f a="this:col">
 				<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 				<x path="Int"/>
@@ -17848,7 +17875,7 @@
 			</f>
 			<meta><m n=":impl"/></meta>
 		</set_rgbC>
-		<get_rgbC get="inline" set="null" line="526" static="1">
+		<get_rgbC get="inline" set="null" line="534" static="1">
 			<f a="this">
 				<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 				<x path="Int"/>
@@ -17859,7 +17886,7 @@
 			<x path="Int"/>
 			<meta><m n=":impl"/></meta>
 		</argb>
-		<set_argb get="inline" set="null" line="533" static="1">
+		<set_argb get="inline" set="null" line="541" static="1">
 			<f a="this:col">
 				<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 				<x path="Int"/>
@@ -17871,7 +17898,7 @@
 			<x path="Int"/>
 			<meta><m n=":impl"/></meta>
 		</argbA>
-		<set_argbA get="inline" set="null" line="542" static="1">
+		<set_argbA get="inline" set="null" line="550" static="1">
 			<f a="this:col">
 				<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 				<x path="Int"/>
@@ -17879,7 +17906,7 @@
 			</f>
 			<meta><m n=":impl"/></meta>
 		</set_argbA>
-		<get_argbA get="inline" set="null" line="550" static="1">
+		<get_argbA get="inline" set="null" line="558" static="1">
 			<f a="this">
 				<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 				<x path="Int"/>
@@ -17890,7 +17917,7 @@
 			<x path="Int"/>
 			<meta><m n=":impl"/></meta>
 		</argbB>
-		<set_argbB get="inline" set="null" line="559" static="1">
+		<set_argbB get="inline" set="null" line="567" static="1">
 			<f a="this:col">
 				<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 				<x path="Int"/>
@@ -17898,7 +17925,7 @@
 			</f>
 			<meta><m n=":impl"/></meta>
 		</set_argbB>
-		<get_argbB get="inline" set="null" line="567" static="1">
+		<get_argbB get="inline" set="null" line="575" static="1">
 			<f a="this">
 				<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 				<x path="Int"/>
@@ -17909,7 +17936,7 @@
 			<x path="Int"/>
 			<meta><m n=":impl"/></meta>
 		</argbC>
-		<set_argbC get="inline" set="null" line="575" static="1">
+		<set_argbC get="inline" set="null" line="583" static="1">
 			<f a="this:col">
 				<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 				<x path="Int"/>
@@ -17917,28 +17944,28 @@
 			</f>
 			<meta><m n=":impl"/></meta>
 		</set_argbC>
-		<get_argbC get="inline" set="null" line="583" static="1">
+		<get_argbC get="inline" set="null" line="591" static="1">
 			<f a="this">
 				<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 				<x path="Int"/>
 			</f>
 			<meta><m n=":impl"/></meta>
 		</get_argbC>
-		<prettyStringVert public="1" get="inline" set="null" line="590" static="1">
+		<prettyStringVert public="1" get="inline" set="null" line="598" static="1">
 			<f a="this">
 				<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 				<c path="String"/>
 			</f>
 			<meta><m n=":impl"/></meta>
 		</prettyStringVert>
-		<prettyAllVert public="1" get="inline" set="null" line="596" static="1">
+		<prettyAllVert public="1" get="inline" set="null" line="604" static="1">
 			<f a="this">
 				<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 				<c path="String"/>
 			</f>
 			<meta><m n=":impl"/></meta>
 		</prettyAllVert>
-		<hex public="1" get="inline" set="null" line="606" static="1">
+		<hex public="1" get="inline" set="null" line="615" static="1">
 			<f a="this:v">
 				<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 				<x path="Int"/>
@@ -17946,61 +17973,68 @@
 			</f>
 			<meta><m n=":impl"/></meta>
 		</hex>
-		<hexA public="1" get="inline" set="null" line="610" static="1">
+		<hexA public="1" get="inline" set="null" line="619" static="1">
 			<f a="this">
 				<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 				<c path="String"/>
 			</f>
 			<meta><m n=":impl"/></meta>
 		</hexA>
-		<hexB public="1" get="inline" set="null" line="614" static="1">
+		<hexB public="1" get="inline" set="null" line="623" static="1">
 			<f a="this">
 				<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 				<c path="String"/>
 			</f>
 			<meta><m n=":impl"/></meta>
 		</hexB>
-		<hexC public="1" get="inline" set="null" line="618" static="1">
+		<hexC public="1" get="inline" set="null" line="627" static="1">
 			<f a="this">
 				<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 				<c path="String"/>
 			</f>
 			<meta><m n=":impl"/></meta>
 		</hexC>
-		<hexAll public="1" get="inline" set="null" line="622" static="1">
+		<hexAll public="1" get="inline" set="null" line="631" static="1">
 			<f a="this">
 				<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 				<c path="String"/>
 			</f>
 			<meta><m n=":impl"/></meta>
 		</hexAll>
-		<prettyStringUV public="1" get="inline" set="null" line="633" static="1">
+		<prettyStringUV public="1" get="inline" set="null" line="642" static="1">
 			<f a="this">
 				<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 				<c path="String"/>
 			</f>
 			<meta><m n=":impl"/></meta>
 		</prettyStringUV>
-		<prettyAlluv public="1" get="inline" set="null" line="639" static="1">
+		<prettyAlluv public="1" get="inline" set="null" line="648" static="1">
 			<f a="this">
 				<x path="dsHelper.flatInterleave.core.Flat3x9"/>
 				<c path="String"/>
 			</f>
 			<meta><m n=":impl"/></meta>
 		</prettyAlluv>
-		<alphaChannel public="1" get="inline" set="null" line="650" static="1"><f a="int">
+		<prettyEverything public="1" get="inline" set="null" line="659" static="1">
+			<f a="this">
+				<x path="dsHelper.flatInterleave.core.Flat3x9"/>
+				<c path="String"/>
+			</f>
+			<meta><m n=":impl"/></meta>
+		</prettyEverything>
+		<alphaChannel public="1" get="inline" set="null" line="672" static="1"><f a="int">
 	<x path="Int"/>
 	<x path="Float"/>
 </f></alphaChannel>
-		<redChannel public="1" get="inline" set="null" line="653" static="1"><f a="int">
+		<redChannel public="1" get="inline" set="null" line="675" static="1"><f a="int">
 	<x path="Int"/>
 	<x path="Float"/>
 </f></redChannel>
-		<greenChannel public="1" get="inline" set="null" line="656" static="1"><f a="int">
+		<greenChannel public="1" get="inline" set="null" line="678" static="1"><f a="int">
 	<x path="Int"/>
 	<x path="Float"/>
 </f></greenChannel>
-		<blueChannel public="1" get="inline" set="null" line="659" static="1"><f a="int">
+		<blueChannel public="1" get="inline" set="null" line="681" static="1"><f a="int">
 	<x path="Int"/>
 	<x path="Float"/>
 </f></blueChannel>
@@ -18132,10 +18166,12 @@
 		</getArray>
 	</class>
 	<abstract path="dsHelper.flatInterleave.core.Flat3x9" params="" file="src/dsHelper/flatInterleave/core/Flat3x9.hx">
+		<from><icast><x path="dsHelper.flat.io.Float32Flat"/></icast></from>
 		<this><x path="dsHelper.flat.io.Float32Flat"/></this>
+		<to><icast><x path="dsHelper.flat.io.Float32Flat"/></icast></to>
 		<meta><m n=":forward"/></meta>
 		<impl><class path="dsHelper.flatInterleave.core._Flat3x9.Flat3x9_Impl_" params="" file="src/dsHelper/flatInterleave/core/Flat3x9.hx" private="1" module="dsHelper.flatInterleave.core.Flat3x9" final="1">
-	<readItem public="1" get="inline" set="null" line="6" static="1">
+	<readItem public="1" get="inline" set="null" line="7" static="1">
 		<f a="this:k">
 			<x path="dsHelper.flat.io.Float32Flat"/>
 			<x path="Int"/>
@@ -18146,7 +18182,7 @@
 			<m n=":op"><e>[]</e></m>
 		</meta>
 	</readItem>
-	<writeItem public="1" get="inline" set="null" line="10" static="1">
+	<writeItem public="1" get="inline" set="null" line="11" static="1">
 		<f a="this:k:v">
 			<x path="dsHelper.flat.io.Float32Flat"/>
 			<x path="Int"/>
@@ -18158,7 +18194,7 @@
 			<m n=":op"><e>[]</e></m>
 		</meta>
 	</writeItem>
-	<_new public="1" get="inline" set="null" line="15" static="1">
+	<_new public="1" get="inline" set="null" line="16" static="1">
 		<f a="len">
 			<x path="Int"/>
 			<x path="dsHelper.flatInterleave.core.Flat3x9"/>
@@ -18172,14 +18208,14 @@
 		<x path="Int"/>
 		<meta><m n=":impl"/></meta>
 	</index>
-	<get_index get="inline" set="null" line="20" static="1">
+	<get_index get="inline" set="null" line="21" static="1">
 		<f a="this">
 			<x path="dsHelper.flat.io.Float32Flat"/>
 			<x path="Int"/>
 		</f>
 		<meta><m n=":impl"/></meta>
 	</get_index>
-	<set_index get="inline" set="null" line="24" static="1">
+	<set_index get="inline" set="null" line="25" static="1">
 		<f a="this:id">
 			<x path="dsHelper.flat.io.Float32Flat"/>
 			<x path="Int"/>
@@ -18187,7 +18223,7 @@
 		</f>
 		<meta><m n=":impl"/></meta>
 	</set_index>
-	<getArray public="1" get="inline" set="null" line="29" static="1">
+	<getArray public="1" get="inline" set="null" line="30" static="1">
 		<f a="this">
 			<x path="dsHelper.flat.io.Float32Flat"/>
 			<t path="dsHelper.haxe.io.Float32Array"/>
@@ -18197,7 +18233,7 @@
 </class></impl>
 	</abstract>
 	<class path="dsHelper.flatInterleave.core._Flat3x9.Flat3x9_Impl_" params="" file="src/dsHelper/flatInterleave/core/Flat3x9.hx" private="1" module="dsHelper.flatInterleave.core.Flat3x9" final="1">
-		<readItem public="1" get="inline" set="null" line="6" static="1">
+		<readItem public="1" get="inline" set="null" line="7" static="1">
 			<f a="this:k">
 				<x path="dsHelper.flat.io.Float32Flat"/>
 				<x path="Int"/>
@@ -18208,7 +18244,7 @@
 				<m n=":op"><e>[]</e></m>
 			</meta>
 		</readItem>
-		<writeItem public="1" get="inline" set="null" line="10" static="1">
+		<writeItem public="1" get="inline" set="null" line="11" static="1">
 			<f a="this:k:v">
 				<x path="dsHelper.flat.io.Float32Flat"/>
 				<x path="Int"/>
@@ -18220,7 +18256,7 @@
 				<m n=":op"><e>[]</e></m>
 			</meta>
 		</writeItem>
-		<_new public="1" get="inline" set="null" line="15" static="1">
+		<_new public="1" get="inline" set="null" line="16" static="1">
 			<f a="len">
 				<x path="Int"/>
 				<x path="dsHelper.flatInterleave.core.Flat3x9"/>
@@ -18234,14 +18270,14 @@
 			<x path="Int"/>
 			<meta><m n=":impl"/></meta>
 		</index>
-		<get_index get="inline" set="null" line="20" static="1">
+		<get_index get="inline" set="null" line="21" static="1">
 			<f a="this">
 				<x path="dsHelper.flat.io.Float32Flat"/>
 				<x path="Int"/>
 			</f>
 			<meta><m n=":impl"/></meta>
 		</get_index>
-		<set_index get="inline" set="null" line="24" static="1">
+		<set_index get="inline" set="null" line="25" static="1">
 			<f a="this:id">
 				<x path="dsHelper.flat.io.Float32Flat"/>
 				<x path="Int"/>
@@ -18249,7 +18285,7 @@
 			</f>
 			<meta><m n=":impl"/></meta>
 		</set_index>
-		<getArray public="1" get="inline" set="null" line="29" static="1">
+		<getArray public="1" get="inline" set="null" line="30" static="1">
 			<f a="this">
 				<x path="dsHelper.flat.io.Float32Flat"/>
 				<t path="dsHelper.haxe.io.Float32Array"/>

@@ -8,7 +8,7 @@ abstract Float32Flat( Float32Array )/* to Float32Array from Float32Array*/ {
     /**
      * <pre><code>
      * >>> ({ 
-     * ... var ff = new Flat32(2);
+     * ... var ff = new Float32Flat(2);
      * ... ff[0] = 1.;
      * ... ff[0] == 1.; }) == true
      * </code></pre>
@@ -21,7 +21,7 @@ abstract Float32Flat( Float32Array )/* to Float32Array from Float32Array*/ {
     /**
      * <pre><code>
      * >>> ({ 
-     * ... var ff = new Flat32(2);
+     * ... var ff = new Float32Flat(2);
      * ... ff[0] = 1.;
      * ... ff[0] == 1.; }) == true
      * </code></pre>
