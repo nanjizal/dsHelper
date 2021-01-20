@@ -431,6 +431,14 @@ abstract FloatColorTrianglesUV( Flat3x9 ) from Flat3x9 to Flat3x9 {
         if( px > x && px < right && py > y && py < bottom ) return true;
         return liteHit( px, py );
     }
+    public
+    function distHit( px: Float, py: Float ): Float {
+        if( liteHit( px, py ) ) return 0;
+        var dA = Math.pow( Math.pow( px - ax, 2 ) + Math.pow( py - ay, 2 ), 0.5 );
+        var dB = Math.pow( Math.pow( px - bx, 2 ) + Math.pow( py - by, 2 ), 0.5 );
+        var dC = Math.pow( Math.pow( px - cx, 2 ) + Math.pow( py - cy, 2 ), 0.5 );
+        return Math.min( Math.min( dA, dB ), dC );
+    }
     function moveDeltaUV( du: Float, dv: Float ){
         uA += du;
         vA += dv;

@@ -83,6 +83,14 @@ abstract Float32Flat( Float32Array )/* to Float32Array from Float32Array*/ {
         pos = pos + 1.;
         return pos;
     }
+    /*
+    var checker = i % ( section/3);
+        switch( checker ){
+            case 6:  this[ starting + i ] = this[ starting + i ]/2; 
+            default:
+                
+    }
+    */
     @:op(A++) public inline
     function increment() {
         return next();
@@ -90,7 +98,7 @@ abstract Float32Flat( Float32Array )/* to Float32Array from Float32Array*/ {
     @:to
     public inline
     function toArray(): Float32Array {
-        return this.subarray( 2, this.length - 2 );
+        return this.subarray( 2, this.length );
     }
     @:from
     public static inline

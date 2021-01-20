@@ -1,9 +1,9 @@
 package dsHelper.flatInterleave.core;
-import dsHelper.flat.io.Float32Flat;
+import dsHelper.flat.io.Float32FlatDepth;
 import dsHelper.haxe.io.Float32Array;
 
 @:forward
-abstract Flat3x9( Float32Flat ) from Float32Flat to Float32Flat {
+abstract Flat3x9( Float32FlatDepth ) from Float32FlatDepth to Float32FlatDepth {
     @:op([]) public inline 
     function readItem( k: Int ): Float {
         return this.readItem( index*27 + k );
@@ -15,7 +15,7 @@ abstract Flat3x9( Float32Flat ) from Float32Flat to Float32Flat {
     }
     public inline 
     function new( len: Int ){
-        this = new Float32Flat( len );
+        this = new Float32FlatDepth( len );
     }
     public var index( get, set ): Int;
     inline
@@ -30,5 +30,13 @@ abstract Flat3x9( Float32Flat ) from Float32Flat to Float32Flat {
     public inline
     function getArray(): Float32Array {
         return this.subarray( 2, this.size*27 + 2 );
+    }
+    public inline 
+    function toEnd( id: Int, len: Int ){
+        return this.rangeToEnd( id*27, Std.int( 27*len ), 27 );
+    }
+    public inline 
+    function toStart( id: Int, len: Int ){
+        return this.rangeToStart( id*27, Std.int( 27*len ) );
     }
 }

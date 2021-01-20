@@ -61,7 +61,7 @@ abstract Int32Flat( Int32Array ) to Int32Array from Int32Array {
     @:to
     public inline
     function toArray(): Int32Array {
-        return this.subarray( 2, this.length - 2 );
+        return this.subarray( 2, this.length );
     }
     @:from
     public static inline

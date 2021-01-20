@@ -88,7 +88,7 @@ abstract UInt16Flat( UInt16Array ) to UInt16Array to UInt16Array {
     @:to
     public inline
     function toArray(): UInt16Array {
-        return this.subarray( 4, this.length - 4 );
+        return this.subarray( 4, this.length );
     }
     @:from
     public static inline

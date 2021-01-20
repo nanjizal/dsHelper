@@ -14,7 +14,6 @@ abstract FloatFlatRGBA( FloatFlat4 ){
         this[ 0 ] = v;
         return v;
     }
-    
     public var green( get, set ): Float;
     inline
     function get_green(): Float {
