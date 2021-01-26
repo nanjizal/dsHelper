@@ -40,4 +40,8 @@ abstract Flat3x7( Float32FlatDepth ) {
     function toStart( id: Int, len: Int ){
         return this.rangeToStart( id*21, Std.int( 21 * len ) );
     }
+    public inline
+    function swap( id0: Int, id1: Int, len: Int ){
+        return this.rangeSwitch( id0*21, id1*21, Std.int( 21 * len ) );
+    }
 }

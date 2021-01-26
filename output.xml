@@ -12456,7 +12456,7 @@
 			<m n=":noCompletion"/>
 		</meta>
 	</_new>
-	<rangeToEnd public="1" set="method" line="11" static="1">
+	<rangeToEnd public="1" set="method" line="10" static="1">
 		<f a="this:starting:totalLen:section">
 			<x path="dsHelper.flat.io.Float32Flat"/>
 			<x path="Int"/>
@@ -12466,7 +12466,7 @@
 		</f>
 		<meta><m n=":impl"/></meta>
 	</rangeToEnd>
-	<rangeToStart public="1" get="inline" set="null" line="30" static="1">
+	<rangeToStart public="1" get="inline" set="null" line="28" static="1">
 		<f a="this:starting:totalLen">
 			<x path="dsHelper.flat.io.Float32Flat"/>
 			<x path="Int"/>
@@ -12475,6 +12475,16 @@
 		</f>
 		<meta><m n=":impl"/></meta>
 	</rangeToStart>
+	<rangeSwitch public="1" get="inline" set="null" line="53" static="1">
+		<f a="this:start0:start1:totalLen">
+			<x path="dsHelper.flat.io.Float32Flat"/>
+			<x path="Int"/>
+			<x path="Int"/>
+			<x path="Int"/>
+			<x path="Bool"/>
+		</f>
+		<meta><m n=":impl"/></meta>
+	</rangeSwitch>
 	<meta><m n=":directlyUsed"/></meta>
 </class></impl>
 	</abstract>
@@ -12489,7 +12499,7 @@
 				<m n=":noCompletion"/>
 			</meta>
 		</_new>
-		<rangeToEnd public="1" set="method" line="11" static="1">
+		<rangeToEnd public="1" set="method" line="10" static="1">
 			<f a="this:starting:totalLen:section">
 				<x path="dsHelper.flat.io.Float32Flat"/>
 				<x path="Int"/>
@@ -12499,7 +12509,7 @@
 			</f>
 			<meta><m n=":impl"/></meta>
 		</rangeToEnd>
-		<rangeToStart public="1" get="inline" set="null" line="30" static="1">
+		<rangeToStart public="1" get="inline" set="null" line="28" static="1">
 			<f a="this:starting:totalLen">
 				<x path="dsHelper.flat.io.Float32Flat"/>
 				<x path="Int"/>
@@ -12508,6 +12518,16 @@
 			</f>
 			<meta><m n=":impl"/></meta>
 		</rangeToStart>
+		<rangeSwitch public="1" get="inline" set="null" line="53" static="1">
+			<f a="this:start0:start1:totalLen">
+				<x path="dsHelper.flat.io.Float32Flat"/>
+				<x path="Int"/>
+				<x path="Int"/>
+				<x path="Int"/>
+				<x path="Bool"/>
+			</f>
+			<meta><m n=":impl"/></meta>
+		</rangeSwitch>
 		<meta><m n=":directlyUsed"/></meta>
 	</class>
 	<abstract path="dsHelper.flat.io.Int32Flat" params="" file="src/dsHelper/flat/io/Int32Flat.hx">
@@ -20327,6 +20347,16 @@
 		</f>
 		<meta><m n=":impl"/></meta>
 	</toStart>
+	<swap public="1" get="inline" set="null" line="43" static="1">
+		<f a="this:id0:id1:len">
+			<x path="dsHelper.flat.io.Float32FlatDepth"/>
+			<x path="Int"/>
+			<x path="Int"/>
+			<x path="Int"/>
+			<x path="Bool"/>
+		</f>
+		<meta><m n=":impl"/></meta>
+	</swap>
 </class></impl>
 	</abstract>
 	<class path="dsHelper.flatInterleave.core._Flat3x7.Flat3x7_Impl_" params="" file="src/dsHelper/flatInterleave/core/Flat3x7.hx" private="1" module="dsHelper.flatInterleave.core.Flat3x7" final="1">
@@ -20407,6 +20437,16 @@
 			</f>
 			<meta><m n=":impl"/></meta>
 		</toStart>
+		<swap public="1" get="inline" set="null" line="43" static="1">
+			<f a="this:id0:id1:len">
+				<x path="dsHelper.flat.io.Float32FlatDepth"/>
+				<x path="Int"/>
+				<x path="Int"/>
+				<x path="Int"/>
+				<x path="Bool"/>
+			</f>
+			<meta><m n=":impl"/></meta>
+		</swap>
 	</class>
 	<abstract path="dsHelper.flatInterleave.core.Flat3x9" params="" file="src/dsHelper/flatInterleave/core/Flat3x9.hx">
 		<from><icast><x path="dsHelper.flat.io.Float32FlatDepth"/></icast></from>
@@ -20491,6 +20531,16 @@
 		</f>
 		<meta><m n=":impl"/></meta>
 	</toStart>
+	<swap public="1" get="inline" set="null" line="42" static="1">
+		<f a="this:id0:id1:len">
+			<x path="dsHelper.flat.io.Float32FlatDepth"/>
+			<x path="Int"/>
+			<x path="Int"/>
+			<x path="Int"/>
+			<x path="Bool"/>
+		</f>
+		<meta><m n=":impl"/></meta>
+	</swap>
 </class></impl>
 	</abstract>
 	<class path="dsHelper.flatInterleave.core._Flat3x9.Flat3x9_Impl_" params="" file="src/dsHelper/flatInterleave/core/Flat3x9.hx" private="1" module="dsHelper.flatInterleave.core.Flat3x9" final="1">
@@ -20571,6 +20621,16 @@
 			</f>
 			<meta><m n=":impl"/></meta>
 		</toStart>
+		<swap public="1" get="inline" set="null" line="42" static="1">
+			<f a="this:id0:id1:len">
+				<x path="dsHelper.flat.io.Float32FlatDepth"/>
+				<x path="Int"/>
+				<x path="Int"/>
+				<x path="Int"/>
+				<x path="Bool"/>
+			</f>
+			<meta><m n=":impl"/></meta>
+		</swap>
 	</class>
 	<abstract path="dsHelper.flatInterleave.core.Flat3x9t" params="" file="src/dsHelper/flatInterleave/core/Flat3x9t.hx">
 		<from><icast><x path="dsHelper.flat.io.Float32FlatDepth"/></icast></from>
@@ -20655,6 +20715,16 @@
 		</f>
 		<meta><m n=":impl"/></meta>
 	</toStart>
+	<swap public="1" get="inline" set="null" line="43" static="1">
+		<f a="this:id0:id1:len">
+			<x path="dsHelper.flat.io.Float32FlatDepth"/>
+			<x path="Int"/>
+			<x path="Int"/>
+			<x path="Int"/>
+			<x path="Bool"/>
+		</f>
+		<meta><m n=":impl"/></meta>
+	</swap>
 </class></impl>
 	</abstract>
 	<class path="dsHelper.flatInterleave.core._Flat3x9t.Flat3x9t_Impl_" params="" file="src/dsHelper/flatInterleave/core/Flat3x9t.hx" private="1" module="dsHelper.flatInterleave.core.Flat3x9t" final="1">
@@ -20735,6 +20805,16 @@
 			</f>
 			<meta><m n=":impl"/></meta>
 		</toStart>
+		<swap public="1" get="inline" set="null" line="43" static="1">
+			<f a="this:id0:id1:len">
+				<x path="dsHelper.flat.io.Float32FlatDepth"/>
+				<x path="Int"/>
+				<x path="Int"/>
+				<x path="Int"/>
+				<x path="Bool"/>
+			</f>
+			<meta><m n=":impl"/></meta>
+		</swap>
 	</class>
 	<typedef path="dsHelper.haxe.io.Float32Array" params="" file="src/dsHelper/haxe/io/Float32Array.hx">
 		<x path="haxe.io.Float32Array"/>

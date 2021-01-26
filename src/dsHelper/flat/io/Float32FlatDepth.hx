@@ -7,7 +7,6 @@ abstract Float32FlatDepth( Float32Flat )/* to Float32Array from Float32Array*/ {
     function new( len: Int ){
         this = new Float32Flat( len );
     }
-    // depth sort, ugly low level
     public
     function rangeToEnd( starting: Int, totalLen: Int, section: Int ){
         var ending: Int = starting + totalLen;
@@ -26,7 +25,6 @@ abstract Float32FlatDepth( Float32Flat )/* to Float32Array from Float32Array*/ {
         temp = null;
         return true;
     }
-    // depth sort, ugly low level
     public inline
     function rangeToStart( starting: Int, totalLen: Int ){
         if( starting == 0 ) return false;
@@ -51,5 +49,21 @@ abstract Float32FlatDepth( Float32Flat )/* to Float32Array from Float32Array*/ {
         }
         temp = null;
         return true;
+    }
+    public inline
+    function rangeSwitch( start0: Int, start1: Int, totalLen: Int ){
+        if( start0 + totalLen > this.size && start1 + totalLen > this.size ){
+            var temp0: Float;
+            var temp1: Float;
+            for( i in 0...totalLen ){
+                temp0 = this[ start0 + i ];
+                temp1 = this[ start1 + i ];
+                this[ start0 + i ] = temp1;
+                this[ start1 + i ] = temp0;
+            }
+            return true;
+        } else {
+            return false;
+        }
     }
 }

@@ -39,4 +39,8 @@ abstract Flat3x9( Float32FlatDepth ) from Float32FlatDepth to Float32FlatDepth {
     function toStart( id: Int, len: Int ){
         return this.rangeToStart( id*27, Std.int( 27*len ) );
     }
+    public inline
+    function swap( id0: Int, id1: Int, len: Int ){
+        return this.rangeSwitch( id0*21, id1*21, Std.int( 21 * len ) );
+    }
 }
