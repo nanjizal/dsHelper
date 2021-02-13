@@ -2,6 +2,7 @@ package dsHelper.flat.i32;
 import dsHelper.flat.io.Int32Flat;
 import dsHelper.haxe.io.Int32Array;
 // Not yet tested this version, colours may need some tweaking.
+@:transitive
 @:forward
 abstract Int32FlatRGBA( Int32Flat4 ){
     public inline

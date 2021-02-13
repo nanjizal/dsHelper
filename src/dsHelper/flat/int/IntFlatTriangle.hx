@@ -1,6 +1,7 @@
 package dsHelper.flat.int;
 import dsHelper.flat.int.IntFlat9;
 // effectively 2D with z coordinates for depth etc... at the moment.
+@:transitive
 @:forward
 abstract IntFlatTriangle( IntFlat9 ){
     public inline function new( len: Int ){

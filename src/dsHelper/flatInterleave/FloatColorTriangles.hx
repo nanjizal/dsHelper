@@ -1,5 +1,6 @@
 package dsHelper.flatInterleave;
 import dsHelper.flatInterleave.core.Flat3x7;
+@:transitive
 @:forward
 abstract FloatColorTriangles( Flat3x7 ){
     public inline function new( len: Int ){

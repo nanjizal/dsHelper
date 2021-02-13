@@ -3,6 +3,7 @@ import dsHelper.flat.io.Float32Flat;
 import dsHelper.haxe.io.Float32Array;
 import dsHelper.flat.io.Float32FlatDepth;
 // texture id version
+@:transitive
 @:forward
 abstract Flat3x9t( Float32FlatDepth ) from Float32FlatDepth to Float32FlatDepth {
     @:op([]) public inline 

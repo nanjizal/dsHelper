@@ -1,6 +1,7 @@
 package dsHelper.flat.f32;
 import dsHelper.flat.io.Float32Flat;
 import dsHelper.haxe.io.Float32Array;
+@:transitive
 @:forward
 abstract Float32Flat4( Float32Flat ) {
     @:op([]) public inline 

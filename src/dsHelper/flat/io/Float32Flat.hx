@@ -3,6 +3,7 @@ import dsHelper.haxe.io.Float32Array;
 // arr[0] defines pos the position, pos is used to get items
 // arr[1] defines internal ( populated ) size
 // DON'T use this one directly!!
+@:transitive
 @:forward
 abstract Float32Flat( Float32Array )/* to Float32Array from Float32Array*/ {
     /**

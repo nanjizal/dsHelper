@@ -2,6 +2,7 @@ package dsHelper.flat.float;
 // arr[0] defines pos the position, pos is used to get items
 // arr[1] defines size used.
 // DON'T use this one directly!!
+@:transitive
 @:forward
 abstract FloatFlat( Array<Float> ){
     

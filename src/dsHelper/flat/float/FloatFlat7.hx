@@ -1,4 +1,5 @@
 package dsHelper.flat.float;
+@:transitive
 @:forward
 abstract FloatFlat7( FloatFlat ) {
     @:op([]) public inline 

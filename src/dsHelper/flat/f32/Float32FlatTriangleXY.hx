@@ -1,6 +1,7 @@
 package dsHelper.flat.f32;
 import dsHelper.flat.io.Float32Flat;
 import dsHelper.haxe.io.Float32Array;
+@:transitive
 @:forward
 abstract Float32FlatTriangleXY( Float32Flat6 ){
     public inline function new( len: Int ){

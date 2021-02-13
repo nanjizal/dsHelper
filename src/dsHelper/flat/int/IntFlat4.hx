@@ -1,4 +1,5 @@
 package dsHelper.flat.int; 
+@:transitive
 @:forward
 abstract IntFlat4( IntFlat ) {
     @:op([]) public inline 

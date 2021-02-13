@@ -1,6 +1,7 @@
 package dsHelper.flat.int;
 import dsHelper.flat.int.IntFlat4;
 // Not yet tested this version, colours may need some tweaking.
+@:transitive
 @:forward
 abstract IntFlatRGBA( IntFlat4 ){
     public inline

@@ -1,7 +1,7 @@
 package dsHelper.flatInterleave.core;
 import dsHelper.flat.io.Float32FlatDepth;
 import dsHelper.haxe.io.Float32Array;
-
+@:transitive
 @:forward
 abstract Flat3x9( Float32FlatDepth ) from Float32FlatDepth to Float32FlatDepth {
     @:op([]) public inline 

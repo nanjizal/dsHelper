@@ -1,6 +1,7 @@
 package dsHelper.flatInterleave;
 import dsHelper.flatInterleave.core.Flat3x9t;
 // uses texture id
+@:transitive
 @:forward
 abstract FloatColorTrianglesUVt( Flat3x9t ) from Flat3x9t to Flat3x9t {
     public inline function new( len: Int ){

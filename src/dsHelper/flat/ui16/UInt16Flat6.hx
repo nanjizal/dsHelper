@@ -1,6 +1,7 @@
 package dsHelper.flat.ui16;
 import dsHelper.flat.io.UInt16Flat;
 import dsHelper.haxe.io.UInt16Array;
+@:transitive
 @:forward
 abstract UInt16Flat6( UInt16Flat ) {
     @:op([]) public inline 

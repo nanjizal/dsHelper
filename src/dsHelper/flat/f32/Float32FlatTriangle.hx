@@ -2,6 +2,7 @@ package dsHelper.flat.f32;
 import dsHelper.flat.io.Float32Flat;
 import dsHelper.haxe.io.Float32Array;
 // effectively 2D with z coordinates for depth etc... at the moment.
+@:transitive
 @:forward
 abstract Float32FlatTriangle( Float32Flat9 ){
     public inline function new( len: Int ){

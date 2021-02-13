@@ -1,5 +1,6 @@
 package dsHelper.flat.float;
 import dsHelper.flat.float.FloatFlat4;
+@:transitive
 @:forward
 abstract FloatFlatRGBA( FloatFlat4 ){
     public inline

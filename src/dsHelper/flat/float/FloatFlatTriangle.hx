@@ -1,6 +1,7 @@
 package dsHelper.flat.float;
 import dsHelper.flat.float.FloatFlat9;
 // effectively 2D with z coordinates for depth etc... at the moment.
+@:transitive
 @:forward
 abstract FloatFlatTriangle( FloatFlat9 ){
     public inline function new( len: Int ){
