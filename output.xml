@@ -8275,6 +8275,218 @@
 	<c path="String"/>
 </f></prettyAll>
 	</class>
+	<abstract path="dsHelper.flat.io.ArrayFlat" params="" file="src/dsHelper/flat/io/ArrayFlat.hx">
+		<this><c path="Array"><x path="Float"/></c></this>
+		<meta>
+			<m n=":transitive"/>
+			<m n=":forward"/>
+		</meta>
+		<impl><class path="dsHelper.flat.io._ArrayFlat.ArrayFlat_Impl_" params="" file="src/dsHelper/flat/io/ArrayFlat.hx" private="1" module="dsHelper.flat.io.ArrayFlat" final="1">
+	<readItem public="1" get="inline" set="null" line="10" static="1">
+		<f a="this:k">
+			<c path="Array"><x path="Float"/></c>
+			<x path="Int"/>
+			<x path="Float"/>
+		</f>
+		<meta><m n=":op"><e>[]</e></m></meta>
+	</readItem>
+	<writeItem public="1" get="inline" set="null" line="15" static="1">
+		<f a="this:k:v">
+			<c path="Array"><x path="Float"/></c>
+			<x path="Int"/>
+			<x path="Float"/>
+			<x path="Float"/>
+		</f>
+		<meta><m n=":op"><e>[]</e></m></meta>
+	</writeItem>
+	<_new public="1" get="inline" set="null" line="19" static="1">
+		<f a=""><x path="dsHelper.flat.io.ArrayFlat"/></f>
+		<meta><m n=":noCompletion"/></meta>
+	</_new>
+	<size public="1" get="accessor" set="null" static="1"><x path="Int"/></size>
+	<get_size get="inline" set="null" line="26" static="1"><f a="this">
+	<c path="Array"><x path="Float"/></c>
+	<x path="Int"/>
+</f></get_size>
+	<index public="1" get="accessor" set="accessor" static="1"><x path="Int"/></index>
+	<get_index get="inline" set="null" line="31" static="1"><f a="this">
+	<c path="Array"><x path="Float"/></c>
+	<x path="Int"/>
+</f></get_index>
+	<set_index get="inline" set="null" line="35" static="1"><f a="this:id">
+	<c path="Array"><x path="Float"/></c>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_index>
+	<pos public="1" get="accessor" set="accessor" static="1"><x path="Float"/></pos>
+	<get_pos get="inline" set="null" line="41" static="1"><f a="this">
+	<c path="Array"><x path="Float"/></c>
+	<x path="Float"/>
+</f></get_pos>
+	<set_pos get="inline" set="null" line="45" static="1"><f a="this:pos_">
+	<c path="Array"><x path="Float"/></c>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_pos>
+	<hasNext public="1" get="inline" set="null" line="50" static="1"><f a="this">
+	<c path="Array"><x path="Float"/></c>
+	<x path="Bool"/>
+</f></hasNext>
+	<next public="1" get="inline" set="null" line="52" static="1"><f a="this">
+	<c path="Array"><x path="Float"/></c>
+	<x path="Float"/>
+</f></next>
+	<increment public="1" get="inline" set="null" line="57" static="1">
+		<f a="this">
+			<c path="Array"><x path="Float"/></c>
+			<x path="Float"/>
+		</f>
+		<meta><m n=":op"><e>A++</e></m></meta>
+	</increment>
+	<setArray public="1" get="inline" set="null" line="75" static="1"><f a="this:arr">
+	<c path="Array"><x path="Float"/></c>
+	<c path="Array"><x path="Float"/></c>
+	<x path="Void"/>
+</f></setArray>
+	<clone public="1" get="inline" set="null" line="79" static="1"><f a="this">
+	<c path="Array"><x path="Float"/></c>
+	<x path="dsHelper.flat.io.ArrayFlat"/>
+</f></clone>
+</class></impl>
+	</abstract>
+	<class path="dsHelper.flat.io._ArrayFlat.ArrayFlat_Impl_" params="" file="src/dsHelper/flat/io/ArrayFlat.hx" private="1" module="dsHelper.flat.io.ArrayFlat" final="1">
+		<readItem public="1" get="inline" set="null" line="10" static="1">
+			<f a="this:k">
+				<c path="Array"><x path="Float"/></c>
+				<x path="Int"/>
+				<x path="Float"/>
+			</f>
+			<meta><m n=":op"><e>[]</e></m></meta>
+		</readItem>
+		<writeItem public="1" get="inline" set="null" line="15" static="1">
+			<f a="this:k:v">
+				<c path="Array"><x path="Float"/></c>
+				<x path="Int"/>
+				<x path="Float"/>
+				<x path="Float"/>
+			</f>
+			<meta><m n=":op"><e>[]</e></m></meta>
+		</writeItem>
+		<_new public="1" get="inline" set="null" line="19" static="1">
+			<f a=""><x path="dsHelper.flat.io.ArrayFlat"/></f>
+			<meta><m n=":noCompletion"/></meta>
+		</_new>
+		<size public="1" get="accessor" set="null" static="1"><x path="Int"/></size>
+		<get_size get="inline" set="null" line="26" static="1"><f a="this">
+	<c path="Array"><x path="Float"/></c>
+	<x path="Int"/>
+</f></get_size>
+		<index public="1" get="accessor" set="accessor" static="1"><x path="Int"/></index>
+		<get_index get="inline" set="null" line="31" static="1"><f a="this">
+	<c path="Array"><x path="Float"/></c>
+	<x path="Int"/>
+</f></get_index>
+		<set_index get="inline" set="null" line="35" static="1"><f a="this:id">
+	<c path="Array"><x path="Float"/></c>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_index>
+		<pos public="1" get="accessor" set="accessor" static="1"><x path="Float"/></pos>
+		<get_pos get="inline" set="null" line="41" static="1"><f a="this">
+	<c path="Array"><x path="Float"/></c>
+	<x path="Float"/>
+</f></get_pos>
+		<set_pos get="inline" set="null" line="45" static="1"><f a="this:pos_">
+	<c path="Array"><x path="Float"/></c>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_pos>
+		<hasNext public="1" get="inline" set="null" line="50" static="1"><f a="this">
+	<c path="Array"><x path="Float"/></c>
+	<x path="Bool"/>
+</f></hasNext>
+		<next public="1" get="inline" set="null" line="52" static="1"><f a="this">
+	<c path="Array"><x path="Float"/></c>
+	<x path="Float"/>
+</f></next>
+		<increment public="1" get="inline" set="null" line="57" static="1">
+			<f a="this">
+				<c path="Array"><x path="Float"/></c>
+				<x path="Float"/>
+			</f>
+			<meta><m n=":op"><e>A++</e></m></meta>
+		</increment>
+		<setArray public="1" get="inline" set="null" line="75" static="1"><f a="this:arr">
+	<c path="Array"><x path="Float"/></c>
+	<c path="Array"><x path="Float"/></c>
+	<x path="Void"/>
+</f></setArray>
+		<clone public="1" get="inline" set="null" line="79" static="1"><f a="this">
+	<c path="Array"><x path="Float"/></c>
+	<x path="dsHelper.flat.io.ArrayFlat"/>
+</f></clone>
+	</class>
+	<abstract path="dsHelper.flat.io.ArrayFlatDepth" params="" file="src/dsHelper/flat/io/ArrayFlatDepth.hx">
+		<this><x path="dsHelper.flat.io.ArrayFlat"/></this>
+		<meta>
+			<m n=":transitive"/>
+			<m n=":forward"/>
+		</meta>
+		<impl><class path="dsHelper.flat.io._ArrayFlatDepth.ArrayFlatDepth_Impl_" params="" file="src/dsHelper/flat/io/ArrayFlatDepth.hx" private="1" module="dsHelper.flat.io.ArrayFlatDepth" final="1">
+	<_new public="1" get="inline" set="null" line="7" static="1">
+		<f a=""><x path="dsHelper.flat.io.ArrayFlatDepth"/></f>
+		<meta><m n=":noCompletion"/></meta>
+	</_new>
+	<rangeToEnd public="1" set="method" line="12" static="1"><f a="this:starting:totalLen:section">
+	<x path="dsHelper.flat.io.ArrayFlat"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Bool"/>
+</f></rangeToEnd>
+	<rangeToStart public="1" get="inline" set="null" line="36" static="1"><f a="this:starting:totalLen">
+	<x path="dsHelper.flat.io.ArrayFlat"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Bool"/>
+</f></rangeToStart>
+	<rangeSwitch public="1" get="inline" set="null" line="61" static="1"><f a="this:start0:start1:totalLen">
+	<x path="dsHelper.flat.io.ArrayFlat"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Bool"/>
+</f></rangeSwitch>
+	<meta><m n=":directlyUsed"/></meta>
+</class></impl>
+	</abstract>
+	<class path="dsHelper.flat.io._ArrayFlatDepth.ArrayFlatDepth_Impl_" params="" file="src/dsHelper/flat/io/ArrayFlatDepth.hx" private="1" module="dsHelper.flat.io.ArrayFlatDepth" final="1">
+		<_new public="1" get="inline" set="null" line="7" static="1">
+			<f a=""><x path="dsHelper.flat.io.ArrayFlatDepth"/></f>
+			<meta><m n=":noCompletion"/></meta>
+		</_new>
+		<rangeToEnd public="1" set="method" line="12" static="1"><f a="this:starting:totalLen:section">
+	<x path="dsHelper.flat.io.ArrayFlat"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Bool"/>
+</f></rangeToEnd>
+		<rangeToStart public="1" get="inline" set="null" line="36" static="1"><f a="this:starting:totalLen">
+	<x path="dsHelper.flat.io.ArrayFlat"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Bool"/>
+</f></rangeToStart>
+		<rangeSwitch public="1" get="inline" set="null" line="61" static="1"><f a="this:start0:start1:totalLen">
+	<x path="dsHelper.flat.io.ArrayFlat"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Bool"/>
+</f></rangeSwitch>
+		<meta><m n=":directlyUsed"/></meta>
+	</class>
 	<abstract path="dsHelper.flat.io.Float32Flat" params="" file="src/dsHelper/flat/io/Float32Flat.hx">
 		<from><icast field="fromArray"><t path="dsHelper.haxe.io.Float32Array"/></icast></from>
 		<this><t path="dsHelper.haxe.io.Float32Array"/></this>
@@ -9886,6 +10098,3259 @@
 	<x path="dsHelper.flat.io.UInt16Flat"/>
 	<t path="dsHelper.haxe.io.UInt16Array"/>
 </f></getArray>
+	</class>
+	<abstract path="dsHelper.flatInterleave.ArrayColorTriangles" params="" file="src/dsHelper/flatInterleave/ArrayColorTriangles.hx">
+		<from><icast><x path="dsHelper.flatInterleave.core.Array3x7"/></icast></from>
+		<this><x path="dsHelper.flatInterleave.core.Array3x7"/></this>
+		<to><icast><x path="dsHelper.flatInterleave.core.Array3x7"/></icast></to>
+		<meta>
+			<m n=":transitive"/>
+			<m n=":forward"/>
+		</meta>
+		<impl><class path="dsHelper.flatInterleave._ArrayColorTriangles.ArrayColorTriangles_Impl_" params="" file="src/dsHelper/flatInterleave/ArrayColorTriangles.hx" private="1" module="dsHelper.flatInterleave.ArrayColorTriangles" final="1">
+	<_new public="1" get="inline" set="null" line="6" static="1">
+		<f a=""><x path="dsHelper.flatInterleave.ArrayColorTriangles"/></f>
+		<meta><m n=":noCompletion"/></meta>
+	</_new>
+	<create public="1" get="inline" set="null" line="10" static="1"><f a=""><x path="dsHelper.flatInterleave.ArrayColorTriangles"/></f></create>
+	<ax public="1" get="accessor" set="accessor" static="1"><x path="Float"/></ax>
+	<get_ax set="method" line="14" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_ax>
+	<set_ax set="method" line="17" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_ax>
+	<ay public="1" get="accessor" set="accessor" static="1"><x path="Float"/></ay>
+	<get_ay set="method" line="23" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_ay>
+	<set_ay set="method" line="26" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_ay>
+	<az public="1" get="accessor" set="accessor" static="1"><x path="Float"/></az>
+	<get_az set="method" line="32" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_az>
+	<set_az set="method" line="35" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_az>
+	<redA public="1" get="accessor" set="accessor" static="1"><x path="Float"/></redA>
+	<get_redA set="method" line="42" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_redA>
+	<set_redA set="method" line="45" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_redA>
+	<greenA public="1" get="accessor" set="accessor" static="1"><x path="Float"/></greenA>
+	<get_greenA get="inline" set="null" line="53" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_greenA>
+	<set_greenA get="inline" set="null" line="57" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_greenA>
+	<blueA public="1" get="accessor" set="accessor" static="1"><x path="Float"/></blueA>
+	<get_blueA get="inline" set="null" line="64" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_blueA>
+	<set_blueA get="inline" set="null" line="68" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_blueA>
+	<alphaA public="1" get="accessor" set="accessor" static="1"><x path="Float"/></alphaA>
+	<get_alphaA get="inline" set="null" line="75" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_alphaA>
+	<set_alphaA get="inline" set="null" line="79" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_alphaA>
+	<bx public="1" get="accessor" set="accessor" static="1"><x path="Float"/></bx>
+	<get_bx set="method" line="86" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_bx>
+	<set_bx set="method" line="89" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_bx>
+	<by public="1" get="accessor" set="accessor" static="1"><x path="Float"/></by>
+	<get_by set="method" line="95" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_by>
+	<set_by set="method" line="98" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_by>
+	<bz public="1" get="accessor" set="accessor" static="1"><x path="Float"/></bz>
+	<get_bz set="method" line="104" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_bz>
+	<set_bz set="method" line="107" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_bz>
+	<redB public="1" get="accessor" set="accessor" static="1"><x path="Float"/></redB>
+	<get_redB set="method" line="114" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_redB>
+	<set_redB set="method" line="117" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_redB>
+	<greenB public="1" get="accessor" set="accessor" static="1"><x path="Float"/></greenB>
+	<get_greenB get="inline" set="null" line="125" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_greenB>
+	<set_greenB get="inline" set="null" line="129" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_greenB>
+	<blueB public="1" get="accessor" set="accessor" static="1"><x path="Float"/></blueB>
+	<get_blueB get="inline" set="null" line="136" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_blueB>
+	<set_blueB get="inline" set="null" line="140" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_blueB>
+	<alphaB public="1" get="accessor" set="accessor" static="1"><x path="Float"/></alphaB>
+	<get_alphaB get="inline" set="null" line="147" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_alphaB>
+	<set_alphaB get="inline" set="null" line="151" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_alphaB>
+	<cx public="1" get="accessor" set="accessor" static="1"><x path="Float"/></cx>
+	<get_cx set="method" line="158" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_cx>
+	<set_cx set="method" line="161" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_cx>
+	<cy public="1" get="accessor" set="accessor" static="1"><x path="Float"/></cy>
+	<get_cy set="method" line="167" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_cy>
+	<set_cy set="method" line="170" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_cy>
+	<cz public="1" get="accessor" set="accessor" static="1"><x path="Float"/></cz>
+	<get_cz set="method" line="176" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_cz>
+	<set_cz set="method" line="179" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_cz>
+	<redC public="1" get="accessor" set="accessor" static="1"><x path="Float"/></redC>
+	<get_redC set="method" line="186" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_redC>
+	<set_redC set="method" line="189" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_redC>
+	<greenC public="1" get="accessor" set="accessor" static="1"><x path="Float"/></greenC>
+	<get_greenC get="inline" set="null" line="197" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_greenC>
+	<set_greenC get="inline" set="null" line="201" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_greenC>
+	<blueC public="1" get="accessor" set="accessor" static="1"><x path="Float"/></blueC>
+	<get_blueC get="inline" set="null" line="208" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_blueC>
+	<set_blueC get="inline" set="null" line="212" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_blueC>
+	<alphaC public="1" get="accessor" set="accessor" static="1"><x path="Float"/></alphaC>
+	<get_alphaC get="inline" set="null" line="219" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_alphaC>
+	<set_alphaC get="inline" set="null" line="223" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_alphaC>
+	<triangle public="1" set="method" line="231" static="1">
+		<f a="this:ax_:ay_:az_:bx_:by_:bz_:cx_:cy_:cz_">
+			<x path="dsHelper.flatInterleave.core.Array3x7"/>
+			<x path="Float"/>
+			<x path="Float"/>
+			<x path="Float"/>
+			<x path="Float"/>
+			<x path="Float"/>
+			<x path="Float"/>
+			<x path="Float"/>
+			<x path="Float"/>
+			<x path="Float"/>
+			<x path="Bool"/>
+		</f>
+		<meta><m n=":keep"/></meta>
+	</triangle>
+	<adjustWinding public="1" set="method" line="253" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Bool"/>
+</f></adjustWinding>
+	<x public="1" get="accessor" set="accessor" static="1"><x path="Float"/></x>
+	<get_x get="inline" set="null" line="258" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_x>
+	<set_x get="inline" set="null" line="262" static="1"><f a="this:x">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_x>
+	<y public="1" get="accessor" set="accessor" static="1"><x path="Float"/></y>
+	<get_y get="inline" set="null" line="271" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_y>
+	<set_y get="inline" set="null" line="275" static="1"><f a="this:y">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_y>
+	<z public="1" get="accessor" set="accessor" static="1"><x path="Float"/></z>
+	<get_z get="inline" set="null" line="284" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_z>
+	<set_z get="inline" set="null" line="288" static="1"><f a="this:z">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_z>
+	<right public="1" get="accessor" set="null" static="1"><x path="Float"/></right>
+	<get_right get="inline" set="null" line="297" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_right>
+	<bottom public="1" get="accessor" set="null" static="1"><x path="Float"/></bottom>
+	<get_bottom get="inline" set="null" line="302" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_bottom>
+	<back public="1" get="accessor" set="null" static="1"><x path="Float"/></back>
+	<get_back get="inline" set="null" line="307" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_back>
+	<moveDelta set="method" line="310" static="1"><f a="this:dx:dy">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Void"/>
+</f></moveDelta>
+	<sign public="1" get="inline" set="null" line="319" static="1"><f a="n">
+	<x path="Float"/>
+	<x path="Int"/>
+</f></sign>
+	<distHit public="1" set="method" line="323" static="1"><f a="this:px:py">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></distHit>
+	<liteHit public="1" get="inline" set="null" line="332" static="1"><f a="this:px:py">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Bool"/>
+</f></liteHit>
+	<fullHit public="1" set="method" line="340" static="1"><f a="this:px:py">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Bool"/>
+</f></fullHit>
+	<rotate public="1" get="inline" set="null" line="345" static="1"><f a="this:x:y:theta">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Void"/>
+</f></rotate>
+	<rotateTrig public="1" get="inline" set="null" line="351" static="1"><f a="this:x:y:cos:sin">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Void"/>
+</f></rotateTrig>
+	<colorTriangles public="1" get="inline" set="null" line="380" static="1"><f a="this:color:times">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Void"/>
+</f></colorTriangles>
+	<cornerColors public="1" get="inline" set="null" line="387" static="1"><f a="this:colorA:colorB:colorC">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Void"/>
+</f></cornerColors>
+	<rgb public="1" get="null" set="accessor" static="1"><x path="Int"/></rgb>
+	<set_rgb get="inline" set="null" line="394" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_rgb>
+	<rgbA public="1" get="accessor" set="accessor" static="1"><x path="Int"/></rgbA>
+	<set_rgbA get="inline" set="null" line="402" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_rgbA>
+	<get_rgbA get="inline" set="null" line="410" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Int"/>
+</f></get_rgbA>
+	<rgbB public="1" get="accessor" set="accessor" static="1"><x path="Int"/></rgbB>
+	<set_rgbB get="inline" set="null" line="417" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_rgbB>
+	<get_rgbB get="inline" set="null" line="425" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Int"/>
+</f></get_rgbB>
+	<rgbC public="1" get="accessor" set="accessor" static="1"><x path="Int"/></rgbC>
+	<set_rgbC get="inline" set="null" line="432" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_rgbC>
+	<get_rgbC get="inline" set="null" line="440" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Int"/>
+</f></get_rgbC>
+	<argb public="1" get="null" set="accessor" static="1"><x path="Int"/></argb>
+	<set_argb get="inline" set="null" line="447" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_argb>
+	<argbA public="1" get="accessor" set="accessor" static="1"><x path="Int"/></argbA>
+	<set_argbA get="inline" set="null" line="455" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_argbA>
+	<get_argbA get="inline" set="null" line="463" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Int"/>
+</f></get_argbA>
+	<argbB public="1" get="accessor" set="accessor" static="1"><x path="Int"/></argbB>
+	<set_argbB get="inline" set="null" line="471" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_argbB>
+	<get_argbB get="inline" set="null" line="479" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Int"/>
+</f></get_argbB>
+	<argbC public="1" get="accessor" set="accessor" static="1"><x path="Int"/></argbC>
+	<set_argbC get="inline" set="null" line="487" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_argbC>
+	<get_argbC get="inline" set="null" line="495" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Int"/>
+</f></get_argbC>
+	<prettyStringVert public="1" get="inline" set="null" line="502" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<c path="String"/>
+</f></prettyStringVert>
+	<prettyAllVert public="1" get="inline" set="null" line="508" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<c path="String"/>
+</f></prettyAllVert>
+	<hex public="1" get="inline" set="null" line="519" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Int"/>
+	<c path="String"/>
+</f></hex>
+	<hexA public="1" get="inline" set="null" line="523" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<c path="String"/>
+</f></hexA>
+	<hexB public="1" get="inline" set="null" line="527" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<c path="String"/>
+</f></hexB>
+	<hexC public="1" get="inline" set="null" line="531" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<c path="String"/>
+</f></hexC>
+	<hexAll public="1" get="inline" set="null" line="535" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<c path="String"/>
+</f></hexAll>
+	<alphaChannel public="1" get="inline" set="null" line="547" static="1"><f a="int">
+	<x path="Int"/>
+	<x path="Float"/>
+</f></alphaChannel>
+	<redChannel public="1" get="inline" set="null" line="550" static="1"><f a="int">
+	<x path="Int"/>
+	<x path="Float"/>
+</f></redChannel>
+	<greenChannel public="1" get="inline" set="null" line="553" static="1"><f a="int">
+	<x path="Int"/>
+	<x path="Float"/>
+</f></greenChannel>
+	<blueChannel public="1" get="inline" set="null" line="556" static="1"><f a="int">
+	<x path="Int"/>
+	<x path="Float"/>
+</f></blueChannel>
+</class></impl>
+	</abstract>
+	<class path="dsHelper.flatInterleave._ArrayColorTriangles.ArrayColorTriangles_Impl_" params="" file="src/dsHelper/flatInterleave/ArrayColorTriangles.hx" private="1" module="dsHelper.flatInterleave.ArrayColorTriangles" final="1">
+		<_new public="1" get="inline" set="null" line="6" static="1">
+			<f a=""><x path="dsHelper.flatInterleave.ArrayColorTriangles"/></f>
+			<meta><m n=":noCompletion"/></meta>
+		</_new>
+		<create public="1" get="inline" set="null" line="10" static="1"><f a=""><x path="dsHelper.flatInterleave.ArrayColorTriangles"/></f></create>
+		<ax public="1" get="accessor" set="accessor" static="1"><x path="Float"/></ax>
+		<get_ax set="method" line="14" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_ax>
+		<set_ax set="method" line="17" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_ax>
+		<ay public="1" get="accessor" set="accessor" static="1"><x path="Float"/></ay>
+		<get_ay set="method" line="23" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_ay>
+		<set_ay set="method" line="26" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_ay>
+		<az public="1" get="accessor" set="accessor" static="1"><x path="Float"/></az>
+		<get_az set="method" line="32" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_az>
+		<set_az set="method" line="35" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_az>
+		<redA public="1" get="accessor" set="accessor" static="1"><x path="Float"/></redA>
+		<get_redA set="method" line="42" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_redA>
+		<set_redA set="method" line="45" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_redA>
+		<greenA public="1" get="accessor" set="accessor" static="1"><x path="Float"/></greenA>
+		<get_greenA get="inline" set="null" line="53" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_greenA>
+		<set_greenA get="inline" set="null" line="57" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_greenA>
+		<blueA public="1" get="accessor" set="accessor" static="1"><x path="Float"/></blueA>
+		<get_blueA get="inline" set="null" line="64" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_blueA>
+		<set_blueA get="inline" set="null" line="68" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_blueA>
+		<alphaA public="1" get="accessor" set="accessor" static="1"><x path="Float"/></alphaA>
+		<get_alphaA get="inline" set="null" line="75" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_alphaA>
+		<set_alphaA get="inline" set="null" line="79" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_alphaA>
+		<bx public="1" get="accessor" set="accessor" static="1"><x path="Float"/></bx>
+		<get_bx set="method" line="86" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_bx>
+		<set_bx set="method" line="89" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_bx>
+		<by public="1" get="accessor" set="accessor" static="1"><x path="Float"/></by>
+		<get_by set="method" line="95" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_by>
+		<set_by set="method" line="98" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_by>
+		<bz public="1" get="accessor" set="accessor" static="1"><x path="Float"/></bz>
+		<get_bz set="method" line="104" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_bz>
+		<set_bz set="method" line="107" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_bz>
+		<redB public="1" get="accessor" set="accessor" static="1"><x path="Float"/></redB>
+		<get_redB set="method" line="114" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_redB>
+		<set_redB set="method" line="117" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_redB>
+		<greenB public="1" get="accessor" set="accessor" static="1"><x path="Float"/></greenB>
+		<get_greenB get="inline" set="null" line="125" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_greenB>
+		<set_greenB get="inline" set="null" line="129" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_greenB>
+		<blueB public="1" get="accessor" set="accessor" static="1"><x path="Float"/></blueB>
+		<get_blueB get="inline" set="null" line="136" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_blueB>
+		<set_blueB get="inline" set="null" line="140" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_blueB>
+		<alphaB public="1" get="accessor" set="accessor" static="1"><x path="Float"/></alphaB>
+		<get_alphaB get="inline" set="null" line="147" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_alphaB>
+		<set_alphaB get="inline" set="null" line="151" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_alphaB>
+		<cx public="1" get="accessor" set="accessor" static="1"><x path="Float"/></cx>
+		<get_cx set="method" line="158" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_cx>
+		<set_cx set="method" line="161" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_cx>
+		<cy public="1" get="accessor" set="accessor" static="1"><x path="Float"/></cy>
+		<get_cy set="method" line="167" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_cy>
+		<set_cy set="method" line="170" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_cy>
+		<cz public="1" get="accessor" set="accessor" static="1"><x path="Float"/></cz>
+		<get_cz set="method" line="176" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_cz>
+		<set_cz set="method" line="179" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_cz>
+		<redC public="1" get="accessor" set="accessor" static="1"><x path="Float"/></redC>
+		<get_redC set="method" line="186" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_redC>
+		<set_redC set="method" line="189" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_redC>
+		<greenC public="1" get="accessor" set="accessor" static="1"><x path="Float"/></greenC>
+		<get_greenC get="inline" set="null" line="197" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_greenC>
+		<set_greenC get="inline" set="null" line="201" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_greenC>
+		<blueC public="1" get="accessor" set="accessor" static="1"><x path="Float"/></blueC>
+		<get_blueC get="inline" set="null" line="208" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_blueC>
+		<set_blueC get="inline" set="null" line="212" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_blueC>
+		<alphaC public="1" get="accessor" set="accessor" static="1"><x path="Float"/></alphaC>
+		<get_alphaC get="inline" set="null" line="219" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_alphaC>
+		<set_alphaC get="inline" set="null" line="223" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_alphaC>
+		<triangle public="1" set="method" line="231" static="1">
+			<f a="this:ax_:ay_:az_:bx_:by_:bz_:cx_:cy_:cz_">
+				<x path="dsHelper.flatInterleave.core.Array3x7"/>
+				<x path="Float"/>
+				<x path="Float"/>
+				<x path="Float"/>
+				<x path="Float"/>
+				<x path="Float"/>
+				<x path="Float"/>
+				<x path="Float"/>
+				<x path="Float"/>
+				<x path="Float"/>
+				<x path="Bool"/>
+			</f>
+			<meta><m n=":keep"/></meta>
+		</triangle>
+		<adjustWinding public="1" set="method" line="253" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Bool"/>
+</f></adjustWinding>
+		<x public="1" get="accessor" set="accessor" static="1"><x path="Float"/></x>
+		<get_x get="inline" set="null" line="258" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_x>
+		<set_x get="inline" set="null" line="262" static="1"><f a="this:x">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_x>
+		<y public="1" get="accessor" set="accessor" static="1"><x path="Float"/></y>
+		<get_y get="inline" set="null" line="271" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_y>
+		<set_y get="inline" set="null" line="275" static="1"><f a="this:y">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_y>
+		<z public="1" get="accessor" set="accessor" static="1"><x path="Float"/></z>
+		<get_z get="inline" set="null" line="284" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_z>
+		<set_z get="inline" set="null" line="288" static="1"><f a="this:z">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_z>
+		<right public="1" get="accessor" set="null" static="1"><x path="Float"/></right>
+		<get_right get="inline" set="null" line="297" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_right>
+		<bottom public="1" get="accessor" set="null" static="1"><x path="Float"/></bottom>
+		<get_bottom get="inline" set="null" line="302" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_bottom>
+		<back public="1" get="accessor" set="null" static="1"><x path="Float"/></back>
+		<get_back get="inline" set="null" line="307" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+</f></get_back>
+		<moveDelta set="method" line="310" static="1"><f a="this:dx:dy">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Void"/>
+</f></moveDelta>
+		<sign public="1" get="inline" set="null" line="319" static="1"><f a="n">
+	<x path="Float"/>
+	<x path="Int"/>
+</f></sign>
+		<distHit public="1" set="method" line="323" static="1"><f a="this:px:py">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></distHit>
+		<liteHit public="1" get="inline" set="null" line="332" static="1"><f a="this:px:py">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Bool"/>
+</f></liteHit>
+		<fullHit public="1" set="method" line="340" static="1"><f a="this:px:py">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Bool"/>
+</f></fullHit>
+		<rotate public="1" get="inline" set="null" line="345" static="1"><f a="this:x:y:theta">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Void"/>
+</f></rotate>
+		<rotateTrig public="1" get="inline" set="null" line="351" static="1"><f a="this:x:y:cos:sin">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Void"/>
+</f></rotateTrig>
+		<colorTriangles public="1" get="inline" set="null" line="380" static="1"><f a="this:color:times">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Void"/>
+</f></colorTriangles>
+		<cornerColors public="1" get="inline" set="null" line="387" static="1"><f a="this:colorA:colorB:colorC">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Void"/>
+</f></cornerColors>
+		<rgb public="1" get="null" set="accessor" static="1"><x path="Int"/></rgb>
+		<set_rgb get="inline" set="null" line="394" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_rgb>
+		<rgbA public="1" get="accessor" set="accessor" static="1"><x path="Int"/></rgbA>
+		<set_rgbA get="inline" set="null" line="402" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_rgbA>
+		<get_rgbA get="inline" set="null" line="410" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Int"/>
+</f></get_rgbA>
+		<rgbB public="1" get="accessor" set="accessor" static="1"><x path="Int"/></rgbB>
+		<set_rgbB get="inline" set="null" line="417" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_rgbB>
+		<get_rgbB get="inline" set="null" line="425" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Int"/>
+</f></get_rgbB>
+		<rgbC public="1" get="accessor" set="accessor" static="1"><x path="Int"/></rgbC>
+		<set_rgbC get="inline" set="null" line="432" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_rgbC>
+		<get_rgbC get="inline" set="null" line="440" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Int"/>
+</f></get_rgbC>
+		<argb public="1" get="null" set="accessor" static="1"><x path="Int"/></argb>
+		<set_argb get="inline" set="null" line="447" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_argb>
+		<argbA public="1" get="accessor" set="accessor" static="1"><x path="Int"/></argbA>
+		<set_argbA get="inline" set="null" line="455" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_argbA>
+		<get_argbA get="inline" set="null" line="463" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Int"/>
+</f></get_argbA>
+		<argbB public="1" get="accessor" set="accessor" static="1"><x path="Int"/></argbB>
+		<set_argbB get="inline" set="null" line="471" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_argbB>
+		<get_argbB get="inline" set="null" line="479" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Int"/>
+</f></get_argbB>
+		<argbC public="1" get="accessor" set="accessor" static="1"><x path="Int"/></argbC>
+		<set_argbC get="inline" set="null" line="487" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_argbC>
+		<get_argbC get="inline" set="null" line="495" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Int"/>
+</f></get_argbC>
+		<prettyStringVert public="1" get="inline" set="null" line="502" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<c path="String"/>
+</f></prettyStringVert>
+		<prettyAllVert public="1" get="inline" set="null" line="508" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<c path="String"/>
+</f></prettyAllVert>
+		<hex public="1" get="inline" set="null" line="519" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<x path="Int"/>
+	<c path="String"/>
+</f></hex>
+		<hexA public="1" get="inline" set="null" line="523" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<c path="String"/>
+</f></hexA>
+		<hexB public="1" get="inline" set="null" line="527" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<c path="String"/>
+</f></hexB>
+		<hexC public="1" get="inline" set="null" line="531" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<c path="String"/>
+</f></hexC>
+		<hexAll public="1" get="inline" set="null" line="535" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x7"/>
+	<c path="String"/>
+</f></hexAll>
+		<alphaChannel public="1" get="inline" set="null" line="547" static="1"><f a="int">
+	<x path="Int"/>
+	<x path="Float"/>
+</f></alphaChannel>
+		<redChannel public="1" get="inline" set="null" line="550" static="1"><f a="int">
+	<x path="Int"/>
+	<x path="Float"/>
+</f></redChannel>
+		<greenChannel public="1" get="inline" set="null" line="553" static="1"><f a="int">
+	<x path="Int"/>
+	<x path="Float"/>
+</f></greenChannel>
+		<blueChannel public="1" get="inline" set="null" line="556" static="1"><f a="int">
+	<x path="Int"/>
+	<x path="Float"/>
+</f></blueChannel>
+	</class>
+	<abstract path="dsHelper.flatInterleave.ArrayColorTrianglesUV" params="" file="src/dsHelper/flatInterleave/ArrayColorTrianglesUV.hx">
+		<from><icast><x path="dsHelper.flatInterleave.core.Array3x9"/></icast></from>
+		<this><x path="dsHelper.flatInterleave.core.Array3x9"/></this>
+		<to><icast><x path="dsHelper.flatInterleave.core.Array3x9"/></icast></to>
+		<meta>
+			<m n=":transitive"/>
+			<m n=":forward"/>
+		</meta>
+		<impl><class path="dsHelper.flatInterleave._ArrayColorTrianglesUV.ArrayColorTrianglesUV_Impl_" params="" file="src/dsHelper/flatInterleave/ArrayColorTrianglesUV.hx" private="1" module="dsHelper.flatInterleave.ArrayColorTrianglesUV" final="1">
+	<_new public="1" get="inline" set="null" line="6" static="1">
+		<f a=""><x path="dsHelper.flatInterleave.ArrayColorTrianglesUV"/></f>
+		<meta><m n=":noCompletion"/></meta>
+	</_new>
+	<create public="1" get="inline" set="null" line="10" static="1"><f a=""><x path="dsHelper.flatInterleave.ArrayColorTrianglesUV"/></f></create>
+	<ax public="1" get="accessor" set="accessor" static="1"><x path="Float"/></ax>
+	<get_ax set="method" line="14" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_ax>
+	<set_ax set="method" line="17" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_ax>
+	<ay public="1" get="accessor" set="accessor" static="1"><x path="Float"/></ay>
+	<get_ay set="method" line="23" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_ay>
+	<set_ay set="method" line="26" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_ay>
+	<az public="1" get="accessor" set="accessor" static="1"><x path="Float"/></az>
+	<get_az set="method" line="32" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_az>
+	<set_az set="method" line="35" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_az>
+	<redA public="1" get="accessor" set="accessor" static="1"><x path="Float"/></redA>
+	<get_redA set="method" line="42" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_redA>
+	<set_redA set="method" line="45" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_redA>
+	<greenA public="1" get="accessor" set="accessor" static="1"><x path="Float"/></greenA>
+	<get_greenA get="inline" set="null" line="53" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_greenA>
+	<set_greenA get="inline" set="null" line="57" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_greenA>
+	<blueA public="1" get="accessor" set="accessor" static="1"><x path="Float"/></blueA>
+	<get_blueA get="inline" set="null" line="64" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_blueA>
+	<set_blueA get="inline" set="null" line="68" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_blueA>
+	<alphaA public="1" get="accessor" set="accessor" static="1"><x path="Float"/></alphaA>
+	<get_alphaA get="inline" set="null" line="75" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_alphaA>
+	<set_alphaA get="inline" set="null" line="79" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_alphaA>
+	<uA public="1" get="accessor" set="accessor" static="1"><x path="Float"/></uA>
+	<get_uA get="inline" set="null" line="86" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_uA>
+	<set_uA get="inline" set="null" line="90" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_uA>
+	<vA public="1" get="accessor" set="accessor" static="1"><x path="Float"/></vA>
+	<get_vA get="inline" set="null" line="97" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_vA>
+	<set_vA get="inline" set="null" line="101" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_vA>
+	<bx public="1" get="accessor" set="accessor" static="1"><x path="Float"/></bx>
+	<get_bx set="method" line="108" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_bx>
+	<set_bx set="method" line="111" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_bx>
+	<by public="1" get="accessor" set="accessor" static="1"><x path="Float"/></by>
+	<get_by set="method" line="117" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_by>
+	<set_by set="method" line="120" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_by>
+	<bz public="1" get="accessor" set="accessor" static="1"><x path="Float"/></bz>
+	<get_bz set="method" line="126" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_bz>
+	<set_bz set="method" line="129" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_bz>
+	<redB public="1" get="accessor" set="accessor" static="1"><x path="Float"/></redB>
+	<get_redB set="method" line="136" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_redB>
+	<set_redB set="method" line="139" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_redB>
+	<greenB public="1" get="accessor" set="accessor" static="1"><x path="Float"/></greenB>
+	<get_greenB get="inline" set="null" line="147" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_greenB>
+	<set_greenB get="inline" set="null" line="151" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_greenB>
+	<blueB public="1" get="accessor" set="accessor" static="1"><x path="Float"/></blueB>
+	<get_blueB get="inline" set="null" line="158" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_blueB>
+	<set_blueB get="inline" set="null" line="162" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_blueB>
+	<alphaB public="1" get="accessor" set="accessor" static="1"><x path="Float"/></alphaB>
+	<get_alphaB get="inline" set="null" line="169" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_alphaB>
+	<set_alphaB get="inline" set="null" line="173" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_alphaB>
+	<uB public="1" get="accessor" set="accessor" static="1"><x path="Float"/></uB>
+	<get_uB get="inline" set="null" line="180" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_uB>
+	<set_uB get="inline" set="null" line="184" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_uB>
+	<vB public="1" get="accessor" set="accessor" static="1"><x path="Float"/></vB>
+	<get_vB get="inline" set="null" line="191" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_vB>
+	<set_vB get="inline" set="null" line="195" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_vB>
+	<cx public="1" get="accessor" set="accessor" static="1"><x path="Float"/></cx>
+	<get_cx set="method" line="202" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_cx>
+	<set_cx set="method" line="205" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_cx>
+	<cy public="1" get="accessor" set="accessor" static="1"><x path="Float"/></cy>
+	<get_cy set="method" line="211" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_cy>
+	<set_cy set="method" line="214" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_cy>
+	<cz public="1" get="accessor" set="accessor" static="1"><x path="Float"/></cz>
+	<get_cz set="method" line="220" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_cz>
+	<set_cz set="method" line="223" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_cz>
+	<redC public="1" get="accessor" set="accessor" static="1"><x path="Float"/></redC>
+	<get_redC set="method" line="230" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_redC>
+	<set_redC set="method" line="233" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_redC>
+	<greenC public="1" get="accessor" set="accessor" static="1"><x path="Float"/></greenC>
+	<get_greenC get="inline" set="null" line="241" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_greenC>
+	<set_greenC get="inline" set="null" line="245" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_greenC>
+	<blueC public="1" get="accessor" set="accessor" static="1"><x path="Float"/></blueC>
+	<get_blueC get="inline" set="null" line="252" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_blueC>
+	<set_blueC get="inline" set="null" line="256" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_blueC>
+	<alphaC public="1" get="accessor" set="accessor" static="1"><x path="Float"/></alphaC>
+	<get_alphaC get="inline" set="null" line="263" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_alphaC>
+	<set_alphaC get="inline" set="null" line="267" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_alphaC>
+	<uC public="1" get="accessor" set="accessor" static="1"><x path="Float"/></uC>
+	<get_uC get="inline" set="null" line="274" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_uC>
+	<set_uC get="inline" set="null" line="278" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_uC>
+	<vC public="1" get="accessor" set="accessor" static="1"><x path="Float"/></vC>
+	<get_vC get="inline" set="null" line="285" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_vC>
+	<set_vC get="inline" set="null" line="289" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_vC>
+	<triangle public="1" set="method" line="298" static="1">
+		<f a="this:ax_:ay_:az_:bx_:by_:bz_:cx_:cy_:cz_">
+			<x path="dsHelper.flatInterleave.core.Array3x9"/>
+			<x path="Float"/>
+			<x path="Float"/>
+			<x path="Float"/>
+			<x path="Float"/>
+			<x path="Float"/>
+			<x path="Float"/>
+			<x path="Float"/>
+			<x path="Float"/>
+			<x path="Float"/>
+			<x path="Bool"/>
+		</f>
+		<meta><m n=":keep"/></meta>
+	</triangle>
+	<triangleUV public="1" set="method" line="324" static="1">
+		<f a="this:uA_:vA_:uB_:vB_:uC_:vC_:?windAdjust_">
+			<x path="dsHelper.flatInterleave.core.Array3x9"/>
+			<x path="Float"/>
+			<x path="Float"/>
+			<x path="Float"/>
+			<x path="Float"/>
+			<x path="Float"/>
+			<x path="Float"/>
+			<x path="Bool"/>
+			<x path="Bool"/>
+		</f>
+		<meta><m n=":keep"/></meta>
+	</triangleUV>
+	<adjustWinding public="1" set="method" line="341" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Bool"/>
+</f></adjustWinding>
+	<u public="1" get="accessor" set="accessor" static="1"><x path="Float"/></u>
+	<get_u get="inline" set="null" line="346" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_u>
+	<set_u get="inline" set="null" line="350" static="1"><f a="this:u_">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_u>
+	<v public="1" get="accessor" set="accessor" static="1"><x path="Float"/></v>
+	<get_v get="inline" set="null" line="359" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_v>
+	<set_v get="inline" set="null" line="363" static="1"><f a="this:v_">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_v>
+	<rightU public="1" get="accessor" set="null" static="1"><x path="Float"/></rightU>
+	<get_rightU get="inline" set="null" line="373" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_rightU>
+	<bottomV public="1" get="accessor" set="null" static="1"><x path="Float"/></bottomV>
+	<get_bottomV get="inline" set="null" line="378" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_bottomV>
+	<x public="1" get="accessor" set="accessor" static="1"><x path="Float"/></x>
+	<get_x get="inline" set="null" line="384" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_x>
+	<set_x get="inline" set="null" line="388" static="1"><f a="this:x">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_x>
+	<y public="1" get="accessor" set="accessor" static="1"><x path="Float"/></y>
+	<get_y get="inline" set="null" line="397" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_y>
+	<set_y get="inline" set="null" line="401" static="1"><f a="this:y">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_y>
+	<z public="1" get="accessor" set="accessor" static="1"><x path="Float"/></z>
+	<get_z get="inline" set="null" line="410" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_z>
+	<set_z get="inline" set="null" line="414" static="1"><f a="this:z">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_z>
+	<right public="1" get="accessor" set="null" static="1"><x path="Float"/></right>
+	<get_right get="inline" set="null" line="423" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_right>
+	<bottom public="1" get="accessor" set="null" static="1"><x path="Float"/></bottom>
+	<get_bottom get="inline" set="null" line="428" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_bottom>
+	<back public="1" get="accessor" set="null" static="1"><x path="Float"/></back>
+	<get_back get="inline" set="null" line="433" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_back>
+	<moveDelta set="method" line="436" static="1"><f a="this:dx:dy">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Void"/>
+</f></moveDelta>
+	<sign public="1" get="inline" set="null" line="445" static="1"><f a="n">
+	<x path="Float"/>
+	<x path="Int"/>
+</f></sign>
+	<liteHit public="1" get="inline" set="null" line="450" static="1"><f a="this:px:py">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Bool"/>
+</f></liteHit>
+	<fullHit public="1" set="method" line="458" static="1"><f a="this:px:py">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Bool"/>
+</f></fullHit>
+	<distHit public="1" set="method" line="463" static="1"><f a="this:px:py">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></distHit>
+	<moveDeltaUV set="method" line="470" static="1"><f a="this:du:dv">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Void"/>
+</f></moveDeltaUV>
+	<rotate public="1" get="inline" set="null" line="479" static="1"><f a="this:x:y:theta">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Void"/>
+</f></rotate>
+	<rotateTrig public="1" get="inline" set="null" line="485" static="1"><f a="this:x:y:cos:sin">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Void"/>
+</f></rotateTrig>
+	<colorTriangles public="1" get="inline" set="null" line="514" static="1"><f a="this:color:times">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Void"/>
+</f></colorTriangles>
+	<cornerColors public="1" get="inline" set="null" line="518" static="1"><f a="this:colorA:colorB:colorC">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Void"/>
+</f></cornerColors>
+	<rgb public="1" get="null" set="accessor" static="1"><x path="Int"/></rgb>
+	<set_rgb get="inline" set="null" line="525" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_rgb>
+	<rgbA public="1" get="accessor" set="accessor" static="1"><x path="Int"/></rgbA>
+	<set_rgbA get="inline" set="null" line="533" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_rgbA>
+	<get_rgbA get="inline" set="null" line="541" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Int"/>
+</f></get_rgbA>
+	<rgbB public="1" get="accessor" set="accessor" static="1"><x path="Int"/></rgbB>
+	<set_rgbB get="inline" set="null" line="548" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_rgbB>
+	<get_rgbB get="inline" set="null" line="556" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Int"/>
+</f></get_rgbB>
+	<rgbC public="1" get="accessor" set="accessor" static="1"><x path="Int"/></rgbC>
+	<set_rgbC get="inline" set="null" line="563" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_rgbC>
+	<get_rgbC get="inline" set="null" line="571" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Int"/>
+</f></get_rgbC>
+	<argb public="1" get="null" set="accessor" static="1"><x path="Int"/></argb>
+	<set_argb get="inline" set="null" line="578" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_argb>
+	<argbA public="1" get="accessor" set="accessor" static="1"><x path="Int"/></argbA>
+	<set_argbA get="inline" set="null" line="587" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_argbA>
+	<get_argbA get="inline" set="null" line="595" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Int"/>
+</f></get_argbA>
+	<argbB public="1" get="accessor" set="accessor" static="1"><x path="Int"/></argbB>
+	<set_argbB get="inline" set="null" line="604" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_argbB>
+	<get_argbB get="inline" set="null" line="612" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Int"/>
+</f></get_argbB>
+	<argbC public="1" get="accessor" set="accessor" static="1"><x path="Int"/></argbC>
+	<set_argbC get="inline" set="null" line="620" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_argbC>
+	<get_argbC get="inline" set="null" line="628" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Int"/>
+</f></get_argbC>
+	<prettyStringVert public="1" get="inline" set="null" line="635" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<c path="String"/>
+</f></prettyStringVert>
+	<prettyAllVert public="1" get="inline" set="null" line="641" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<c path="String"/>
+</f></prettyAllVert>
+	<hex public="1" get="inline" set="null" line="652" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Int"/>
+	<c path="String"/>
+</f></hex>
+	<hexA public="1" get="inline" set="null" line="656" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<c path="String"/>
+</f></hexA>
+	<hexB public="1" get="inline" set="null" line="660" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<c path="String"/>
+</f></hexB>
+	<hexC public="1" get="inline" set="null" line="664" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<c path="String"/>
+</f></hexC>
+	<hexAll public="1" get="inline" set="null" line="668" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<c path="String"/>
+</f></hexAll>
+	<prettyStringUV public="1" get="inline" set="null" line="679" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<c path="String"/>
+</f></prettyStringUV>
+	<prettyAlluv public="1" get="inline" set="null" line="685" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<c path="String"/>
+</f></prettyAlluv>
+	<prettyEverything public="1" get="inline" set="null" line="696" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<c path="String"/>
+</f></prettyEverything>
+	<alphaChannel public="1" get="inline" set="null" line="710" static="1"><f a="int">
+	<x path="Int"/>
+	<x path="Float"/>
+</f></alphaChannel>
+	<redChannel public="1" get="inline" set="null" line="713" static="1"><f a="int">
+	<x path="Int"/>
+	<x path="Float"/>
+</f></redChannel>
+	<greenChannel public="1" get="inline" set="null" line="716" static="1"><f a="int">
+	<x path="Int"/>
+	<x path="Float"/>
+</f></greenChannel>
+	<blueChannel public="1" get="inline" set="null" line="719" static="1"><f a="int">
+	<x path="Int"/>
+	<x path="Float"/>
+</f></blueChannel>
+</class></impl>
+	</abstract>
+	<class path="dsHelper.flatInterleave._ArrayColorTrianglesUV.ArrayColorTrianglesUV_Impl_" params="" file="src/dsHelper/flatInterleave/ArrayColorTrianglesUV.hx" private="1" module="dsHelper.flatInterleave.ArrayColorTrianglesUV" final="1">
+		<_new public="1" get="inline" set="null" line="6" static="1">
+			<f a=""><x path="dsHelper.flatInterleave.ArrayColorTrianglesUV"/></f>
+			<meta><m n=":noCompletion"/></meta>
+		</_new>
+		<create public="1" get="inline" set="null" line="10" static="1"><f a=""><x path="dsHelper.flatInterleave.ArrayColorTrianglesUV"/></f></create>
+		<ax public="1" get="accessor" set="accessor" static="1"><x path="Float"/></ax>
+		<get_ax set="method" line="14" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_ax>
+		<set_ax set="method" line="17" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_ax>
+		<ay public="1" get="accessor" set="accessor" static="1"><x path="Float"/></ay>
+		<get_ay set="method" line="23" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_ay>
+		<set_ay set="method" line="26" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_ay>
+		<az public="1" get="accessor" set="accessor" static="1"><x path="Float"/></az>
+		<get_az set="method" line="32" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_az>
+		<set_az set="method" line="35" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_az>
+		<redA public="1" get="accessor" set="accessor" static="1"><x path="Float"/></redA>
+		<get_redA set="method" line="42" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_redA>
+		<set_redA set="method" line="45" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_redA>
+		<greenA public="1" get="accessor" set="accessor" static="1"><x path="Float"/></greenA>
+		<get_greenA get="inline" set="null" line="53" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_greenA>
+		<set_greenA get="inline" set="null" line="57" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_greenA>
+		<blueA public="1" get="accessor" set="accessor" static="1"><x path="Float"/></blueA>
+		<get_blueA get="inline" set="null" line="64" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_blueA>
+		<set_blueA get="inline" set="null" line="68" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_blueA>
+		<alphaA public="1" get="accessor" set="accessor" static="1"><x path="Float"/></alphaA>
+		<get_alphaA get="inline" set="null" line="75" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_alphaA>
+		<set_alphaA get="inline" set="null" line="79" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_alphaA>
+		<uA public="1" get="accessor" set="accessor" static="1"><x path="Float"/></uA>
+		<get_uA get="inline" set="null" line="86" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_uA>
+		<set_uA get="inline" set="null" line="90" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_uA>
+		<vA public="1" get="accessor" set="accessor" static="1"><x path="Float"/></vA>
+		<get_vA get="inline" set="null" line="97" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_vA>
+		<set_vA get="inline" set="null" line="101" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_vA>
+		<bx public="1" get="accessor" set="accessor" static="1"><x path="Float"/></bx>
+		<get_bx set="method" line="108" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_bx>
+		<set_bx set="method" line="111" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_bx>
+		<by public="1" get="accessor" set="accessor" static="1"><x path="Float"/></by>
+		<get_by set="method" line="117" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_by>
+		<set_by set="method" line="120" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_by>
+		<bz public="1" get="accessor" set="accessor" static="1"><x path="Float"/></bz>
+		<get_bz set="method" line="126" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_bz>
+		<set_bz set="method" line="129" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_bz>
+		<redB public="1" get="accessor" set="accessor" static="1"><x path="Float"/></redB>
+		<get_redB set="method" line="136" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_redB>
+		<set_redB set="method" line="139" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_redB>
+		<greenB public="1" get="accessor" set="accessor" static="1"><x path="Float"/></greenB>
+		<get_greenB get="inline" set="null" line="147" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_greenB>
+		<set_greenB get="inline" set="null" line="151" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_greenB>
+		<blueB public="1" get="accessor" set="accessor" static="1"><x path="Float"/></blueB>
+		<get_blueB get="inline" set="null" line="158" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_blueB>
+		<set_blueB get="inline" set="null" line="162" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_blueB>
+		<alphaB public="1" get="accessor" set="accessor" static="1"><x path="Float"/></alphaB>
+		<get_alphaB get="inline" set="null" line="169" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_alphaB>
+		<set_alphaB get="inline" set="null" line="173" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_alphaB>
+		<uB public="1" get="accessor" set="accessor" static="1"><x path="Float"/></uB>
+		<get_uB get="inline" set="null" line="180" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_uB>
+		<set_uB get="inline" set="null" line="184" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_uB>
+		<vB public="1" get="accessor" set="accessor" static="1"><x path="Float"/></vB>
+		<get_vB get="inline" set="null" line="191" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_vB>
+		<set_vB get="inline" set="null" line="195" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_vB>
+		<cx public="1" get="accessor" set="accessor" static="1"><x path="Float"/></cx>
+		<get_cx set="method" line="202" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_cx>
+		<set_cx set="method" line="205" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_cx>
+		<cy public="1" get="accessor" set="accessor" static="1"><x path="Float"/></cy>
+		<get_cy set="method" line="211" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_cy>
+		<set_cy set="method" line="214" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_cy>
+		<cz public="1" get="accessor" set="accessor" static="1"><x path="Float"/></cz>
+		<get_cz set="method" line="220" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_cz>
+		<set_cz set="method" line="223" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_cz>
+		<redC public="1" get="accessor" set="accessor" static="1"><x path="Float"/></redC>
+		<get_redC set="method" line="230" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_redC>
+		<set_redC set="method" line="233" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_redC>
+		<greenC public="1" get="accessor" set="accessor" static="1"><x path="Float"/></greenC>
+		<get_greenC get="inline" set="null" line="241" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_greenC>
+		<set_greenC get="inline" set="null" line="245" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_greenC>
+		<blueC public="1" get="accessor" set="accessor" static="1"><x path="Float"/></blueC>
+		<get_blueC get="inline" set="null" line="252" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_blueC>
+		<set_blueC get="inline" set="null" line="256" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_blueC>
+		<alphaC public="1" get="accessor" set="accessor" static="1"><x path="Float"/></alphaC>
+		<get_alphaC get="inline" set="null" line="263" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_alphaC>
+		<set_alphaC get="inline" set="null" line="267" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_alphaC>
+		<uC public="1" get="accessor" set="accessor" static="1"><x path="Float"/></uC>
+		<get_uC get="inline" set="null" line="274" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_uC>
+		<set_uC get="inline" set="null" line="278" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_uC>
+		<vC public="1" get="accessor" set="accessor" static="1"><x path="Float"/></vC>
+		<get_vC get="inline" set="null" line="285" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_vC>
+		<set_vC get="inline" set="null" line="289" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_vC>
+		<triangle public="1" set="method" line="298" static="1">
+			<f a="this:ax_:ay_:az_:bx_:by_:bz_:cx_:cy_:cz_">
+				<x path="dsHelper.flatInterleave.core.Array3x9"/>
+				<x path="Float"/>
+				<x path="Float"/>
+				<x path="Float"/>
+				<x path="Float"/>
+				<x path="Float"/>
+				<x path="Float"/>
+				<x path="Float"/>
+				<x path="Float"/>
+				<x path="Float"/>
+				<x path="Bool"/>
+			</f>
+			<meta><m n=":keep"/></meta>
+		</triangle>
+		<triangleUV public="1" set="method" line="324" static="1">
+			<f a="this:uA_:vA_:uB_:vB_:uC_:vC_:?windAdjust_">
+				<x path="dsHelper.flatInterleave.core.Array3x9"/>
+				<x path="Float"/>
+				<x path="Float"/>
+				<x path="Float"/>
+				<x path="Float"/>
+				<x path="Float"/>
+				<x path="Float"/>
+				<x path="Bool"/>
+				<x path="Bool"/>
+			</f>
+			<meta><m n=":keep"/></meta>
+		</triangleUV>
+		<adjustWinding public="1" set="method" line="341" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Bool"/>
+</f></adjustWinding>
+		<u public="1" get="accessor" set="accessor" static="1"><x path="Float"/></u>
+		<get_u get="inline" set="null" line="346" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_u>
+		<set_u get="inline" set="null" line="350" static="1"><f a="this:u_">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_u>
+		<v public="1" get="accessor" set="accessor" static="1"><x path="Float"/></v>
+		<get_v get="inline" set="null" line="359" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_v>
+		<set_v get="inline" set="null" line="363" static="1"><f a="this:v_">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_v>
+		<rightU public="1" get="accessor" set="null" static="1"><x path="Float"/></rightU>
+		<get_rightU get="inline" set="null" line="373" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_rightU>
+		<bottomV public="1" get="accessor" set="null" static="1"><x path="Float"/></bottomV>
+		<get_bottomV get="inline" set="null" line="378" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_bottomV>
+		<x public="1" get="accessor" set="accessor" static="1"><x path="Float"/></x>
+		<get_x get="inline" set="null" line="384" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_x>
+		<set_x get="inline" set="null" line="388" static="1"><f a="this:x">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_x>
+		<y public="1" get="accessor" set="accessor" static="1"><x path="Float"/></y>
+		<get_y get="inline" set="null" line="397" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_y>
+		<set_y get="inline" set="null" line="401" static="1"><f a="this:y">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_y>
+		<z public="1" get="accessor" set="accessor" static="1"><x path="Float"/></z>
+		<get_z get="inline" set="null" line="410" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_z>
+		<set_z get="inline" set="null" line="414" static="1"><f a="this:z">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_z>
+		<right public="1" get="accessor" set="null" static="1"><x path="Float"/></right>
+		<get_right get="inline" set="null" line="423" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_right>
+		<bottom public="1" get="accessor" set="null" static="1"><x path="Float"/></bottom>
+		<get_bottom get="inline" set="null" line="428" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_bottom>
+		<back public="1" get="accessor" set="null" static="1"><x path="Float"/></back>
+		<get_back get="inline" set="null" line="433" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+</f></get_back>
+		<moveDelta set="method" line="436" static="1"><f a="this:dx:dy">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Void"/>
+</f></moveDelta>
+		<sign public="1" get="inline" set="null" line="445" static="1"><f a="n">
+	<x path="Float"/>
+	<x path="Int"/>
+</f></sign>
+		<liteHit public="1" get="inline" set="null" line="450" static="1"><f a="this:px:py">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Bool"/>
+</f></liteHit>
+		<fullHit public="1" set="method" line="458" static="1"><f a="this:px:py">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Bool"/>
+</f></fullHit>
+		<distHit public="1" set="method" line="463" static="1"><f a="this:px:py">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></distHit>
+		<moveDeltaUV set="method" line="470" static="1"><f a="this:du:dv">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Void"/>
+</f></moveDeltaUV>
+		<rotate public="1" get="inline" set="null" line="479" static="1"><f a="this:x:y:theta">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Void"/>
+</f></rotate>
+		<rotateTrig public="1" get="inline" set="null" line="485" static="1"><f a="this:x:y:cos:sin">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Void"/>
+</f></rotateTrig>
+		<colorTriangles public="1" get="inline" set="null" line="514" static="1"><f a="this:color:times">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Void"/>
+</f></colorTriangles>
+		<cornerColors public="1" get="inline" set="null" line="518" static="1"><f a="this:colorA:colorB:colorC">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Void"/>
+</f></cornerColors>
+		<rgb public="1" get="null" set="accessor" static="1"><x path="Int"/></rgb>
+		<set_rgb get="inline" set="null" line="525" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_rgb>
+		<rgbA public="1" get="accessor" set="accessor" static="1"><x path="Int"/></rgbA>
+		<set_rgbA get="inline" set="null" line="533" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_rgbA>
+		<get_rgbA get="inline" set="null" line="541" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Int"/>
+</f></get_rgbA>
+		<rgbB public="1" get="accessor" set="accessor" static="1"><x path="Int"/></rgbB>
+		<set_rgbB get="inline" set="null" line="548" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_rgbB>
+		<get_rgbB get="inline" set="null" line="556" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Int"/>
+</f></get_rgbB>
+		<rgbC public="1" get="accessor" set="accessor" static="1"><x path="Int"/></rgbC>
+		<set_rgbC get="inline" set="null" line="563" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_rgbC>
+		<get_rgbC get="inline" set="null" line="571" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Int"/>
+</f></get_rgbC>
+		<argb public="1" get="null" set="accessor" static="1"><x path="Int"/></argb>
+		<set_argb get="inline" set="null" line="578" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_argb>
+		<argbA public="1" get="accessor" set="accessor" static="1"><x path="Int"/></argbA>
+		<set_argbA get="inline" set="null" line="587" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_argbA>
+		<get_argbA get="inline" set="null" line="595" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Int"/>
+</f></get_argbA>
+		<argbB public="1" get="accessor" set="accessor" static="1"><x path="Int"/></argbB>
+		<set_argbB get="inline" set="null" line="604" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_argbB>
+		<get_argbB get="inline" set="null" line="612" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Int"/>
+</f></get_argbB>
+		<argbC public="1" get="accessor" set="accessor" static="1"><x path="Int"/></argbC>
+		<set_argbC get="inline" set="null" line="620" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_argbC>
+		<get_argbC get="inline" set="null" line="628" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Int"/>
+</f></get_argbC>
+		<prettyStringVert public="1" get="inline" set="null" line="635" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<c path="String"/>
+</f></prettyStringVert>
+		<prettyAllVert public="1" get="inline" set="null" line="641" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<c path="String"/>
+</f></prettyAllVert>
+		<hex public="1" get="inline" set="null" line="652" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<x path="Int"/>
+	<c path="String"/>
+</f></hex>
+		<hexA public="1" get="inline" set="null" line="656" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<c path="String"/>
+</f></hexA>
+		<hexB public="1" get="inline" set="null" line="660" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<c path="String"/>
+</f></hexB>
+		<hexC public="1" get="inline" set="null" line="664" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<c path="String"/>
+</f></hexC>
+		<hexAll public="1" get="inline" set="null" line="668" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<c path="String"/>
+</f></hexAll>
+		<prettyStringUV public="1" get="inline" set="null" line="679" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<c path="String"/>
+</f></prettyStringUV>
+		<prettyAlluv public="1" get="inline" set="null" line="685" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<c path="String"/>
+</f></prettyAlluv>
+		<prettyEverything public="1" get="inline" set="null" line="696" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9"/>
+	<c path="String"/>
+</f></prettyEverything>
+		<alphaChannel public="1" get="inline" set="null" line="710" static="1"><f a="int">
+	<x path="Int"/>
+	<x path="Float"/>
+</f></alphaChannel>
+		<redChannel public="1" get="inline" set="null" line="713" static="1"><f a="int">
+	<x path="Int"/>
+	<x path="Float"/>
+</f></redChannel>
+		<greenChannel public="1" get="inline" set="null" line="716" static="1"><f a="int">
+	<x path="Int"/>
+	<x path="Float"/>
+</f></greenChannel>
+		<blueChannel public="1" get="inline" set="null" line="719" static="1"><f a="int">
+	<x path="Int"/>
+	<x path="Float"/>
+</f></blueChannel>
+	</class>
+	<abstract path="dsHelper.flatInterleave.ArrayColorTrianglesUVt" params="" file="src/dsHelper/flatInterleave/ArrayColorTrianglesUVt.hx">
+		<from><icast><x path="dsHelper.flatInterleave.core.Array3x9t"/></icast></from>
+		<this><x path="dsHelper.flatInterleave.core.Array3x9t"/></this>
+		<to><icast><x path="dsHelper.flatInterleave.core.Array3x9t"/></icast></to>
+		<meta>
+			<m n=":transitive"/>
+			<m n=":forward"/>
+		</meta>
+		<impl><class path="dsHelper.flatInterleave._ArrayColorTrianglesUVt.ArrayColorTrianglesUVt_Impl_" params="" file="src/dsHelper/flatInterleave/ArrayColorTrianglesUVt.hx" private="1" module="dsHelper.flatInterleave.ArrayColorTrianglesUVt" final="1">
+	<_new public="1" get="inline" set="null" line="7" static="1">
+		<f a=""><x path="dsHelper.flatInterleave.ArrayColorTrianglesUVt"/></f>
+		<meta><m n=":noCompletion"/></meta>
+	</_new>
+	<create public="1" get="inline" set="null" line="11" static="1"><f a=""><x path="dsHelper.flatInterleave.ArrayColorTrianglesUVt"/></f></create>
+	<ax public="1" get="accessor" set="accessor" static="1"><x path="Float"/></ax>
+	<get_ax set="method" line="15" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_ax>
+	<set_ax set="method" line="18" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_ax>
+	<ay public="1" get="accessor" set="accessor" static="1"><x path="Float"/></ay>
+	<get_ay set="method" line="23" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_ay>
+	<set_ay set="method" line="26" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_ay>
+	<az public="1" get="accessor" set="accessor" static="1"><x path="Float"/></az>
+	<get_az set="method" line="31" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_az>
+	<set_az set="method" line="34" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_az>
+	<redA public="1" get="accessor" set="accessor" static="1"><x path="Float"/></redA>
+	<get_redA set="method" line="40" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_redA>
+	<set_redA set="method" line="43" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_redA>
+	<greenA public="1" get="accessor" set="accessor" static="1"><x path="Float"/></greenA>
+	<get_greenA get="inline" set="null" line="50" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_greenA>
+	<set_greenA get="inline" set="null" line="54" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_greenA>
+	<blueA public="1" get="accessor" set="accessor" static="1"><x path="Float"/></blueA>
+	<get_blueA get="inline" set="null" line="60" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_blueA>
+	<set_blueA get="inline" set="null" line="64" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_blueA>
+	<alphaA public="1" get="accessor" set="accessor" static="1"><x path="Float"/></alphaA>
+	<get_alphaA get="inline" set="null" line="70" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_alphaA>
+	<set_alphaA get="inline" set="null" line="74" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_alphaA>
+	<uA public="1" get="accessor" set="accessor" static="1"><x path="Float"/></uA>
+	<get_uA get="inline" set="null" line="80" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_uA>
+	<set_uA get="inline" set="null" line="84" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_uA>
+	<vA public="1" get="accessor" set="accessor" static="1"><x path="Float"/></vA>
+	<get_vA get="inline" set="null" line="90" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_vA>
+	<set_vA get="inline" set="null" line="94" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_vA>
+	<bx public="1" get="accessor" set="accessor" static="1"><x path="Float"/></bx>
+	<get_bx set="method" line="100" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_bx>
+	<set_bx set="method" line="103" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_bx>
+	<by public="1" get="accessor" set="accessor" static="1"><x path="Float"/></by>
+	<get_by set="method" line="108" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_by>
+	<set_by set="method" line="111" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_by>
+	<bz public="1" get="accessor" set="accessor" static="1"><x path="Float"/></bz>
+	<get_bz set="method" line="116" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_bz>
+	<set_bz set="method" line="119" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_bz>
+	<redB public="1" get="accessor" set="accessor" static="1"><x path="Float"/></redB>
+	<get_redB set="method" line="125" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_redB>
+	<set_redB set="method" line="128" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_redB>
+	<greenB public="1" get="accessor" set="accessor" static="1"><x path="Float"/></greenB>
+	<get_greenB get="inline" set="null" line="135" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_greenB>
+	<set_greenB get="inline" set="null" line="139" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_greenB>
+	<blueB public="1" get="accessor" set="accessor" static="1"><x path="Float"/></blueB>
+	<get_blueB get="inline" set="null" line="145" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_blueB>
+	<set_blueB get="inline" set="null" line="149" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_blueB>
+	<alphaB public="1" get="accessor" set="accessor" static="1"><x path="Float"/></alphaB>
+	<get_alphaB get="inline" set="null" line="155" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_alphaB>
+	<set_alphaB get="inline" set="null" line="159" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_alphaB>
+	<uB public="1" get="accessor" set="accessor" static="1"><x path="Float"/></uB>
+	<get_uB get="inline" set="null" line="165" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_uB>
+	<set_uB get="inline" set="null" line="169" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_uB>
+	<vB public="1" get="accessor" set="accessor" static="1"><x path="Float"/></vB>
+	<get_vB get="inline" set="null" line="175" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_vB>
+	<set_vB get="inline" set="null" line="179" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_vB>
+	<cx public="1" get="accessor" set="accessor" static="1"><x path="Float"/></cx>
+	<get_cx set="method" line="185" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_cx>
+	<set_cx set="method" line="188" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_cx>
+	<cy public="1" get="accessor" set="accessor" static="1"><x path="Float"/></cy>
+	<get_cy set="method" line="193" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_cy>
+	<set_cy set="method" line="196" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_cy>
+	<cz public="1" get="accessor" set="accessor" static="1"><x path="Float"/></cz>
+	<get_cz set="method" line="201" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_cz>
+	<set_cz set="method" line="204" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_cz>
+	<redC public="1" get="accessor" set="accessor" static="1"><x path="Float"/></redC>
+	<get_redC set="method" line="210" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_redC>
+	<set_redC set="method" line="213" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_redC>
+	<greenC public="1" get="accessor" set="accessor" static="1"><x path="Float"/></greenC>
+	<get_greenC get="inline" set="null" line="220" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_greenC>
+	<set_greenC get="inline" set="null" line="224" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_greenC>
+	<blueC public="1" get="accessor" set="accessor" static="1"><x path="Float"/></blueC>
+	<get_blueC get="inline" set="null" line="230" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_blueC>
+	<set_blueC get="inline" set="null" line="234" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_blueC>
+	<alphaC public="1" get="accessor" set="accessor" static="1"><x path="Float"/></alphaC>
+	<get_alphaC get="inline" set="null" line="240" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_alphaC>
+	<set_alphaC get="inline" set="null" line="244" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_alphaC>
+	<uC public="1" get="accessor" set="accessor" static="1"><x path="Float"/></uC>
+	<get_uC get="inline" set="null" line="250" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_uC>
+	<set_uC get="inline" set="null" line="254" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_uC>
+	<vC public="1" get="accessor" set="accessor" static="1"><x path="Float"/></vC>
+	<get_vC get="inline" set="null" line="260" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_vC>
+	<set_vC get="inline" set="null" line="264" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_vC>
+	<textureId public="1" get="accessor" set="accessor" static="1"><x path="Float"/></textureId>
+	<get_textureId get="inline" set="null" line="270" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_textureId>
+	<set_textureId get="inline" set="null" line="274" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_textureId>
+	<triangle public="1" set="method" line="281" static="1">
+		<f a="this:ax_:ay_:az_:bx_:by_:bz_:cx_:cy_:cz_">
+			<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+			<x path="Float"/>
+			<x path="Float"/>
+			<x path="Float"/>
+			<x path="Float"/>
+			<x path="Float"/>
+			<x path="Float"/>
+			<x path="Float"/>
+			<x path="Float"/>
+			<x path="Float"/>
+			<x path="Bool"/>
+		</f>
+		<meta><m n=":keep"/></meta>
+	</triangle>
+	<triangleUV public="1" set="method" line="307" static="1">
+		<f a="this:uA_:vA_:uB_:vB_:uC_:vC_:?windAdjust_">
+			<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+			<x path="Float"/>
+			<x path="Float"/>
+			<x path="Float"/>
+			<x path="Float"/>
+			<x path="Float"/>
+			<x path="Float"/>
+			<x path="Bool"/>
+			<x path="Bool"/>
+		</f>
+		<meta><m n=":keep"/></meta>
+	</triangleUV>
+	<adjustWinding public="1" set="method" line="324" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Bool"/>
+</f></adjustWinding>
+	<u public="1" get="accessor" set="accessor" static="1"><x path="Float"/></u>
+	<get_u get="inline" set="null" line="329" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_u>
+	<set_u get="inline" set="null" line="333" static="1"><f a="this:u_">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_u>
+	<v public="1" get="accessor" set="accessor" static="1"><x path="Float"/></v>
+	<get_v get="inline" set="null" line="342" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_v>
+	<set_v get="inline" set="null" line="346" static="1"><f a="this:v_">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_v>
+	<rightU public="1" get="accessor" set="null" static="1"><x path="Float"/></rightU>
+	<get_rightU get="inline" set="null" line="356" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_rightU>
+	<bottomV public="1" get="accessor" set="null" static="1"><x path="Float"/></bottomV>
+	<get_bottomV get="inline" set="null" line="361" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_bottomV>
+	<x public="1" get="accessor" set="accessor" static="1"><x path="Float"/></x>
+	<get_x get="inline" set="null" line="367" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_x>
+	<set_x get="inline" set="null" line="371" static="1"><f a="this:x">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_x>
+	<y public="1" get="accessor" set="accessor" static="1"><x path="Float"/></y>
+	<get_y get="inline" set="null" line="380" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_y>
+	<set_y get="inline" set="null" line="384" static="1"><f a="this:y">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_y>
+	<z public="1" get="accessor" set="accessor" static="1"><x path="Float"/></z>
+	<get_z get="inline" set="null" line="393" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_z>
+	<set_z get="inline" set="null" line="397" static="1"><f a="this:z">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_z>
+	<right public="1" get="accessor" set="null" static="1"><x path="Float"/></right>
+	<get_right get="inline" set="null" line="406" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_right>
+	<bottom public="1" get="accessor" set="null" static="1"><x path="Float"/></bottom>
+	<get_bottom get="inline" set="null" line="411" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_bottom>
+	<back public="1" get="accessor" set="null" static="1"><x path="Float"/></back>
+	<get_back get="inline" set="null" line="416" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_back>
+	<moveDelta set="method" line="419" static="1"><f a="this:dx:dy">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Void"/>
+</f></moveDelta>
+	<sign public="1" get="inline" set="null" line="428" static="1"><f a="n">
+	<x path="Float"/>
+	<x path="Int"/>
+</f></sign>
+	<liteHit public="1" get="inline" set="null" line="433" static="1"><f a="this:px:py">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Bool"/>
+</f></liteHit>
+	<fullHit public="1" set="method" line="441" static="1"><f a="this:px:py">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Bool"/>
+</f></fullHit>
+	<moveDeltaUV set="method" line="445" static="1"><f a="this:du:dv">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Void"/>
+</f></moveDeltaUV>
+	<rotate public="1" get="inline" set="null" line="454" static="1"><f a="this:x:y:theta">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Void"/>
+</f></rotate>
+	<rotateTrig public="1" get="inline" set="null" line="460" static="1"><f a="this:x:y:cos:sin">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Void"/>
+</f></rotateTrig>
+	<colorTriangles public="1" get="inline" set="null" line="489" static="1"><f a="this:color:times">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Void"/>
+</f></colorTriangles>
+	<cornerColors public="1" get="inline" set="null" line="493" static="1"><f a="this:colorA:colorB:colorC">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Void"/>
+</f></cornerColors>
+	<rgb public="1" get="null" set="accessor" static="1"><x path="Int"/></rgb>
+	<set_rgb get="inline" set="null" line="500" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_rgb>
+	<rgbA public="1" get="accessor" set="accessor" static="1"><x path="Int"/></rgbA>
+	<set_rgbA get="inline" set="null" line="508" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_rgbA>
+	<get_rgbA get="inline" set="null" line="516" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Int"/>
+</f></get_rgbA>
+	<rgbB public="1" get="accessor" set="accessor" static="1"><x path="Int"/></rgbB>
+	<set_rgbB get="inline" set="null" line="523" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_rgbB>
+	<get_rgbB get="inline" set="null" line="531" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Int"/>
+</f></get_rgbB>
+	<rgbC public="1" get="accessor" set="accessor" static="1"><x path="Int"/></rgbC>
+	<set_rgbC get="inline" set="null" line="538" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_rgbC>
+	<get_rgbC get="inline" set="null" line="546" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Int"/>
+</f></get_rgbC>
+	<argb public="1" get="null" set="accessor" static="1"><x path="Int"/></argb>
+	<set_argb get="inline" set="null" line="553" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_argb>
+	<argbA public="1" get="accessor" set="accessor" static="1"><x path="Int"/></argbA>
+	<set_argbA get="inline" set="null" line="562" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_argbA>
+	<get_argbA get="inline" set="null" line="570" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Int"/>
+</f></get_argbA>
+	<argbB public="1" get="accessor" set="accessor" static="1"><x path="Int"/></argbB>
+	<set_argbB get="inline" set="null" line="579" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_argbB>
+	<get_argbB get="inline" set="null" line="587" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Int"/>
+</f></get_argbB>
+	<argbC public="1" get="accessor" set="accessor" static="1"><x path="Int"/></argbC>
+	<set_argbC get="inline" set="null" line="595" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_argbC>
+	<get_argbC get="inline" set="null" line="603" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Int"/>
+</f></get_argbC>
+	<prettyStringVert public="1" get="inline" set="null" line="610" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<c path="String"/>
+</f></prettyStringVert>
+	<prettyAllVert public="1" get="inline" set="null" line="616" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<c path="String"/>
+</f></prettyAllVert>
+	<hex public="1" get="inline" set="null" line="627" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Int"/>
+	<c path="String"/>
+</f></hex>
+	<hexA public="1" get="inline" set="null" line="631" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<c path="String"/>
+</f></hexA>
+	<hexB public="1" get="inline" set="null" line="635" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<c path="String"/>
+</f></hexB>
+	<hexC public="1" get="inline" set="null" line="639" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<c path="String"/>
+</f></hexC>
+	<hexAll public="1" get="inline" set="null" line="643" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<c path="String"/>
+</f></hexAll>
+	<prettyStringUV public="1" get="inline" set="null" line="654" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<c path="String"/>
+</f></prettyStringUV>
+	<prettyAlluv public="1" get="inline" set="null" line="660" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<c path="String"/>
+</f></prettyAlluv>
+	<prettyEverything public="1" get="inline" set="null" line="671" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<c path="String"/>
+</f></prettyEverything>
+	<alphaChannel public="1" get="inline" set="null" line="685" static="1"><f a="int">
+	<x path="Int"/>
+	<x path="Float"/>
+</f></alphaChannel>
+	<redChannel public="1" get="inline" set="null" line="688" static="1"><f a="int">
+	<x path="Int"/>
+	<x path="Float"/>
+</f></redChannel>
+	<greenChannel public="1" get="inline" set="null" line="691" static="1"><f a="int">
+	<x path="Int"/>
+	<x path="Float"/>
+</f></greenChannel>
+	<blueChannel public="1" get="inline" set="null" line="694" static="1"><f a="int">
+	<x path="Int"/>
+	<x path="Float"/>
+</f></blueChannel>
+</class></impl>
+	</abstract>
+	<class path="dsHelper.flatInterleave._ArrayColorTrianglesUVt.ArrayColorTrianglesUVt_Impl_" params="" file="src/dsHelper/flatInterleave/ArrayColorTrianglesUVt.hx" private="1" module="dsHelper.flatInterleave.ArrayColorTrianglesUVt" final="1">
+		<_new public="1" get="inline" set="null" line="7" static="1">
+			<f a=""><x path="dsHelper.flatInterleave.ArrayColorTrianglesUVt"/></f>
+			<meta><m n=":noCompletion"/></meta>
+		</_new>
+		<create public="1" get="inline" set="null" line="11" static="1"><f a=""><x path="dsHelper.flatInterleave.ArrayColorTrianglesUVt"/></f></create>
+		<ax public="1" get="accessor" set="accessor" static="1"><x path="Float"/></ax>
+		<get_ax set="method" line="15" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_ax>
+		<set_ax set="method" line="18" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_ax>
+		<ay public="1" get="accessor" set="accessor" static="1"><x path="Float"/></ay>
+		<get_ay set="method" line="23" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_ay>
+		<set_ay set="method" line="26" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_ay>
+		<az public="1" get="accessor" set="accessor" static="1"><x path="Float"/></az>
+		<get_az set="method" line="31" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_az>
+		<set_az set="method" line="34" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_az>
+		<redA public="1" get="accessor" set="accessor" static="1"><x path="Float"/></redA>
+		<get_redA set="method" line="40" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_redA>
+		<set_redA set="method" line="43" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_redA>
+		<greenA public="1" get="accessor" set="accessor" static="1"><x path="Float"/></greenA>
+		<get_greenA get="inline" set="null" line="50" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_greenA>
+		<set_greenA get="inline" set="null" line="54" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_greenA>
+		<blueA public="1" get="accessor" set="accessor" static="1"><x path="Float"/></blueA>
+		<get_blueA get="inline" set="null" line="60" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_blueA>
+		<set_blueA get="inline" set="null" line="64" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_blueA>
+		<alphaA public="1" get="accessor" set="accessor" static="1"><x path="Float"/></alphaA>
+		<get_alphaA get="inline" set="null" line="70" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_alphaA>
+		<set_alphaA get="inline" set="null" line="74" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_alphaA>
+		<uA public="1" get="accessor" set="accessor" static="1"><x path="Float"/></uA>
+		<get_uA get="inline" set="null" line="80" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_uA>
+		<set_uA get="inline" set="null" line="84" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_uA>
+		<vA public="1" get="accessor" set="accessor" static="1"><x path="Float"/></vA>
+		<get_vA get="inline" set="null" line="90" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_vA>
+		<set_vA get="inline" set="null" line="94" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_vA>
+		<bx public="1" get="accessor" set="accessor" static="1"><x path="Float"/></bx>
+		<get_bx set="method" line="100" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_bx>
+		<set_bx set="method" line="103" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_bx>
+		<by public="1" get="accessor" set="accessor" static="1"><x path="Float"/></by>
+		<get_by set="method" line="108" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_by>
+		<set_by set="method" line="111" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_by>
+		<bz public="1" get="accessor" set="accessor" static="1"><x path="Float"/></bz>
+		<get_bz set="method" line="116" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_bz>
+		<set_bz set="method" line="119" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_bz>
+		<redB public="1" get="accessor" set="accessor" static="1"><x path="Float"/></redB>
+		<get_redB set="method" line="125" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_redB>
+		<set_redB set="method" line="128" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_redB>
+		<greenB public="1" get="accessor" set="accessor" static="1"><x path="Float"/></greenB>
+		<get_greenB get="inline" set="null" line="135" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_greenB>
+		<set_greenB get="inline" set="null" line="139" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_greenB>
+		<blueB public="1" get="accessor" set="accessor" static="1"><x path="Float"/></blueB>
+		<get_blueB get="inline" set="null" line="145" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_blueB>
+		<set_blueB get="inline" set="null" line="149" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_blueB>
+		<alphaB public="1" get="accessor" set="accessor" static="1"><x path="Float"/></alphaB>
+		<get_alphaB get="inline" set="null" line="155" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_alphaB>
+		<set_alphaB get="inline" set="null" line="159" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_alphaB>
+		<uB public="1" get="accessor" set="accessor" static="1"><x path="Float"/></uB>
+		<get_uB get="inline" set="null" line="165" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_uB>
+		<set_uB get="inline" set="null" line="169" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_uB>
+		<vB public="1" get="accessor" set="accessor" static="1"><x path="Float"/></vB>
+		<get_vB get="inline" set="null" line="175" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_vB>
+		<set_vB get="inline" set="null" line="179" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_vB>
+		<cx public="1" get="accessor" set="accessor" static="1"><x path="Float"/></cx>
+		<get_cx set="method" line="185" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_cx>
+		<set_cx set="method" line="188" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_cx>
+		<cy public="1" get="accessor" set="accessor" static="1"><x path="Float"/></cy>
+		<get_cy set="method" line="193" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_cy>
+		<set_cy set="method" line="196" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_cy>
+		<cz public="1" get="accessor" set="accessor" static="1"><x path="Float"/></cz>
+		<get_cz set="method" line="201" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_cz>
+		<set_cz set="method" line="204" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_cz>
+		<redC public="1" get="accessor" set="accessor" static="1"><x path="Float"/></redC>
+		<get_redC set="method" line="210" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_redC>
+		<set_redC set="method" line="213" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_redC>
+		<greenC public="1" get="accessor" set="accessor" static="1"><x path="Float"/></greenC>
+		<get_greenC get="inline" set="null" line="220" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_greenC>
+		<set_greenC get="inline" set="null" line="224" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_greenC>
+		<blueC public="1" get="accessor" set="accessor" static="1"><x path="Float"/></blueC>
+		<get_blueC get="inline" set="null" line="230" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_blueC>
+		<set_blueC get="inline" set="null" line="234" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_blueC>
+		<alphaC public="1" get="accessor" set="accessor" static="1"><x path="Float"/></alphaC>
+		<get_alphaC get="inline" set="null" line="240" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_alphaC>
+		<set_alphaC get="inline" set="null" line="244" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_alphaC>
+		<uC public="1" get="accessor" set="accessor" static="1"><x path="Float"/></uC>
+		<get_uC get="inline" set="null" line="250" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_uC>
+		<set_uC get="inline" set="null" line="254" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_uC>
+		<vC public="1" get="accessor" set="accessor" static="1"><x path="Float"/></vC>
+		<get_vC get="inline" set="null" line="260" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_vC>
+		<set_vC get="inline" set="null" line="264" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_vC>
+		<textureId public="1" get="accessor" set="accessor" static="1"><x path="Float"/></textureId>
+		<get_textureId get="inline" set="null" line="270" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_textureId>
+		<set_textureId get="inline" set="null" line="274" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_textureId>
+		<triangle public="1" set="method" line="281" static="1">
+			<f a="this:ax_:ay_:az_:bx_:by_:bz_:cx_:cy_:cz_">
+				<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+				<x path="Float"/>
+				<x path="Float"/>
+				<x path="Float"/>
+				<x path="Float"/>
+				<x path="Float"/>
+				<x path="Float"/>
+				<x path="Float"/>
+				<x path="Float"/>
+				<x path="Float"/>
+				<x path="Bool"/>
+			</f>
+			<meta><m n=":keep"/></meta>
+		</triangle>
+		<triangleUV public="1" set="method" line="307" static="1">
+			<f a="this:uA_:vA_:uB_:vB_:uC_:vC_:?windAdjust_">
+				<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+				<x path="Float"/>
+				<x path="Float"/>
+				<x path="Float"/>
+				<x path="Float"/>
+				<x path="Float"/>
+				<x path="Float"/>
+				<x path="Bool"/>
+				<x path="Bool"/>
+			</f>
+			<meta><m n=":keep"/></meta>
+		</triangleUV>
+		<adjustWinding public="1" set="method" line="324" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Bool"/>
+</f></adjustWinding>
+		<u public="1" get="accessor" set="accessor" static="1"><x path="Float"/></u>
+		<get_u get="inline" set="null" line="329" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_u>
+		<set_u get="inline" set="null" line="333" static="1"><f a="this:u_">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_u>
+		<v public="1" get="accessor" set="accessor" static="1"><x path="Float"/></v>
+		<get_v get="inline" set="null" line="342" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_v>
+		<set_v get="inline" set="null" line="346" static="1"><f a="this:v_">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_v>
+		<rightU public="1" get="accessor" set="null" static="1"><x path="Float"/></rightU>
+		<get_rightU get="inline" set="null" line="356" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_rightU>
+		<bottomV public="1" get="accessor" set="null" static="1"><x path="Float"/></bottomV>
+		<get_bottomV get="inline" set="null" line="361" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_bottomV>
+		<x public="1" get="accessor" set="accessor" static="1"><x path="Float"/></x>
+		<get_x get="inline" set="null" line="367" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_x>
+		<set_x get="inline" set="null" line="371" static="1"><f a="this:x">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_x>
+		<y public="1" get="accessor" set="accessor" static="1"><x path="Float"/></y>
+		<get_y get="inline" set="null" line="380" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_y>
+		<set_y get="inline" set="null" line="384" static="1"><f a="this:y">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_y>
+		<z public="1" get="accessor" set="accessor" static="1"><x path="Float"/></z>
+		<get_z get="inline" set="null" line="393" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_z>
+		<set_z get="inline" set="null" line="397" static="1"><f a="this:z">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></set_z>
+		<right public="1" get="accessor" set="null" static="1"><x path="Float"/></right>
+		<get_right get="inline" set="null" line="406" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_right>
+		<bottom public="1" get="accessor" set="null" static="1"><x path="Float"/></bottom>
+		<get_bottom get="inline" set="null" line="411" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_bottom>
+		<back public="1" get="accessor" set="null" static="1"><x path="Float"/></back>
+		<get_back get="inline" set="null" line="416" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+</f></get_back>
+		<moveDelta set="method" line="419" static="1"><f a="this:dx:dy">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Void"/>
+</f></moveDelta>
+		<sign public="1" get="inline" set="null" line="428" static="1"><f a="n">
+	<x path="Float"/>
+	<x path="Int"/>
+</f></sign>
+		<liteHit public="1" get="inline" set="null" line="433" static="1"><f a="this:px:py">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Bool"/>
+</f></liteHit>
+		<fullHit public="1" set="method" line="441" static="1"><f a="this:px:py">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Bool"/>
+</f></fullHit>
+		<moveDeltaUV set="method" line="445" static="1"><f a="this:du:dv">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Void"/>
+</f></moveDeltaUV>
+		<rotate public="1" get="inline" set="null" line="454" static="1"><f a="this:x:y:theta">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Void"/>
+</f></rotate>
+		<rotateTrig public="1" get="inline" set="null" line="460" static="1"><f a="this:x:y:cos:sin">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Float"/>
+	<x path="Void"/>
+</f></rotateTrig>
+		<colorTriangles public="1" get="inline" set="null" line="489" static="1"><f a="this:color:times">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Void"/>
+</f></colorTriangles>
+		<cornerColors public="1" get="inline" set="null" line="493" static="1"><f a="this:colorA:colorB:colorC">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Void"/>
+</f></cornerColors>
+		<rgb public="1" get="null" set="accessor" static="1"><x path="Int"/></rgb>
+		<set_rgb get="inline" set="null" line="500" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_rgb>
+		<rgbA public="1" get="accessor" set="accessor" static="1"><x path="Int"/></rgbA>
+		<set_rgbA get="inline" set="null" line="508" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_rgbA>
+		<get_rgbA get="inline" set="null" line="516" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Int"/>
+</f></get_rgbA>
+		<rgbB public="1" get="accessor" set="accessor" static="1"><x path="Int"/></rgbB>
+		<set_rgbB get="inline" set="null" line="523" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_rgbB>
+		<get_rgbB get="inline" set="null" line="531" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Int"/>
+</f></get_rgbB>
+		<rgbC public="1" get="accessor" set="accessor" static="1"><x path="Int"/></rgbC>
+		<set_rgbC get="inline" set="null" line="538" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_rgbC>
+		<get_rgbC get="inline" set="null" line="546" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Int"/>
+</f></get_rgbC>
+		<argb public="1" get="null" set="accessor" static="1"><x path="Int"/></argb>
+		<set_argb get="inline" set="null" line="553" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_argb>
+		<argbA public="1" get="accessor" set="accessor" static="1"><x path="Int"/></argbA>
+		<set_argbA get="inline" set="null" line="562" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_argbA>
+		<get_argbA get="inline" set="null" line="570" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Int"/>
+</f></get_argbA>
+		<argbB public="1" get="accessor" set="accessor" static="1"><x path="Int"/></argbB>
+		<set_argbB get="inline" set="null" line="579" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_argbB>
+		<get_argbB get="inline" set="null" line="587" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Int"/>
+</f></get_argbB>
+		<argbC public="1" get="accessor" set="accessor" static="1"><x path="Int"/></argbC>
+		<set_argbC get="inline" set="null" line="595" static="1"><f a="this:col">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_argbC>
+		<get_argbC get="inline" set="null" line="603" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Int"/>
+</f></get_argbC>
+		<prettyStringVert public="1" get="inline" set="null" line="610" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<c path="String"/>
+</f></prettyStringVert>
+		<prettyAllVert public="1" get="inline" set="null" line="616" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<c path="String"/>
+</f></prettyAllVert>
+		<hex public="1" get="inline" set="null" line="627" static="1"><f a="this:v">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<x path="Int"/>
+	<c path="String"/>
+</f></hex>
+		<hexA public="1" get="inline" set="null" line="631" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<c path="String"/>
+</f></hexA>
+		<hexB public="1" get="inline" set="null" line="635" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<c path="String"/>
+</f></hexB>
+		<hexC public="1" get="inline" set="null" line="639" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<c path="String"/>
+</f></hexC>
+		<hexAll public="1" get="inline" set="null" line="643" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<c path="String"/>
+</f></hexAll>
+		<prettyStringUV public="1" get="inline" set="null" line="654" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<c path="String"/>
+</f></prettyStringUV>
+		<prettyAlluv public="1" get="inline" set="null" line="660" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<c path="String"/>
+</f></prettyAlluv>
+		<prettyEverything public="1" get="inline" set="null" line="671" static="1"><f a="this">
+	<x path="dsHelper.flatInterleave.core.Array3x9t"/>
+	<c path="String"/>
+</f></prettyEverything>
+		<alphaChannel public="1" get="inline" set="null" line="685" static="1"><f a="int">
+	<x path="Int"/>
+	<x path="Float"/>
+</f></alphaChannel>
+		<redChannel public="1" get="inline" set="null" line="688" static="1"><f a="int">
+	<x path="Int"/>
+	<x path="Float"/>
+</f></redChannel>
+		<greenChannel public="1" get="inline" set="null" line="691" static="1"><f a="int">
+	<x path="Int"/>
+	<x path="Float"/>
+</f></greenChannel>
+		<blueChannel public="1" get="inline" set="null" line="694" static="1"><f a="int">
+	<x path="Int"/>
+	<x path="Float"/>
+</f></blueChannel>
 	</class>
 	<abstract path="dsHelper.flatInterleave.FloatColorTriangles" params="" file="src/dsHelper/flatInterleave/FloatColorTriangles.hx">
 		<this><x path="dsHelper.flatInterleave.core.Flat3x7"/></this>
@@ -13173,6 +16638,345 @@
 	<x path="Int"/>
 	<x path="Float"/>
 </f></blueChannel>
+	</class>
+	<abstract path="dsHelper.flatInterleave.core.Array3x7" params="" file="src/dsHelper/flatInterleave/core/Array3x7.hx">
+		<this><x path="dsHelper.flat.io.ArrayFlatDepth"/></this>
+		<meta>
+			<m n=":transitive"/>
+			<m n=":forward"/>
+		</meta>
+		<impl><class path="dsHelper.flatInterleave.core._Array3x7.Array3x7_Impl_" params="" file="src/dsHelper/flatInterleave/core/Array3x7.hx" private="1" module="dsHelper.flatInterleave.core.Array3x7" final="1">
+	<readItem public="1" get="inline" set="null" line="10" static="1">
+		<f a="this:k">
+			<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+			<x path="Int"/>
+			<x path="Float"/>
+		</f>
+		<meta><m n=":op"><e>[]</e></m></meta>
+	</readItem>
+	<writeItem public="1" get="inline" set="null" line="15" static="1"><f a="this:k:v">
+	<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+	<x path="Int"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></writeItem>
+	<_new public="1" get="inline" set="null" line="19" static="1">
+		<f a=""><x path="dsHelper.flatInterleave.core.Array3x7"/></f>
+		<meta><m n=":noCompletion"/></meta>
+	</_new>
+	<index public="1" get="accessor" set="accessor" static="1"><x path="Int"/></index>
+	<get_index get="inline" set="null" line="25" static="1"><f a="this">
+	<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+	<x path="Int"/>
+</f></get_index>
+	<set_index get="inline" set="null" line="29" static="1"><f a="this:id">
+	<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_index>
+	<getArray public="1" get="inline" set="null" line="35" static="1"><f a="this">
+	<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+	<t path="dsHelper.haxe.io.Float32Array"/>
+</f></getArray>
+	<toEnd public="1" get="inline" set="null" line="43" static="1"><f a="this:id:len">
+	<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Bool"/>
+</f></toEnd>
+	<toStart public="1" get="inline" set="null" line="47" static="1"><f a="this:id:len">
+	<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Bool"/>
+</f></toStart>
+	<swap public="1" get="inline" set="null" line="51" static="1"><f a="this:id0:id1:len">
+	<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Bool"/>
+</f></swap>
+</class></impl>
+	</abstract>
+	<class path="dsHelper.flatInterleave.core._Array3x7.Array3x7_Impl_" params="" file="src/dsHelper/flatInterleave/core/Array3x7.hx" private="1" module="dsHelper.flatInterleave.core.Array3x7" final="1">
+		<readItem public="1" get="inline" set="null" line="10" static="1">
+			<f a="this:k">
+				<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+				<x path="Int"/>
+				<x path="Float"/>
+			</f>
+			<meta><m n=":op"><e>[]</e></m></meta>
+		</readItem>
+		<writeItem public="1" get="inline" set="null" line="15" static="1"><f a="this:k:v">
+	<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+	<x path="Int"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></writeItem>
+		<_new public="1" get="inline" set="null" line="19" static="1">
+			<f a=""><x path="dsHelper.flatInterleave.core.Array3x7"/></f>
+			<meta><m n=":noCompletion"/></meta>
+		</_new>
+		<index public="1" get="accessor" set="accessor" static="1"><x path="Int"/></index>
+		<get_index get="inline" set="null" line="25" static="1"><f a="this">
+	<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+	<x path="Int"/>
+</f></get_index>
+		<set_index get="inline" set="null" line="29" static="1"><f a="this:id">
+	<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_index>
+		<getArray public="1" get="inline" set="null" line="35" static="1"><f a="this">
+	<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+	<t path="dsHelper.haxe.io.Float32Array"/>
+</f></getArray>
+		<toEnd public="1" get="inline" set="null" line="43" static="1"><f a="this:id:len">
+	<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Bool"/>
+</f></toEnd>
+		<toStart public="1" get="inline" set="null" line="47" static="1"><f a="this:id:len">
+	<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Bool"/>
+</f></toStart>
+		<swap public="1" get="inline" set="null" line="51" static="1"><f a="this:id0:id1:len">
+	<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Bool"/>
+</f></swap>
+	</class>
+	<abstract path="dsHelper.flatInterleave.core.Array3x9" params="" file="src/dsHelper/flatInterleave/core/Array3x9.hx">
+		<this><x path="dsHelper.flat.io.ArrayFlatDepth"/></this>
+		<meta>
+			<m n=":transitive"/>
+			<m n=":forward"/>
+		</meta>
+		<impl><class path="dsHelper.flatInterleave.core._Array3x9.Array3x9_Impl_" params="" file="src/dsHelper/flatInterleave/core/Array3x9.hx" private="1" module="dsHelper.flatInterleave.core.Array3x9" final="1">
+	<readItem public="1" get="inline" set="null" line="10" static="1">
+		<f a="this:k">
+			<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+			<x path="Int"/>
+			<x path="Float"/>
+		</f>
+		<meta><m n=":op"><e>[]</e></m></meta>
+	</readItem>
+	<writeItem public="1" get="inline" set="null" line="15" static="1"><f a="this:k:v">
+	<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+	<x path="Int"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></writeItem>
+	<_new public="1" get="inline" set="null" line="19" static="1">
+		<f a=""><x path="dsHelper.flatInterleave.core.Array3x9"/></f>
+		<meta><m n=":noCompletion"/></meta>
+	</_new>
+	<index public="1" get="accessor" set="accessor" static="1"><x path="Int"/></index>
+	<get_index get="inline" set="null" line="25" static="1"><f a="this">
+	<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+	<x path="Int"/>
+</f></get_index>
+	<set_index get="inline" set="null" line="29" static="1"><f a="this:id">
+	<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_index>
+	<getArray public="1" get="inline" set="null" line="34" static="1"><f a="this">
+	<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+	<t path="dsHelper.haxe.io.Float32Array"/>
+</f></getArray>
+	<toEnd public="1" get="inline" set="null" line="42" static="1"><f a="this:id:len">
+	<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Bool"/>
+</f></toEnd>
+	<toStart public="1" get="inline" set="null" line="46" static="1"><f a="this:id:len">
+	<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Bool"/>
+</f></toStart>
+	<swap public="1" get="inline" set="null" line="50" static="1"><f a="this:id0:id1:len">
+	<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Bool"/>
+</f></swap>
+</class></impl>
+	</abstract>
+	<class path="dsHelper.flatInterleave.core._Array3x9.Array3x9_Impl_" params="" file="src/dsHelper/flatInterleave/core/Array3x9.hx" private="1" module="dsHelper.flatInterleave.core.Array3x9" final="1">
+		<readItem public="1" get="inline" set="null" line="10" static="1">
+			<f a="this:k">
+				<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+				<x path="Int"/>
+				<x path="Float"/>
+			</f>
+			<meta><m n=":op"><e>[]</e></m></meta>
+		</readItem>
+		<writeItem public="1" get="inline" set="null" line="15" static="1"><f a="this:k:v">
+	<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+	<x path="Int"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></writeItem>
+		<_new public="1" get="inline" set="null" line="19" static="1">
+			<f a=""><x path="dsHelper.flatInterleave.core.Array3x9"/></f>
+			<meta><m n=":noCompletion"/></meta>
+		</_new>
+		<index public="1" get="accessor" set="accessor" static="1"><x path="Int"/></index>
+		<get_index get="inline" set="null" line="25" static="1"><f a="this">
+	<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+	<x path="Int"/>
+</f></get_index>
+		<set_index get="inline" set="null" line="29" static="1"><f a="this:id">
+	<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_index>
+		<getArray public="1" get="inline" set="null" line="34" static="1"><f a="this">
+	<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+	<t path="dsHelper.haxe.io.Float32Array"/>
+</f></getArray>
+		<toEnd public="1" get="inline" set="null" line="42" static="1"><f a="this:id:len">
+	<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Bool"/>
+</f></toEnd>
+		<toStart public="1" get="inline" set="null" line="46" static="1"><f a="this:id:len">
+	<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Bool"/>
+</f></toStart>
+		<swap public="1" get="inline" set="null" line="50" static="1"><f a="this:id0:id1:len">
+	<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Bool"/>
+</f></swap>
+	</class>
+	<abstract path="dsHelper.flatInterleave.core.Array3x9t" params="" file="src/dsHelper/flatInterleave/core/Array3x9t.hx">
+		<this><x path="dsHelper.flat.io.ArrayFlatDepth"/></this>
+		<meta>
+			<m n=":transitive"/>
+			<m n=":forward"/>
+		</meta>
+		<impl><class path="dsHelper.flatInterleave.core._Array3x9t.Array3x9t_Impl_" params="" file="src/dsHelper/flatInterleave/core/Array3x9t.hx" private="1" module="dsHelper.flatInterleave.core.Array3x9t" final="1">
+	<readItem public="1" get="inline" set="null" line="10" static="1">
+		<f a="this:k">
+			<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+			<x path="Int"/>
+			<x path="Float"/>
+		</f>
+		<meta><m n=":op"><e>[]</e></m></meta>
+	</readItem>
+	<writeItem public="1" get="inline" set="null" line="15" static="1"><f a="this:k:v">
+	<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+	<x path="Int"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></writeItem>
+	<_new public="1" get="inline" set="null" line="19" static="1">
+		<f a=""><x path="dsHelper.flatInterleave.core.Array3x9t"/></f>
+		<meta><m n=":noCompletion"/></meta>
+	</_new>
+	<index public="1" get="accessor" set="accessor" static="1"><x path="Int"/></index>
+	<get_index get="inline" set="null" line="25" static="1"><f a="this">
+	<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+	<x path="Int"/>
+</f></get_index>
+	<set_index get="inline" set="null" line="29" static="1"><f a="this:id">
+	<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_index>
+	<getArray public="1" get="inline" set="null" line="34" static="1"><f a="this">
+	<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+	<t path="dsHelper.haxe.io.Float32Array"/>
+</f></getArray>
+	<toEnd public="1" get="inline" set="null" line="42" static="1"><f a="this:id:len">
+	<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Bool"/>
+</f></toEnd>
+	<toStart public="1" get="inline" set="null" line="46" static="1"><f a="this:id:len">
+	<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Bool"/>
+</f></toStart>
+	<swap public="1" get="inline" set="null" line="50" static="1"><f a="this:id0:id1:len">
+	<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Bool"/>
+</f></swap>
+</class></impl>
+	</abstract>
+	<class path="dsHelper.flatInterleave.core._Array3x9t.Array3x9t_Impl_" params="" file="src/dsHelper/flatInterleave/core/Array3x9t.hx" private="1" module="dsHelper.flatInterleave.core.Array3x9t" final="1">
+		<readItem public="1" get="inline" set="null" line="10" static="1">
+			<f a="this:k">
+				<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+				<x path="Int"/>
+				<x path="Float"/>
+			</f>
+			<meta><m n=":op"><e>[]</e></m></meta>
+		</readItem>
+		<writeItem public="1" get="inline" set="null" line="15" static="1"><f a="this:k:v">
+	<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+	<x path="Int"/>
+	<x path="Float"/>
+	<x path="Float"/>
+</f></writeItem>
+		<_new public="1" get="inline" set="null" line="19" static="1">
+			<f a=""><x path="dsHelper.flatInterleave.core.Array3x9t"/></f>
+			<meta><m n=":noCompletion"/></meta>
+		</_new>
+		<index public="1" get="accessor" set="accessor" static="1"><x path="Int"/></index>
+		<get_index get="inline" set="null" line="25" static="1"><f a="this">
+	<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+	<x path="Int"/>
+</f></get_index>
+		<set_index get="inline" set="null" line="29" static="1"><f a="this:id">
+	<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+	<x path="Int"/>
+	<x path="Int"/>
+</f></set_index>
+		<getArray public="1" get="inline" set="null" line="34" static="1"><f a="this">
+	<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+	<t path="dsHelper.haxe.io.Float32Array"/>
+</f></getArray>
+		<toEnd public="1" get="inline" set="null" line="42" static="1"><f a="this:id:len">
+	<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Bool"/>
+</f></toEnd>
+		<toStart public="1" get="inline" set="null" line="46" static="1"><f a="this:id:len">
+	<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Bool"/>
+</f></toStart>
+		<swap public="1" get="inline" set="null" line="50" static="1"><f a="this:id0:id1:len">
+	<x path="dsHelper.flat.io.ArrayFlatDepth"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Int"/>
+	<x path="Bool"/>
+</f></swap>
 	</class>
 	<abstract path="dsHelper.flatInterleave.core.Flat3x7" params="" file="src/dsHelper/flatInterleave/core/Flat3x7.hx">
 		<this><x path="dsHelper.flat.io.Float32FlatDepth"/></this>
